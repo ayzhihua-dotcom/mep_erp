@@ -1,0 +1,25 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: TARGET_USERS: ['chenzhihua@cb.local', 'dev10.mgt@cb.local', 'dev09.fin@cb.local', 'dev08.pm@cb.local', 'dev07.whs@cb.local', 'dev06.cus@cb.local', 'dev05.log@cb.local', 'dev04.bra@cb.local', 'dev03.prc@cb.local', 'dev02.eng@cb.local', 'dev01.sys@cb.local']
+BLOCKED_ADDED: chenzhihua@cb.local ['Accounts', 'Selling', 'Assets', 'Manufacturing', 'CRM', 'Support', 'Website', 'Automation', 'Build', 'Email', 'Integrations', 'Printing']
+BLOCKED_ADDED: dev10.mgt@cb.local ['Accounts', 'Selling', 'Assets', 'Manufacturing', 'CRM', 'Support', 'Website', 'Automation', 'Build', 'Email', 'Integrations', 'Printing']
+BLOCKED_ADDED: dev09.fin@cb.local ['Accounts', 'Selling', 'Assets', 'Manufacturing', 'CRM', 'Support', 'Website', 'Automation', 'Build', 'Email', 'Integrations', 'Printing']
+BLOCKED_ADDED: dev08.pm@cb.local ['Accounts', 'Selling', 'Assets', 'Manufacturing', 'CRM', 'Support', 'Website', 'Automation', 'Build', 'Email', 'Integrations', 'Printing']
+BLOCKED_ADDED: dev07.whs@cb.local ['Accounts', 'Selling', 'Assets', 'Manufacturing', 'CRM', 'Support', 'Website', 'Automation', 'Build', 'Email', 'Integrations', 'Printing']
+BLOCKED_ADDED: dev06.cus@cb.local ['Accounts', 'Selling', 'Assets', 'Manufacturing', 'CRM', 'Support', 'Website', 'Automation', 'Build', 'Email', 'Integrations', 'Printing']
+BLOCKED_ADDED: dev05.log@cb.local ['Accounts', 'Selling', 'Assets', 'Manufacturing', 'CRM', 'Support', 'Website', 'Automation', 'Build', 'Email', 'Integrations', 'Printing']
+BLOCKED_ADDED: dev04.bra@cb.local ['Accounts', 'Selling', 'Assets', 'Manufacturing', 'CRM', 'Support', 'Website', 'Automation', 'Build', 'Email', 'Integrations', 'Printing']
+BLOCKED_ADDED: dev03.prc@cb.local ['Accounts', 'Selling', 'Assets', 'Manufacturing', 'CRM', 'Support', 'Website', 'Automation', 'Build', 'Email', 'Integrations', 'Printing']
+BLOCKED_ADDED: dev02.eng@cb.local ['Accounts', 'Selling', 'Assets', 'Manufacturing', 'CRM', 'Support', 'Website', 'Automation', 'Build', 'Email', 'Integrations', 'Printing']
+BLOCKED_ADDED: dev01.sys@cb.local ['Accounts', 'Selling', 'Assets', 'Manufacturing', 'CRM', 'Support', 'Website', 'Automation', 'Build', 'Email', 'Integrations', 'Printing']
+CHENZHIHUA_NAVIGABLE: ['Buying', 'CB ERP', 'Contacts', 'Data', 'Geo', 'Portal', 'Projects', 'Quality Management', 'Setup', 'Stock', 'System', 'Users', 'Workflow']
+CHENZHIHUA_SIDEBARS: ['Buying', 'CB ERP', 'Contacts', 'Data', 'Geo', 'Projects', 'Quality', 'Setup', 'Stock', 'System', 'Users', 'Workflow']
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

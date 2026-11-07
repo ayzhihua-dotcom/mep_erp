@@ -1,0 +1,67 @@
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/commands/utils.py", line 309, in execute
+    ret = frappe.get_attr(method)(*fn_args, **fn_kwargs)
+  File "/home/frappe/frappe-bench/apps/cb_erp/cb_erp/cb_erp/ops_setup.py", line 91, in run
+    ensure_report()
+    ~~~~~~~~~~~~~^^
+  File "/home/frappe/frappe-bench/apps/cb_erp/cb_erp/cb_erp/ops_setup.py", line 32, in ensure_report
+    }).insert(ignore_permissions=True)
+       ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 724, in insert
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1068, in _validate
+    self._validate_selects()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 3137, in _validate_selects
+    frappe.throw(
+    ~~~~~~~~~~~~^
+    	_('{0} {1} cannot be "{2}". It should be one of "{3}"').format(
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    		prefix, label, value, comma_options
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    	)
+     ^
+    )
+    ^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/messages.py", line 159, in throw
+    msgprint(
+    ~~~~~~~~^
+    	msg,
+     ^^^^
+    ...<7 lines>...
+    	allow_dangerous_html=allow_dangerous_html,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/messages.py", line 118, in msgprint
+    _raise_exception()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/messages.py", line 59, in _raise_exception
+    raise exc
+frappe.exceptions.ValidationError:  Is Standard cannot be "1". It should be one of "No", "Yes"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 48, in invoke
+    return super().invoke(ctx)
+           ~~~~~~~~~~~~~~^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/click/core.py", line 1970, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+  File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/click/decorators.py", line 34, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/commands/__init__.py", line 28, in _func
+    ret = f(ctx.obj, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/commands/utils.py", line 313, in execute
+    ret = eval(code, globals(), locals())  # nosemgrep
+  File "<bench execute>", line 1, in <module>
+NameError: name 'cb_erp' is not defined
+
+name 'cb_erp' is not defined

@@ -1,0 +1,30 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: TRUSTED_HOSTS: None
+HOST_NAME: None
+DB_NAME: _325fea6ca8b4a462
+--- BUSINESS DATA ---
+CUSTOMERS_COUNT: 0
+ITEM_CB_GV_001: ('CB-GV-001', 1, '个')
+BINS_CB_GV_001:
+  WH: 巴西现场总仓 - 巴项 QTY: 12.0
+WAREHOUSES_巴项:
+  WH: 所有仓库 - 巴项
+  WH: 仓库 - 巴项
+  WH: 进行中 - 巴项
+  WH: 成品 - 巴项
+  WH: 在途物料 - 巴项
+  WH: 巴西现场总仓 - 巴项
+  WH: 巴西待检仓 - 巴项
+  WH: 巴西隔离仓 - 巴项
+SALES_ORDERS_COUNT: 0
+DONE:1
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

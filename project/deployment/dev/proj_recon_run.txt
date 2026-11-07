@@ -1,0 +1,32 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: PROJECT_COUNT: 2
+PROJECT: PROJ-0002 | 测试项目B (临时) | Open | 中巴机电（巴西）项目有限公司 | pct: 0.0 | None -> None
+PROJECT: PROJ-0001 | 中巴示范楼机电项目 D01（占位） | Open | 中巴机电（巴西）项目有限公司 | pct: 0.0 | 2026-10-29 -> None
+TASK_COUNT: 0
+LINKPROJ: Material Budget | total: 1 | project_fields: ['project'] | nonnull: {'project': 1}
+LINKPROJ: Material Commitment | total: 1 | project_fields: ['project'] | nonnull: {'project': 1}
+LINKPROJ: Design BOM | total: 1 | project_fields: ['project'] | nonnull: {'project': 1}
+LINKPROJ: Design Change Request | total: 0 | project_fields: [] | nonnull: {}
+LINKPROJ: CB Shipment | total: 1 | project_fields: [] | nonnull: {}
+LINKPROJ: CB Shipment Line | total: 2 | project_fields: [] | nonnull: {}
+LINKPROJ: CB Import Case | total: 1 | project_fields: [] | nonnull: {}
+LINKPROJ: CB Import Checklist | total: 3 | project_fields: [] | nonnull: {}
+LINKPROJ: CB Import Cost | total: 2 | project_fields: [] | nonnull: {}
+LINKPROJ: Quality Inspection | total: 1 | project_fields: [] | nonnull: {}
+LINKPROJ: Stock Entry | total: 2 | project_fields: ['project'] | nonnull: {'project': 0}
+LINKPROJ: Purchase Order | total: 2 | project_fields: ['project', 'custom_cb_project'] | nonnull: {'project': 0, 'custom_cb_project': 2}
+LINKPROJ: Material Request | total: 1 | project_fields: ['custom_cb_project'] | nonnull: {'custom_cb_project': 1}
+COUNT Dashboard : 9
+COUNT Dashboard Chart : 50
+COUNT Number Card : 57
+COUNT Report : 195
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

@@ -1,0 +1,8 @@
+Wrote document file for Report 项目专业系统矩阵 at /home/frappe/frappe-bench/apps/cb_erp/cb_erp/cb_erp/report/项目专业系统矩阵/项目专业系统矩阵.json
+/home/frappe/frappe-bench/apps/cb_erp/cb_erp/cb_erp/report/项目专业系统矩阵/项目专业系统矩阵.py already exists, skipping...
+/home/frappe/frappe-bench/apps/cb_erp/cb_erp/cb_erp/report/项目专业系统矩阵/项目专业系统矩阵.js already exists, skipping...
+REPORT_CREATED
+OPS_CARD_ADDED
+Wrote document file for Sidebar Stock at /home/frappe/frappe-bench/apps/erpnext/erpnext/stock/sidebar/stock/stock.json
+SIDEBAR_ADDED 4
+OPS_SETUP_DONE

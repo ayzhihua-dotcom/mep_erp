@@ -1,0 +1,15 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: RESULT: {'created': [{'kind': 'material_request', 'name': 'MAT-MR-2026-00056', 'rows': 1, 'group': 'PROJ-0001'}], 'errors': [], 'count': 1, 'total_rows': 1}
+DOC: MAT-MR-2026-00056 | discipline: 电气 | system: 电气系统 | responsible: eng01@cb.local | owner: Administrator
+CLEANED
+MR_COUNT: 51
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

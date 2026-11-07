@@ -1,0 +1,27 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: USE_PO: PUR-ORD-2026-00004
+TEMP_IMPORT_CASE: CB-IMP-2026-00002 | ds: 1
+TEMP_BUDGET: CB-BUD-2026-00002 | ds: 1
+TEMP_COMMIT: CB-CMT-2026-00003 | ds: 1
+RUN: ['ok:CST-007:CB-BUD-2026-00002:created', 'ok:ALR-002:CB-IMP-2026-00002:created']
+EVENT_COUNT: 2
+EV: CB-ALE-2026-00017 | ALR-002 | 单证缺失 | metric: 1.0 | ref: CB-IMP-2026-00002 | status: 待处理
+EV: CB-ALE-2026-00016 | CST-007 | 超预算 | metric: 2.0 | ref: CB-BUD-2026-00002 | status: 待处理
+ALERT_EVENTS_DELETED: 2
+CLEANED: Material Commitment CB-CMT-2026-00003
+CLEANED: Material Budget CB-BUD-2026-00002
+CLEANED: CB Import Case CB-IMP-2026-00002
+FINAL_ALERT_EVENT: 0
+FINAL_IMPORT_CASE: 1
+FINAL_BUDGET: 1
+FINAL_COMMIT: 1
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

@@ -1,0 +1,30 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: REPORT 项目总览 -> rows: 52 cols: 11
+REPORT 项目物料执行台账 -> rows: 509 cols: 8
+REPORT 项目文档台账 -> rows: 924 cols: 6
+CARD 在办项目 = 52.0
+CARD 在办任务 = 256.0
+CARD 未关闭预警 = 350.0
+CARD 缺料预警 = 350.0
+CARD 超预算预警 = 350.0
+CARD 逾期任务 = 350.0
+--- ALERT BREAKDOWN ---
+ALERT ALR-001 | 缺料 | 150
+ALERT ALR-002 | 单证缺失 | 50
+ALERT CST-007 | 超预算 | 50
+ALERT PRJ-001 | 其他 | 50
+ALERT PRJ-002 | 其他 | 50
+MR_OWNERS: [{'owner': 'eng01@cb.local', 'c': 1}, {'owner': 'eng05@cb.local', 'c': 1}, {'owner': 'eng09@cb.local', 'c': 1}, {'owner': 'eng13@cb.local', 'c': 1}, {'owner': 'eng17@cb.local', 'c': 1}, {'owner': 'eng21@cb.local', 'c': 1}, {'owner': 'eng25@cb.local', 'c': 1}, {'owner': 'eng29@cb.local', 'c': 1}, {'owner': 'eng33@cb.local', 'c': 1}, {'owner': 'eng37@cb.local', 'c': 1}, {'owner': 'eng41@cb.local', 'c': 1}, {'owner': 'eng45@cb.local', 'c': 1}]
+PO_SUBMITTED: 51
+ISSUE_SE_SUBMITTED: 10
+RECEIPT_SE_SUBMITTED: 11
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

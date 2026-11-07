@@ -1,0 +1,177 @@
+LINKS: 33
+[
+[
+"Card Break",
+"\u5de5\u7a0b\u4e0e\u9884\u7b97",
+"DocType",
+null
+],
+[
+"Link",
+"\u8bbe\u8ba1 BOM",
+"DocType",
+"Design BOM"
+],
+[
+"Link",
+"\u8bbe\u8ba1\u53d8\u66f4\u7533\u8bf7",
+"DocType",
+"Design Change Request"
+],
+[
+"Link",
+"\u6750\u6599\u9884\u7b97",
+"DocType",
+"Material Budget"
+],
+[
+"Card Break",
+"\u91c7\u8d2d\u4e0e\u627f\u8bfa",
+"DocType",
+null
+],
+[
+"Link",
+"\u91c7\u8d2d\u7533\u8bf7",
+"DocType",
+"Material Request"
+],
+[
+"Link",
+"\u8be2\u4ef7\u5355",
+"DocType",
+"Request for Quotation"
+],
+[
+"Link",
+"\u4f9b\u5e94\u5546\u62a5\u4ef7",
+"DocType",
+"Supplier Quotation"
+],
+[
+"Link",
+"\u91c7\u8d2d\u8ba2\u5355",
+"DocType",
+"Purchase Order"
+],
+[
+"Link",
+"\u6750\u6599\u627f\u8bfa\u53f0\u8d26",
+"DocType",
+"Material Commitment"
+],
+[
+"Card Break",
+"\u7269\u6d41\u4e0e\u8fdb\u53e3",
+"DocType",
+null
+],
+[
+"Link",
+"CB \u88c5\u8fd0",
+"DocType",
+"CB Shipment"
+],
+[
+"Link",
+"CB \u8fdb\u53e3\u6848\u4ef6",
+"DocType",
+"CB Import Case"
+],
+[
+"Card Break",
+"\u8d28\u68c0\u4e0e\u5e93\u5b58",
+"DocType",
+null
+],
+[
+"Link",
+"\u8d28\u68c0\u5355",
+"DocType",
+"Quality Inspection"
+],
+[
+"Link",
+"\u5e93\u5b58\u6536\u53d1",
+"DocType",
+"Stock Entry"
+],
+[
+"Card Break",
+"\u4e3b\u6570\u636e",
+"DocType",
+null
+],
+[
+"Link",
+"\u7269\u6599",
+"DocType",
+"Item"
+],
+[
+"Link",
+"\u4f9b\u5e94\u5546",
+"DocType",
+"Supplier"
+],
+[
+"Link",
+"\u9879\u76ee",
+"DocType",
+"Project"
+],
+[
+"Link",
+"\u4e13\u4e1a",
+"DocType",
+"CB Discipline"
+],
+[
+"Link",
+"\u7cfb\u7edf",
+"DocType",
+"CB System"
+],
+[
+"Card Break",
+"\u9879\u76ee\u89c6\u56fe",
+"DocType",
+null
+],
+[
+"Link",
+"\u9879\u76ee\u7269\u6599\u6267\u884c\u53f0\u8d26",
+"Report",
+"\u9879\u76ee\u7269\u6599\u6267\u884c\u53f0\u8d26"
+],
+[
+"Link",
+"\u9879\u76ee\u4efb\u52a1",
+"DocType",
+"Task"
+],
+[
+"Link",
+"\u9879\u76ee\u9884\u8b66",
+"DocType",
+"Alert Event"
+],
+[
+"Link",
+"\u9884\u8b66\u89c4\u5219",
+"DocType",
+"Alert Rule"
+],
+[
+"Link",
+"\u9879\u76ee\u6587\u6863\u53f0\u8d26",
+"Report",
+"\u9879\u76ee\u6587\u6863\u53f0\u8d26"
+],
+[
+"Link",
+"\u9879\u76ee\u603b\u89c8",
+"Report",
+"\u9879\u76ee\u603b\u8
+IN_PAGES: True count: 24
+OK

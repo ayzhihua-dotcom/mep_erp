@@ -1,0 +1,19 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: ADMIN Project report: True
+ADMIN Report read: True
+CHEN Project report: False
+CHEN Project read: True
+CHEN Report read: True
+CHEN roles: ['System Manager', 'SYS 系统管理员', 'ENG 工程人员', 'PRC 中国采购', 'BRA 巴西采购', 'LOG 物流人员', 'CUS 清关人员', 'WHS 仓库人员', 'PM 项目经理', 'FIN 财务人员', 'MGT 管理层', 'Stock Manager', 'Stock User', 'Purchase Manager', 'Purchase User', 'Accounts Manager', 'Accounts User', 'Projects Manager', 'Quality Manager']
+DOCPERM Project: [{'role': 'Projects Manager', 'read': 1, 'report': 1, 'write': 1}, {'role': 'Desk User', 'read': 1, 'report': 1, 'write': 0}, {'role': 'Delivery User', 'read': 0, 'report': 0, 'write': 0}, {'role': 'HR Manager', 'read': 0, 'report': 0, 'write': 0}, {'role': 'Sales Manager', 'read': 0, 'report': 0, 'write': 0}, {'role': 'Stock Manager', 'read': 0, 'report': 0, 'write': 0}, {'role': 'Purchase Master Manager', 'read': 0, 'report': 0, 'write': 0}, {'role': 'HR User', 'read': 0, 'report': 0, 'write': 0}, {'role': 'Delivery Manager', 'read': 0, 'report': 0, 'write': 0}, {'role': 'Accounts Manager', 'read': 0, 'report': 0, 'write': 0}, {'role': 'Maintenance Manager', 'read': 0, 'report': 0, 'write': 0}, {'role': 'Sales Master Manager', 'read': 0, 'report': 0, 'write': 0}, {'role': 'Quality Manager', 'read': 0, 'report': 0, 'write': 0}, {'role': 'Employee', 'read': 0, 'report': 1, 'write': 0}, {'role': 'Stock User', 'read': 0, 'report': 0, 'write': 0}, {'role': 'Maintenance User', 'read': 0, 'report': 0, 'write': 0}, {'role': 'Sales User', 'read': 0, 'report': 0, 'write': 0}, {'role': 'Projects Manager', 'read': 1, 'report': 1, 'write': 1}, {'role': 'Purchase User', 'read': 0, 'report': 0, 'write': 0}, {'role': 'Purchase Manager', 'read': 0, 'report': 0, 'write': 0}, {'role': 'Accounts User', 'read': 0, 'report': 0, 'write': 0}, {'role': 'Support Team', 'read': 0, 'report': 0, 'write': 0}, {'role': 'Manufacturing Manager', 'read': 0, 'report': 0, 'write': 0}, {'role': 'Manufacturing User', 'read': 0, 'report': 0, 'write': 0}, {'role': 'Projects User', 'read': 1, 'report': 1, 'write': 1}]
+CUSTOM_DOCPERM Project: [{'role': 'SYS 系统管理员', 'read': 1, 'report': 0, 'write': 1}]
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

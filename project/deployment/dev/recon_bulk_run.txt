@@ -1,0 +1,18 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: PAGE_FIELDS: ['system_page', 'page_html', 'page_name', 'title', 'icon', 'column_break0', 'module', 'restrict_to_domain', 'standard', 'section_break0', 'roles']
+PAGES: [{'name': 'workspace-restore', 'page_name': 'workspace-restore', 'module': 'Desk', 'standard': 'Yes'}, {'name': 'component-explorer', 'page_name': 'component-explorer', 'module': 'Core', 'standard': 'Yes'}, {'name': 'desktop', 'page_name': 'desktop', 'module': 'Desk', 'standard': 'Yes'}, {'name': 'visual-plant-floor', 'page_name': 'visual-plant-floor', 'module': 'Manufacturing', 'standard': 'Yes'}, {'name': 'workflow-builder', 'page_name': 'workflow-builder', 'module': 'Workflow', 'standard': 'Yes'}, {'name': 'print-format-builder-beta', 'page_name': 'print-format-builder-beta', 'module': 'Printing', 'standard': 'Yes'}, {'name': 'warehouse-capacity-summary', 'page_name': 'warehouse-capacity-summary', 'module': 'Stock', 'standard': 'Yes'}, {'name': 'print', 'page_name': 'print', 'module': 'Printing', 'standard': 'Yes'}, {'name': 'point-of-sale', 'page_name': 'point-of-sale', 'module': 'Selling', 'standard': 'Yes'}, {'name': 'bom-comparison-tool', 'page_name': 'bom-comparison-tool', 'module': 'Manufacturing', 'standard': 'Yes'}]
+STOCK_RECON_FIELDS: [('company', 'Link'), ('purpose', 'Select'), ('posting_date', 'Date'), ('set_warehouse', 'Link'), ('items', 'Table'), ('expense_account', 'Link'), ('cost_center', 'Link')]
+SR_ITEM_FIELDS: [('item_code', 'Link'), ('warehouse', 'Link'), ('qty', 'Float'), ('valuation_rate', 'Currency'), ('serial_no', 'Long Text'), ('batch_no', 'Link'), ('current_qty', 'Float'), ('current_valuation_rate', 'Currency')]
+SE_DETAIL_RETURN_FIELDS: [('s_warehouse', 'Link'), ('t_warehouse', 'Link'), ('qty', 'Float'), ('transfer_qty', 'Float'), ('basic_rate', 'Currency'), ('project', 'Link'), ('against_stock_entry', 'Link')]
+SE_HEADER_FIELDS: [('company', 'Link'), ('stock_entry_type', 'Link'), ('purpose', 'Select'), ('posting_date', 'Date'), ('from_warehouse', 'Link'), ('to_warehouse', 'Link'), ('project', 'Link'), ('is_return', 'Check')]
+OPENPYXL: yes 3.1.5
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

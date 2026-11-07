@@ -1,0 +1,21 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: Material Request | remarks: False | owner_col: True
+Stock Entry | remarks: True | owner_col: True
+Purchase Order | remarks: False | owner_col: True
+Stock Reconciliation | remarks: False | owner_col: True
+Material Budget | remarks: False | owner_col: True
+Material Commitment | remarks: False | owner_col: True
+CB Import Case | remarks: False | owner_col: True
+CB Shipment | remarks: False | owner_col: True
+CF_OK
+L1: ['安全与临时设施', '焊接与辅材', '钢结构与建筑', '弱电与通信', '暖通空调', '给排水', '其他', '消防', '防腐保温', '五金辅材', '机电设备与主材', '仪表与自控', '电气与电缆', '管道与阀门']
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

@@ -1,0 +1,28 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: WS_LINK_ADDED
+REPORT_ROWS: 57
+ROW: {'专业': '仪表', '系统': '仪表自控系统', '责任人': 'eng01@cb.local', '采购申请': 1.0, '库存移动': 0.0, '采购订单': 1.0, '合计': 2}
+ROW: {'专业': '仪表', '系统': '仪表自控系统', '责任人': 'eng12@cb.local', '采购申请': 1.0, '库存移动': 0.0, '采购订单': 1.0, '合计': 2}
+ROW: {'专业': '仪表', '系统': '仪表自控系统', '责任人': 'eng14@cb.local', '采购申请': 3.0, '库存移动': 0.0, '采购订单': 3.0, '合计': 6}
+ROW: {'专业': '仪表', '系统': '仪表自控系统', '责任人': 'eng27@cb.local', '采购申请': 1.0, '库存移动': 0.0, '采购订单': 1.0, '合计': 2}
+ROW: {'专业': '仪表', '系统': '仪表自控系统', '责任人': 'eng32@cb.local', '采购申请': 1.0, '库存移动': 0.0, '采购订单': 1.0, '合计': 2}
+ROW: {'专业': '仪表', '系统': '仪表自控系统', '责任人': 'eng43@cb.local', '采购申请': 1.0, '库存移动': 0.0, '采购订单': 1.0, '合计': 2}
+=== 管控门控在役 ===
+GATE: CB-IC01-PO-预算拦截 | Purchase Order | Before Submit | disabled: 0
+GATE: CB-IC02-领料调拨内控 | Stock Entry | Before Submit | disabled: 0
+GATE: CB-INV001-收货质检前置 | Stock Entry | Before Submit | disabled: 0
+GATE: CB-UCX03-退料冲减项目成本 | Stock Entry | Before Submit | disabled: 0
+GATE: CB-UCX04-会签待办 | Stock Entry | After Insert | disabled: 0
+GATE: CB-UCX04-双方会签门控 | Stock Entry | Before Submit | disabled: 0
+GATE: CB-UCX05-退料关联拦截 | Stock Entry | Before Submit | disabled: 0
+ALERT_RULES: [{'rule_code': 'ALR-001', 'enabled': 1}, {'rule_code': 'ALR-002', 'enabled': 1}, {'rule_code': 'CST-007', 'enabled': 1}, {'rule_code': 'PRJ-001', 'enabled': 1}, {'rule_code': 'PRJ-002', 'enabled': 1}]
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

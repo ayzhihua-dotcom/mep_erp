@@ -1,0 +1,25 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: PARENTS: ['Address', 'Item', 'Material Request', 'Project', 'Purchase Order', 'Quality Inspection', 'Request for Quotation', 'Stock Entry', 'Stock Settings', 'Supplier', 'Supplier Quotation']
+HAS_SM: Address
+ADDED_SM: Item
+ADDED_SM: Material Request
+ADDED_SM: Project
+ADDED_SM: Purchase Order
+ADDED_SM: Quality Inspection
+ADDED_SM: Request for Quotation
+HAS_SM: Stock Entry
+HAS_SM: Stock Settings
+ADDED_SM: Supplier
+ADDED_SM: Supplier Quotation
+REMAINING_GAPS: []
+REPORT_RUN_OK rows: 52
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

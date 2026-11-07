@@ -1,0 +1,13 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: RES: {'created': [{'kind': 'material_issue', 'name': 'MAT-STE-2026-00053', 'rows': 1, 'group': 'PROJ-0004'}], 'errors': [], 'count': 1, 'total_rows': 1}
+LINES: [{'item_code': 'SIM-PV-0004', 'item_name': '模拟管道阀门-0004', 'custom_spec': 'φ114×4.0', 'custom_remark': '演示：规格备注', 'qty': 2.0}]
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

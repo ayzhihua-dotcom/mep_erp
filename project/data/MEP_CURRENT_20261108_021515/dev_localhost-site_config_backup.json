@@ -1,0 +1,21 @@
+{
+ "db_name": "_325fea6ca8b4a462",
+ "db_password": "DwqskygktTkp8h86",
+ "db_type": "mariadb",
+ "db_user": "_325fea6ca8b4a462",
+ "developer_mode": 0,
+ "encryption_key": "OJsLzi8ERNU39Xv6MYhtT1eNAFLEDMuDZ3pYdJmIwzU=",
+ "installed_apps": [
+  "frappe",
+  "erpnext",
+  "cb_erp"
+ ],
+ "language": "zh",
+ "server_script_enabled": 1,
+ "trusted_hosts": [
+  "localhost",
+  "127.0.0.1",
+  "dev.localhost",
+  "*.localhost"
+ ]
+}

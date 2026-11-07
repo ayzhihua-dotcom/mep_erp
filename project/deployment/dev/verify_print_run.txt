@@ -1,0 +1,24 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: LEN: 18976
+HAS 序号 : True
+HAS 编码 : False
+HAS 名称 : False
+HAS 规格参数 : True
+HAS 单位 : True
+HAS 数量 : True
+HAS 使用项目 : True
+HAS 责任人 : True
+HAS 备注 : True
+HAS DN150 : True
+HAS eng02 : True
+HAS 米 : False
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

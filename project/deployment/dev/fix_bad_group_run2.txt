@@ -1,0 +1,18 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: RENAMED: 水处理设备类 -> 水处理装置
+ITEMS_IN_水处理设备: 48
+MOVED: 48 -> 水处理装置
+REMAINING_GROUP_NODES_WITH_ITEMS: []
+GROUPS_END_类: []
+TOTAL_ITEMS: 10032
+TOTAL_GROUPS: 286
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

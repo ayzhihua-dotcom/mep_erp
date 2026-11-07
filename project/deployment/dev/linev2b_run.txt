@@ -1,0 +1,77 @@
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/commands/utils.py", line 309, in execute
+    ret = frappe.get_attr(method)(*fn_args, **fn_kwargs)
+  File "/home/frappe/frappe-bench/apps/cb_erp/cb_erp/cb_erp/line_fields_v2.py", line 41, in run
+    d.save(ignore_permissions=True)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 794, in save
+    return self._save(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 831, in _save
+    self.run_before_save_methods()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1656, in run_before_save_methods
+    self.run_method("validate")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1504, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1908, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1882, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+                              ~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1501, in fn
+    return method_object(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/doctype/doctype.py", line 216, in validate
+    self.check_developer_mode()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/doctype/doctype.py", line 352, in check_developer_mode
+    frappe.throw(
+    ~~~~~~~~~~~~^
+    	_("Not in Developer Mode! Set in site_config.json or make 'Custom' DocType."),
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    	CannotCreateStandardDoctypeError,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/messages.py", line 159, in throw
+    msgprint(
+    ~~~~~~~~^
+    	msg,
+     ^^^^
+    ...<7 lines>...
+    	allow_dangerous_html=allow_dangerous_html,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/messages.py", line 118, in msgprint
+    _raise_exception()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/messages.py", line 59, in _raise_exception
+    raise exc
+frappe.core.doctype.doctype.doctype.CannotCreateStandardDoctypeError: Not in Developer Mode! Set in site_config.json or make 'Custom' DocType.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 48, in invoke
+    return super().invoke(ctx)
+           ~~~~~~~~~~~~~~^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/click/core.py", line 1970, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+  File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/click/decorators.py", line 34, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/commands/__init__.py", line 28, in _func
+    ret = f(ctx.obj, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/commands/utils.py", line 313, in execute
+    ret = eval(code, globals(), locals())  # nosemgrep
+  File "<bench execute>", line 1, in <module>
+NameError: name 'cb_erp' is not defined
+
+name 'cb_erp' is not defined

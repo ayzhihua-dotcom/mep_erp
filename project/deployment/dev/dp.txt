@@ -1,0 +1,7 @@
+{"dt": "Material Budget", "tables": ["budget_items"], "item_tables": ["budget_items"], "rows": 51, "project_links": ["project"]}
+{"dt": "Material Commitment", "tables": [], "item_tables": [], "rows": 101, "project_links": ["project"]}
+{"dt": "Design BOM", "tables": ["bom_items"], "item_tables": ["bom_items"], "rows": 51, "project_links": ["project"]}
+{"dt": "Design Change Request", "tables": [], "item_tables": [], "rows": 25, "project_links": []}
+{"dt": "CB Shipment", "tables": ["shipment_lines", "milestones"], "item_tables": ["shipment_lines"], "rows": 51, "project_links": []}
+{"dt": "CB Import Case", "tables": ["checklists", "costs"], "item_tables": [], "rows": 51, "project_links": []}
+OK

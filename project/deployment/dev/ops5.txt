@@ -1,0 +1,3 @@
+Wrote document file for Sidebar Stock at /home/frappe/frappe-bench/apps/erpnext/erpnext/stock/sidebar/stock/stock.json
+SIDEBAR_ADDED 3
+OPS_SETUP_DONE

@@ -1,0 +1,31 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: ===  Dock
+   app | Autocomplete | Installed Applications
+   user | Link | User
+   standard | Check | 
+   mount_on | Autocomplete | Installed Applications
+   items_section | Section Break | 
+   items | Table | Dock Item
+===  Dock Item
+   link_type | Select | 
+Sidebar
+Workspace
+URL
+   link_to | Dynamic Link | link_type
+   url | Data | 
+   icon | Icon | Emojis
+   title | Data | 
+   added | Check | 
+   hidden | Check | 
+ERPNEXT_DOCK_ITEMS: [(1, 'Sidebar', 'Setup', 'Setup', 'sliders-soft', 0), (2, 'Sidebar', 'Accounts', 'Accounts', 'calculator-soft', 0), (3, 'Sidebar', 'Selling', 'Selling', 'storefront-soft', 0), (4, 'Sidebar', 'Buying', 'Buying', 'shopping-cart-soft', 0), (5, 'Sidebar', 'Stock', 'Stock', 'shelf-rack-soft', 0), (6, 'Sidebar', 'Manufacturing', 'Manufacturing', 'factory-soft', 0), (7, 'Sidebar', 'Projects', 'Projects', 'gantt-chart-soft', 0), (8, 'Sidebar', 'Assets', 'Assets', 'asset-hand-soft', 0), (9, 'Sidebar', 'Quality', 'Quality', 'quality-seal-soft', 0), (10, 'Sidebar', 'CRM', 'CRM', 'handshake-soft', 1), (11, 'Sidebar', 'Support', 'Support', 'headset-soft', 1), (12, 'Sidebar', 'Portal', 'Portal', 'portal-user-soft', 0)]
+HAS_CB_DOCK: None
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

@@ -1,0 +1,7 @@
+BULK_LAYOUT_OK
+SECTION_OK Material Request
+SECTION_OK Purchase Order
+SECTION_OK Stock Entry
+SECTION_OK Purchase Receipt
+SECTION_OK Quality Inspection
+LAYOUT_DONE

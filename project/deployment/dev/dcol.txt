@@ -1,0 +1,3 @@
+LIST_VIEW_SET: ('Material Request', 'Purchase Order', 'Stock Entry', 'Purchase Receipt')
+MR_TEST_DOCS: [{'name': 'MAT-MR-2026-00065', 'custom_discipline': '管道', 'custom_system': '管道-工艺系统', 'docstatus': 1}]
+OK

@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block title %}库存盘点 - 出入库管理系统{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">库存盘点</h1>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addStocktakeModal">
+        <i class="bi bi-plus-circle"></i> 新增盘点
+    </button>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>盘点编号</th>
+                    <th>商品</th>
+                    <th>系统库存</th>
+                    <th>实际库存</th>
+                    <th>差异</th>
+                    <th>备注</th>
+                    <th>盘点人</th>
+                    <th>盘点时间</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for record in records %}
+                <tr>
+                    <td>{{ record.id }}</td>
+                    <td>{{ record.product.name }}</td>
+                    <td>{{ record.system_quantity }}</td>
+                    <td>{{ record.actual_quantity }}</td>
+                    <td>
+                        <span class="{% if record.difference > 0 %}text-success{% elif record.difference < 0 %}text-danger{% endif %}">
+                            {{ record.difference }}
+                        </span>
+                    </td>
+                    <td>{{ record.note }}</td>
+                    <td>{{ record.user.username }}</td>
+                    <td>{{ record.created_at.strftime('%Y-%m-%d %H:%M') }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Add Stocktake Modal -->
+<div class="modal fade" id="addStocktakeModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form method="POST" action="{{ url_for('main.add_stocktake') }}">
+                <div class="modal-header">
+                    <h5 class="modal-title">新增盘点</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">选择商品</label>
+                        <select class="form-select" name="product_id" required>
+                            <option value="">请选择商品</option>
+                            {% for product in products %}
+                            <option value="{{ product.id }}">{{ product.name }} (系统库存: {{ product.stock }})</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">实际库存数量</label>
+                        <input type="number" class="form-control" name="actual_quantity" min="0" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">备注</label>
+                        <textarea class="form-control" name="note" rows="2"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                    <button type="submit" class="btn btn-primary">确认盘点</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

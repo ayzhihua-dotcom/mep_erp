@@ -1,0 +1,18 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: MODULE_PATH_CB_ERP: /home/frappe/frappe-bench/apps/cb_erp/cb_erp/cb_erp
+APP_PATH_CB_ERP: /home/frappe/frappe-bench/apps/cb_erp/cb_erp
+PO_HAS_custom_cb_project: True
+SE_PURPOSES: ['Material Receipt']
+REPORT_ROWS: 2
+ROW: PROJ-0001 | CB-EL-001 | 电力电缆 4×16mm² | budget: 800.0 | commit: 0.0 | po: 800.0 | issue: 0.0
+ROW: PROJ-0001 | CB-GV-001 | 闸阀 DN100 PN1.6 | budget: 12.0 | commit: 12.0 | po: 50.0 | issue: 0.0
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

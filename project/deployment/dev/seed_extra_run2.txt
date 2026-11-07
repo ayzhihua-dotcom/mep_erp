@@ -1,0 +1,2 @@
+EXTRA {'bom': 12, 'dcr': 20, 'qi': 10, 'err': 0}
+EXTRA_DONE {'bom': 12, 'dcr': 20, 'qi': 10, 'err': 0}

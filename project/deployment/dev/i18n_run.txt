@@ -1,0 +1,8 @@
+ZH_TRANSLATIONS 67
+CHECK Design BOM -> Design BOM
+CHECK Material Budget -> Material Budget
+CHECK Bulk Entry -> Bulk Entry
+CHECK Stock Entry -> Stock Entry
+CHECK Draft -> Draft
+CHECK Last Edited By -> Last Edited By
+I18N_DONE

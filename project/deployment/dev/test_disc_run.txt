@@ -1,0 +1,13 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: RESULT: {'created': [], 'errors': [": CannotChangeConstantError('值不能被改变为<strong>创建人</strong>')"], 'count': 0, 'total_rows': 0}
+MR_COUNT: 51
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

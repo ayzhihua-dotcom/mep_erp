@@ -1,0 +1,24 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: == orphan SLE cleanup (exact voucher_no) ==
+ORPHAN_SLE_BEFORE: ['226fbf3c5a', 'b2d48bf082']
+ORPHAN_SLE_REMAINING: 0
+== bin pristine check (expect 12.0) ==
+BIN_QTY_AFTER_CLEANUP: 12.0
+== delete demo customer to restore CUSTOMERS_COUNT=0 ==
+CUSTOMER DELETED
+== final counts ==
+CUSTOMERS_COUNT: 0
+DELIVERY_NOTE_COUNT: 0
+SALES_ORDER_COUNT: 0
+TOTAL_SLE: 31
+CLEANUP_OK:1
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

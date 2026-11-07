@@ -1,0 +1,18 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: SESSION_USER: chenzhihua@cb.local
+Project report: True
+Report read (type): True
+Report doc read (项目总览): True
+RUN_OK rows: 52
+CUSTOM_DOCPERM_PARENT_COUNT: 11
+PERM_GAPS: [('Item', True, False), ('Material Request', True, False), ('Purchase Order', True, False), ('Quality Inspection', True, False), ('Request for Quotation', True, False), ('Stock Settings', True, False), ('Supplier', True, False), ('Supplier Quotation', True, False)]
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

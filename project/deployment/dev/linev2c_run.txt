@@ -1,0 +1,14 @@
+Wrote document file for DocType Material Request Item at /home/frappe/frappe-bench/apps/erpnext/erpnext/stock/doctype/material_request_item/material_request_item.json
+/home/frappe/frappe-bench/apps/erpnext/erpnext/stock/doctype/material_request_item/material_request_item.py already exists, skipping...
+REORDERED Material Request Item ['item_code', 'item_name', 'qty']
+Wrote document file for DocType Stock Entry Detail at /home/frappe/frappe-bench/apps/erpnext/erpnext/stock/doctype/stock_entry_detail/stock_entry_detail.json
+/home/frappe/frappe-bench/apps/erpnext/erpnext/stock/doctype/stock_entry_detail/stock_entry_detail.py already exists, skipping...
+REORDERED Stock Entry Detail ['item_code', 'item_name', 'qty']
+Wrote document file for DocType Purchase Order Item at /home/frappe/frappe-bench/apps/erpnext/erpnext/buying/doctype/purchase_order_item/purchase_order_item.json
+/home/frappe/frappe-bench/apps/erpnext/erpnext/buying/doctype/purchase_order_item/purchase_order_item.py already exists, skipping...
+REORDERED Purchase Order Item ['item_code', 'item_name', 'qty']
+Wrote document file for DocType Stock Reconciliation Item at /home/frappe/frappe-bench/apps/erpnext/erpnext/stock/doctype/stock_reconciliation_item/stock_reconciliation_item.json
+/home/frappe/frappe-bench/apps/erpnext/erpnext/stock/doctype/stock_reconciliation_item/stock_reconciliation_item.py already exists, skipping...
+REORDERED Stock Reconciliation Item ['item_code', 'qty']
+LINE_V2_DONE
+LINE_V2_DONE

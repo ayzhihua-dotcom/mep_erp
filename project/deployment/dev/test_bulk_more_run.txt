@@ -1,0 +1,23 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: CS_HAS_ADD: True | CS_HAS_TPL: True
+TEMPLATE: 'item_code,qty,warehouse,project,rate\nSIM-PV-0001,2,巴西现场总仓 - '
+DRAFTS: ['MAT-MR-2026-00055', 'MAT-MR-2026-00056']
+SET_PROJECT: {'ok': ['MAT-MR-2026-00055', 'MAT-MR-2026-00056'], 'err': [], 'count': 2}
+PROJ_AFTER: ['PROJ-0002', 'PROJ-0002']
+SUBMIT: {'ok': ['MAT-MR-2026-00055', 'MAT-MR-2026-00056'], 'err': [], 'count': 2}
+DS_AFTER_SUBMIT: [1, 1]
+CANCEL: {'ok': ['MAT-MR-2026-00055', 'MAT-MR-2026-00056'], 'err': [], 'count': 2}
+DS_AFTER_CANCEL: [2, 2]
+DELETE: {'ok': ['MAT-MR-2026-00055', 'MAT-MR-2026-00056'], 'err': [], 'count': 2}
+EXISTS_AFTER_DELETE: [None, None]
+FINAL_MR_COUNT: 51
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

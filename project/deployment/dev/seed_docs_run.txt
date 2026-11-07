@@ -1,0 +1,2 @@
+STATS {'budget': 50, 'commit': 100, 'mr': 50, 'po': 50, 'ic': 50, 'shp': 50, 'task': 250, 'err': 0}
+DOCS_DONE {'budget': 50, 'commit': 100, 'mr': 50, 'po': 50, 'ic': 50, 'shp': 50, 'task': 250, 'err': 0}

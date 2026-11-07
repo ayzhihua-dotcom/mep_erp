@@ -1,0 +1,12 @@
+GROUPS {'L1': 8, 'L2': 20, 'L3': 65} | ITEMS_MOVED 1003 | OLD_REMOVED ['管道阀门', '电缆电气', '仪表自控', '机电主材']
+L1_ITEMS 管道与阀门 251
+L1_ITEMS 电气与电缆 251
+L1_ITEMS 仪表与自控 251
+L1_ITEMS 机电设备与主材 250
+L1_ITEMS 五金辅材 0
+L1_ITEMS 防腐保温 0
+L1_ITEMS 消防 0
+L1_ITEMS 其他 0
+ITEM_GROUP_TOTAL 94
+ITEM_TOTAL 1003
+TAXONOMY_DONE {'L1': 8, 'L2': 20, 'L3': 65}

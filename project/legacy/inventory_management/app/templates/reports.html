@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+{% block title %}报表统计 - 出入库管理系统{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">报表统计</h1>
+</div>
+
+<div class="card mb-4">
+    <div class="card-body">
+        <form method="GET" class="row g-3">
+            <div class="col-md-4">
+                <label class="form-label">开始日期</label>
+                <input type="date" class="form-control" name="start_date" value="{{ start_date }}">
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">结束日期</label>
+                <input type="date" class="form-control" name="end_date" value="{{ end_date }}">
+            </div>
+            <div class="col-md-4 d-flex align-items-end">
+                <button type="submit" class="btn btn-primary">
+                    <i class="bi bi-search"></i> 查询
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card stat-card primary">
+            <div class="card-body">
+                <h6 class="text-muted">入库总量</h6>
+                <h2 class="mb-0">{{ total_inbound }}</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card stat-card success">
+            <div class="card-body">
+                <h6 class="text-muted">出库总量</h6>
+                <h2 class="mb-0">{{ total_outbound }}</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card stat-card warning">
+            <div class="card-body">
+                <h6 class="text-muted">入库总值</h6>
+                <h2 class="mb-0">¥{{ "%.2f"|format(inbound_value) }}</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card stat-card danger">
+            <div class="card-body">
+                <h6 class="text-muted">出库总值</h6>
+                <h2 class="mb-0">¥{{ "%.2f"|format(outbound_value) }}</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <i class="bi bi-box-arrow-in-down"></i> 入库记录
+            </div>
+            <div class="card-body" style="max-height: 400px; overflow-y: auto;">
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>商品</th>
+                            <th>数量</th>
+                            <th>金额</th>
+                            <th>时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for record in inbound_records %}
+                        <tr>
+                            <td>{{ record.product.name }}</td>
+                            <td>{{ record.quantity }}</td>
+                            <td>¥{{ "%.2f"|format(record.quantity * record.price) }}</td>
+                            <td>{{ record.created_at.strftime('%m-%d %H:%M') }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <i class="bi bi-box-arrow-up"></i> 出库记录
+            </div>
+            <div class="card-body" style="max-height: 400px; overflow-y: auto;">
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>商品</th>
+                            <th>数量</th>
+                            <th>金额</th>
+                            <th>时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for record in outbound_records %}
+                        <tr>
+                            <td>{{ record.product.name }}</td>
+                            <td>{{ record.quantity }}</td>
+                            <td>¥{{ "%.2f"|format(record.quantity * record.price) }}</td>
+                            <td>{{ record.created_at.strftime('%m-%d %H:%M') }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

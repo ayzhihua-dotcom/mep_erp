@@ -1,0 +1,20 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: TASKS_CREATED: ['TASK-2026-00001', 'TASK-2026-00002', 'TASK-2026-00003', 'TASK-2026-00004', 'TASK-2026-00005', 'TASK-2026-00006']
+WS_LINKS: [('Card Break', '工程与预算', None), ('Link', '设计 BOM', 'Design BOM'), ('Link', '设计变更申请', 'Design Change Request'), ('Link', '材料预算', 'Material Budget'), ('Card Break', '采购与承诺', None), ('Link', '采购申请', 'Material Request'), ('Link', '询价单', 'Request for Quotation'), ('Link', '供应商报价', 'Supplier Quotation'), ('Link', '采购订单', 'Purchase Order'), ('Link', '材料承诺台账', 'Material Commitment'), ('Card Break', '物流与进口', None), ('Link', 'CB 装运', 'CB Shipment'), ('Link', 'CB 进口案件', 'CB Import Case'), ('Card Break', '质检与库存', None), ('Link', '质检单', 'Quality Inspection'), ('Link', '库存收发', 'Stock Entry'), ('Card Break', '主数据', None), ('Link', '物料', 'Item'), ('Link', '供应商', 'Supplier'), ('Link', '项目', 'Project'), ('Card Break', '项目视图', None), ('Link', '项目物料执行台账', '项目物料执行台账'), ('Link', '项目任务', 'Task'), ('Link', '项目预警', 'Alert Event'), ('Link', '预警规则', 'Alert Rule')]
+TASK: TASK-2026-00001 | 设计出图与评审 | Working | milestone: 1 | prog: 40.0 | 2026-11-01 09:00:00 -> 2026-11-20 18:00:00
+TASK: TASK-2026-00002 | 采购下单 | Open | milestone: 1 | prog: 0.0 | 2026-11-15 09:00:00 -> 2026-12-10 18:00:00
+TASK: TASK-2026-00003 | 进口清关 | Open | milestone: 1 | prog: 0.0 | 2026-12-10 09:00:00 -> 2027-01-15 18:00:00
+TASK: TASK-2026-00004 | 到货验收与质检 | Open | milestone: 1 | prog: 0.0 | 2027-01-15 09:00:00 -> 2027-02-05 18:00:00
+TASK: TASK-2026-00005 | 现场安装 | Open | milestone: 0 | prog: 0.0 | 2027-02-01 09:00:00 -> 2027-03-15 18:00:00
+TASK: TASK-2026-00006 | 调试与竣工验收 | Open | milestone: 1 | prog: 0.0 | 2027-03-15 09:00:00 -> 2027-04-10 18:00:00
+TASK_COUNT: 6
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

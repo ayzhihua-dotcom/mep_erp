@@ -1,0 +1,16 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: DCR_DUPLICATES_REMOVED: 15
+DCR_COUNT: 25
+BOM_COUNT: 51
+QI_COUNT: 11
+FINAL_COUNTS: {'items': 1003, 'suppliers': 53, 'projects': 52, 'engineers': 50, 'bom': 51, 'dcr': 25, 'budgets': 51, 'commitments': 101, 'mrs': 51, 'pos': 52, 'import_cases': 51, 'shipments': 51, 'qi': 11, 'tasks': 256, 'stock_entries': 22, 'alert_events': 350}
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

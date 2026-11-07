@@ -1,0 +1,47 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...: 
+In [3]: 
+In [4]: 
+In [5]: 
+In [6]: [0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[6], line 1[0m
+[0;32m----> 1[0m frappe[38;5;241m.[39mcache[38;5;241m.[39mdelete_value([43mDOCK_LAYERS_CACHE_KEY[49m)
+
+[0;31mNameError[0m: name 'DOCK_LAYERS_CACHE_KEY' is not defined
+
+In [7]: 
+In [8]:    ...:    ...: 
+In [9]: 
+In [9]: [0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[9], line 1[0m
+[0;32m----> 1[0m d [38;5;241m=[39m [43mget_dock[49m([38;5;124m"[39m[38;5;124mfrappe[39m[38;5;124m"[39m, standard[38;5;241m=[39m[38;5;241m1[39m)
+
+[0;31mNameError[0m: name 'get_dock' is not defined
+
+In [10]: [0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[10], line 1[0m
+[0;32m----> 1[0m [38;5;28mprint[39m([38;5;124m"[39m[38;5;124mITEMS_NOW:[39m[38;5;124m"[39m, [38;5;28mlen[39m(d[38;5;241m.[39mitems) [38;5;28;01mif[39;00m [43md[49m [38;5;28;01melse[39;00m [38;5;28;01mNone[39;00m)
+
+[0;31mNameError[0m: name 'd' is not defined
+
+In [11]: [0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[11], line 1[0m
+[0;32m----> 1[0m [38;5;28mprint[39m([38;5;124m"[39m[38;5;124mENTRY_SET:[39m[38;5;124m"[39m, [(e[38;5;241m.[39mget([38;5;124m"[39m[38;5;124mlink_type[39m[38;5;124m"[39m), e[38;5;241m.[39mget([38;5;124m"[39m[38;5;124mlink_to[39m[38;5;124m"[39m)) [38;5;28;01mfor[39;00m e [38;5;129;01min[39;00m [43mget_app_entry_set[49m([38;5;124m"[39m[38;5;124mfrappe[39m[38;5;124m"[39m)])
+
+[0;31mNameError[0m: name 'get_app_entry_set' is not defined
+
+In [12]: An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [13]: 
+In [14]: Do you really want to exit ([y]/n)? 
+

@@ -1,0 +1,16 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: DOCTYPE_EXISTS: Bulk Entry
+TABLE_EXISTS: True
+CLIENT_SCRIPTS: []
+WS_HAS_BULK: False
+WS_LINK_ADDED
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

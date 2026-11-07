@@ -1,0 +1,5 @@
+SAVED_RAIL: [('Sidebar', 'Users', '用户'), ('Sidebar', 'System', '系统'), ('Workspace', '巴西机电ERP系统测试', '巴西机电ERP系统测试')]
+RESOLVED_FRAPPE: [('Sidebar', 'Users', '用户', 0), ('Sidebar', 'System', '系统', 0), ('Workspace', '巴西机电ERP系统测试', '巴西机电ERP系统测试', 0)]
+ENTRY_SET_FRAPPE: [('Sidebar', 'Build'), ('Sidebar', 'Users'), ('Sidebar', 'Email'), ('Sidebar', 'Website'), ('Sidebar', 'Data'), ('Sidebar', 'Workflow'), ('Sidebar', 'Printing'), ('Sidebar', 'Integrations'), ('Sidebar', 'Contacts'), ('Sidebar', 'Automation'), ('Sidebar', 'Geo'), ('Sidebar', 'System'), ('Workspace', '巴西机电ERP系统测试')]
+RESOLVED_ERPNEXT: [('Sidebar', 'Setup', 'Setup', 0), ('Sidebar', 'Accounts', 'Accounts', 0), ('Sidebar', 'Selling', 'Selling', 0), ('Sidebar', 'Buying', 'Buying', 0), ('Sidebar', 'Stock', 'Stock', 0), ('Sidebar', 'Manufacturing', 'Manufacturing', 0), ('Sidebar', 'Projects', 'Projects', 0), ('Sidebar', 'Assets', 'Assets', 0), ('Sidebar', 'Quality', 'Quality', 0), ('Sidebar', 'CRM', 'CRM', 1), ('Sidebar', 'Support', 'Support', 1), ('Sidebar', 'Portal', 'Portal', 0), ('Workspace', '巴西机电ERP系统测试', '巴西机电ERP系统测试', 0)]
+DONE

@@ -1,0 +1,141 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: === SCRIPT: CB-UCX04-会签待办 | Stock Entry | After Insert | disabled: 0 ===
+if doc.get("purpose") == "Material Transfer":
+    approver = (doc.get("custom_transfer_approver") or "").strip()
+    if not approver:
+        pass
+    else:
+        existing = frappe.get_all("ToDo", filters={"reference_type": "Stock Entry", "reference_name": doc.name, "allocated_to": approver}, fields=["name"], limit=1)
+        if existing:
+            pass
+        else:
+            todo = frappe.new_doc("ToDo")
+            todo.description = ("[UC-X04 双方会签] 调拨单 " + str(doc.name) + " 待审批。请经办人之外的审批人（" + str(approver) + "）审阅后完成签署，并将本待办状态置为 Closed。")
+            todo.allocated_to = approver
+            todo.reference_type = "Stock Entry"
+            todo.reference_name = doc.name
+            todo.status = "Open"
+            todo.insert(ignore_permissions=True)
+=== END ===
+=== SCRIPT: CB-UCX04-双方会签门控 | Stock Entry | Before Submit | disabled: 0 ===
+if doc.get("purpose") == "Material Transfer":
+    owner = (doc.get("owner") or "").strip()
+    designated = (doc.get("custom_transfer_approver") or "").strip()
+    signed_by = None
+    sig_note = ""
+    try:
+        todolist = frappe.get_all("ToDo", filters={"reference_type": "Stock Entry", "reference_name": doc.name, "status": ["in", ["Closed"]]}, fields=["name", "allocated_to", "status"])
+        for t in todolist:
+            assignee = (t.get("allocated_to") or "").strip()
+            if assignee and assignee != owner:
+                signed_by = assignee
+                sig_note = " 签署人：" + assignee
+                break
+    except Exception as e:
+        sig_note = " [查询待办异常:" + repr(e) + "]"
+    if not signed_by:
+        msg = ("[UC-X04 双方会签门控] 该调拨单未完成双方会签，禁止提交。审批人（经办人之外的用户）须在待办 ToDo 中完成签署（将本待办状态置为 Closed）后方可提交。")
+        if designated:
+            msg += " 当前指定审批人：" + designated
+
+=== END ===
+=== SCRIPT: CB-UCX03-退料冲减项目成本 | Stock Entry | Before Submit | disabled: 0 ===
+if doc.get("doctype") == "Stock Entry" and doc.get("purpose") == "Material Receipt":
+    rows = doc.get("items") or []
+    is_return = bool(doc.get("is_return"))
+    has_against = False
+    for r in rows:
+        if r.get("against_stock_entry"):
+            has_against = True
+    if is_return or has_against:
+        no_wh = []
+        no_proj = []
+        for r in rows:
+            if not r.get("t_warehouse"):
+                no_wh.append(str(r.item_code))
+            if not r.get("project"):
+                no_proj.append(str(r.item_code))
+        if no_wh:
+            frappe.throw("退料行未指定退回仓库，无法回库存（UC-X03 / INV-006）：" + ", ".join(no_wh))
+        if no_proj:
+            frappe.throw("退料行未关联项目，无法冲减项目成本（UC-X03 / INV-006）：" + ", ".join(no_proj))
+
+=== END ===
+=== SCRIPT: CB-UCX05-退料关联拦截 | Stock Entry | Before Submit | disabled: 0 ===
+if doc.get("doctype") == "Stock Entry" and doc.get("purpose") == "Material Receipt":
+    rows = doc.get("items") or []
+    is_return = bool(doc.get("is_return"))
+    has_against = False
+    for r in rows:
+        if r.get("against_stock_entry"):
+            has_against = True
+    if is_return or has_against:
+        linked = []
+        for r in rows:
+            if r.get("against_stock_entry"):
+                linked.append(r.get("against_stock_entry"))
+        reason = (doc.get("remarks") or "").strip()
+        if not linked and not reason:
+            frappe.throw("退料未关联原领料单且未注明原因（UC-X05 无关联退料拦截；TP-INV-002/INV-006）：请设置 against_stock_entry 指向原发料单，或在 remarks 中填写退回原因")
+        for tgt in linked:
+            docst = frappe.db.get_value("Stock Entry", tgt, "docstatus")
+            if not docst or docst != 1:
+                frappe.throw("退料关联的原单 " + str(tgt) + " 不存在或已取消/未提交（UC-X05）")
+
+=== END ===
+=== SCRIPT: CB-IC02-领料调拨内控 | Stock Entry | Before Submit | disabled: 0 ===
+if doc.get("doctype") == "Stock Entry" and doc.get("purpose") in ("Material Issue", "Material Transfer"):
+    # ---- 可用库存校验（领料/调拨共用）----
+    for row in doc.get("items"):
+        s_wh = row.get("s_warehouse") or doc.get("set_warehouse")
+        if not s_wh:
+            continue
+        avail = frappe.db.get_value("Bin", {"item_code": row.item_code, "warehouse": s_wh}, "actual_qty")
+        avail = avail or 0
+        qty = row.get("transfer_qty") or row.get("qty") or 0
+        if qty > avail:
+            frappe.throw("物料 " + str(row.item_code) + " 在 " + str(s_wh) + " 可用库存不足：领出/调出 " + str(qty) + " > 可用 " + str(avail) + "（IC-02 领料调拨内控）")
+
+    # ---- 领料出库(INV-005)：项目归属校验（成本归集前置，跨项目/无项目拦）----
+    if doc.get("purpose") == "Material Issue":
+        missing_project = False
+        for row in doc.get("items"):
+            if not row.get("project"):
+                missing_project = True
+        if
+=== END ===
+=== SCRIPT: CB-INV001-收货质检前置 | Stock Entry | Before Submit | disabled: 0 ===
+if doc.purpose == "Material Receipt":
+    for row in doc.get("items"):
+        qc = frappe.db.get_value("Item", row.item_code, "custom_qc_required")
+        if qc and not row.get("quality_inspection"):
+            frappe.throw("物料 " + str(row.item_code) + " 未挂接质检单，禁止收货（TP-INV-001 前置检查）")
+
+=== END ===
+=== SCRIPT: CB-IC01-PO-预算拦截 | Purchase Order | Before Submit | disabled: 0 ===
+budget = doc.get("custom_cb_budget")
+if not budget:
+    frappe.throw("采购订单未关联材料预算，禁止提交（IC-01 内控-占位口径，冻结后按 D-v1 细化）")
+total = frappe.db.get_value("Material Budget", budget, "total_amount")
+po_total = 0
+for r in doc.items:
+    po_total = po_total + (r.amount or 0)
+if total is None or po_total > total:
+    frappe.throw("采购总额 " + str(po_total) + " 超出材料预算 " + str(total) + "，提交被拦截（IC-01）")
+
+=== END ===
+UOM_LIST: ['个', '套', '件', '米', '公斤', '箱']
+UOM_COUNT: 6
+ITEM_FIELDS_CHECK: ['item_group', 'stock_uom', 'is_stock_item', 'valuation_rate', 'has_batch_no', 'has_serial_no']
+SUPPLIER_REQD: [('supplier_name', 1), ('supplier_type', 1)]
+PROJECT_REQD: [('naming_series', 1), ('project_name', 1), ('company', 1)]
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

@@ -1,0 +1,20 @@
+== frappe site_rows: 4
+    Sidebar Users | 用户 | hidden 0
+    Sidebar System | 系统 | hidden 0
+    URL /desk/home | ERPNext 主页 | hidden 0
+    Workspace 巴西机电ERP系统测试 | 巴西机电ERP系统测试 | hidden 0
+== erpnext site_rows: 0
+    Sidebar Setup | Setup | hidden 0
+    Sidebar Accounts | Accounts | hidden 0
+    Sidebar Selling | Selling | hidden 0
+    Sidebar Buying | Buying | hidden 0
+    Sidebar Stock | Stock | hidden 0
+    Sidebar Manufacturing | Manufacturing | hidden 0
+    Sidebar Projects | Projects | hidden 0
+    Sidebar Assets | Assets | hidden 0
+    Sidebar Quality | Quality | hidden 0
+    Sidebar CRM | CRM | hidden 1
+    Sidebar Support | Support | hidden 1
+    Sidebar Portal | Portal | hidden 0
+    Workspace 巴西机电ERP系统测试 | 巴西机电ERP系统测试 | hidden 0
+DONE

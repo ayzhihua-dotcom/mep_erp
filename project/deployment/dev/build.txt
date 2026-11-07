@@ -1,0 +1,11 @@
+Linking /home/frappe/frappe-bench/apps/frappe/frappe/public to ./assets/frappe  Linking /home/frappe/frappe-bench/apps/frappe/node_modules to ./assets/frappe/node_modules                                                                                Linking /home/frappe/frappe-bench/apps/erpnext/erpnext/public to ./assets/erpnext                                                                                Linking /home/frappe/frappe-bench/apps/erpnext/node_modules to ./assets/erpnext/node_modules                                                                                Linking /home/frappe/frappe-bench/apps/cb_erp/cb_erp/public to ./assets/cb_erp  ✔ Application Assets Linked                                            
+
+
+yarn run v1.22.22
+$ node esbuild --production --apps cb_erp --run-build-command
+File                                                        Size
+
+ DONE  Total Build Time: 178.558ms
+
+Done in 1.25s.
+Compiling translations for cb_erp

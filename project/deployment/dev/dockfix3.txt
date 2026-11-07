@@ -1,0 +1,4 @@
+HOME_WS: {'label': 'Home', 'is_hidden': 0, 'public': 1}
+RAIL: [('Sidebar', 'Users', '用户'), ('Sidebar', 'System', '系统'), ('URL', None, 'ERPNext 主页'), ('Workspace', '巴西机电ERP系统测试', '巴西机电ERP系统测试')]
+RESOLVED: [('Sidebar', 'Users', '用户', 0), ('Sidebar', 'System', '系统', 0), ('URL', None, 'ERPNext 主页', 0), ('Workspace', '巴西机电ERP系统测试', '巴西机电ERP系统测试', 0)]
+DONE

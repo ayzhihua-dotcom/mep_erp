@@ -1,0 +1,13 @@
+{'dt': 'CB Import Case', 'fieldname': 'custom_discipline', 'fieldtype': 'Link', 'options': 'CB Discipline'}
+{'dt': 'CB Import Case', 'fieldname': 'custom_system', 'fieldtype': 'Link', 'options': 'CB System'}
+{'dt': 'CB Shipment', 'fieldname': 'custom_discipline', 'fieldtype': 'Link', 'options': 'CB Discipline'}
+{'dt': 'CB Shipment', 'fieldname': 'custom_system', 'fieldtype': 'Link', 'options': 'CB System'}
+{'dt': 'Design BOM', 'fieldname': 'custom_discipline', 'fieldtype': 'Link', 'options': 'CB Discipline'}
+{'dt': 'Design BOM', 'fieldname': 'custom_system', 'fieldtype': 'Link', 'options': 'CB System'}
+TOTAL: 20
+LINK_COUNT: 20
+META_MR discipline: Link CB Discipline
+META_MR system: Link CB System
+MASTERS: 12 38
+PROJECT_FIELD: Project-custom_project_systems
+OK

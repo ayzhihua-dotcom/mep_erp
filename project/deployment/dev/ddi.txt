@@ -1,0 +1,40 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: erpnext 1 Sidebar Setup | Setup | sliders-soft |hidden 0
+erpnext 2 Sidebar Accounts | Accounts | calculator-soft |hidden 0
+erpnext 3 Sidebar Selling | Selling | storefront-soft |hidden 0
+erpnext 4 Sidebar Buying | Buying | shopping-cart-soft |hidden 0
+erpnext 5 Sidebar Stock | Stock | shelf-rack-soft |hidden 0
+erpnext 6 Sidebar Manufacturing | Manufacturing | factory-soft |hidden 0
+erpnext 7 Sidebar Projects | Projects | gantt-chart-soft |hidden 0
+erpnext 8 Sidebar Assets | Assets | asset-hand-soft |hidden 0
+erpnext 9 Sidebar Quality | Quality | quality-seal-soft |hidden 0
+erpnext 10 Sidebar CRM | CRM | handshake-soft |hidden 1
+erpnext 11 Sidebar Support | Support | headset-soft |hidden 1
+erpnext 12 Sidebar Portal | Portal | portal-user-soft |hidden 0
+erpnext 13 Workspace 巴西机电ERP系统测试 | 巴西机电ERP系统测试 | factory-soft |hidden 0
+frappe 1 Sidebar Build | Build | code-app-soft |hidden 0
+frappe 2 Sidebar Users | Users | users-soft |hidden 0
+frappe 3 Sidebar Email | Email | email-envelope-soft |hidden 0
+frappe 4 Sidebar Website | Website | website-browser-soft |hidden 0
+frappe 5 Sidebar Data | Data | data-table-soft |hidden 0
+frappe 6 Sidebar Workflow | Workflow | workflow-builder-soft |hidden 0
+frappe 7 Sidebar Printing | Printing | printing-printer-soft |hidden 0
+frappe 8 Sidebar Integrations | Integrations | integrations-cable-soft |hidden 0
+frappe 9 Sidebar Contacts | Contacts | contacts-cards-soft |hidden 0
+frappe 10 Sidebar Automation | Automation | automation-cycle-soft |hidden 0
+frappe 11 Sidebar Geo | Geo | geo-pin-soft |hidden 0
+frappe 12 Sidebar System | System | system-monitor-soft |hidden 0
+frappe 13 Workspace 巴西机电ERP系统测试 | 巴西机电ERP系统测试 | factory-soft |hidden 0
+COUNT: 26
+frappe modified 2026-11-05 09:55:22.044109 items 13
+erpnext modified 2026-11-05 09:48:43.180437 items 13
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

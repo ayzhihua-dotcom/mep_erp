@@ -23,10 +23,13 @@ cb_erp/
 │  ├─ hooks.py
 │  └─ patches.txt
 ├─ public/                 # 前端 JS / CSS / 图片
-├─ deploy/                 # 部署示例（不含真实密码）
+├─ deploy/                 # 部署示例
+├─ project/                # 完整项目快照（文档/部署/历史备份/全量数据）
 ├─ README.md
 └─ .gitignore
 ```
+
+> 完整项目与数据见 [project/README.md](project/README.md)。
 
 ## 环境要求
 
@@ -64,9 +67,10 @@ docker compose -f deploy/compose.example.yaml --env-file deploy/.env up -d
 
 ## 数据与安全
 
-- 本仓库**不包含**数据库、附件、站点配置、备份文件或任何密码。
-- 请勿把 `site_config.json`、`.env`、`*.sql.gz`、`*.tar` 提交到 Git。
-- 生产环境请使用独立的数据库账号、强密码、备份与恢复演练。
+- 应用代码本身不依赖数据库文件。
+- 完整数据库、附件、站点配置、历史备份位于 `project/`，仅用于私有仓库与内部恢复，恢复步骤见 `project/README.md`。
+- 仓库必须保持 **Private**；`project/data` 含真实业务数据、密码和密钥，请勿公开或外传。
+- 生产环境请使用独立数据库账号、强密码、定期备份与恢复演练。
 
 ## 许可证
 

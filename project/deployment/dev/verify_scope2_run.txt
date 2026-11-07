@@ -1,0 +1,15 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: AFTER_MIGRATE_OK
+VISIBLE_WORKSPACES: ['Buying', 'CB 机电总控', 'ERPNext Settings', 'Home', 'Projects', 'Quality', 'Stock', 'System', 'Users']
+SIDEBARS: ['Buying', 'CB ERP', 'Projects', 'Quality', 'Setup', 'Stock', 'System', 'Users']
+NAVIGABLE: ['Buying', 'CB ERP', 'Projects', 'Quality Management', 'Setup', 'Stock', 'System', 'Users']
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

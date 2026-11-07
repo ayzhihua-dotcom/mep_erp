@@ -1,0 +1,104 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: [0;31m---------------------------------------------------------------------------[0m
+[0;31mValidationError[0m                           Traceback (most recent call last)
+Cell [0;32mIn[2], line 14[0m
+[1;32m     12[0m     [38;5;28mprint[39m([38;5;124m"[39m[38;5;124mPAGE_CREATED[39m[38;5;124m"[39m, d[38;5;241m.[39mname, [38;5;124m"[39m[38;5;124m| standard:[39m[38;5;124m"[39m, d[38;5;241m.[39mstandard)
+[1;32m     13[0m     sys[38;5;241m.[39mexit([38;5;241m0[39m)
+[0;32m---> 14[0m [43mmain[49m[43m([49m[43m)[49m
+
+Cell [0;32mIn[2], line 10[0m, in [0;36mmain[0;34m()[0m
+[1;32m      6[0m     frappe[38;5;241m.[39mdelete_doc([38;5;124m"[39m[38;5;124mPage[39m[38;5;124m"[39m, name, force[38;5;241m=[39m[38;5;28;01mTrue[39;00m)
+[1;32m      7[0m d [38;5;241m=[39m frappe[38;5;241m.[39mget_doc({[38;5;124m"[39m[38;5;124mdoctype[39m[38;5;124m"[39m: [38;5;124m"[39m[38;5;124mPage[39m[38;5;124m"[39m, [38;5;124m"[39m[38;5;124mpage_name[39m[38;5;124m"[39m: name, [38;5;124m"[39m[38;5;124mtitle[39m[38;5;124m"[39m: [38;5;124m"[39m[38;5;124m批量录入测试[39m[38;5;124m"[39m,
+[1;32m      8[0m                     [38;5;124m"[39m[38;5;124mmodule[39m[38;5;124m"[39m: [38;5;124m"[39m[38;5;124mCB ERP[39m[38;5;124m"[39m, [38;5;124m"[39m[38;5;124mstandard[39m[38;5;124m"[39m: [38;5;241m0[39m,
+[1;32m      9[0m                     [38;5;124m"[39m[38;5;124mpage_html[39m[38;5;124m"[39m: [38;5;124m"[39m[38;5;124m<div id=[39m[38;5;124m'[39m[38;5;124mbe[39m[38;5;124m'[39m[38;5;124m>nojs</div><script>document.getElementById([39m[38;5;124m'[39m[38;5;124mbe[39m[38;5;124m'[39m[38;5;124m).textContent=[39m[38;5;124m'[39m[38;5;124mJS_OK[39m[38;5;124m'[39m[38;5;124m;</script>[39m[38;5;124m"[39m})
+[0;32m---> 10[0m [43md[49m[38;5;241;43m.[39;49m[43minsert[49m[43m([49m[43mignore_permissions[49m[38;5;241;43m=[39;49m[38;5;28;43;01mTrue[39;49;00m[43m)[49m
+[1;32m     11[0m frappe[38;5;241m.[39mdb[38;5;241m.[39mcommit()
+[1;32m     12[0m [38;5;28mprint[39m([38;5;124m"[39m[38;5;124mPAGE_CREATED[39m[38;5;124m"[39m, d[38;5;241m.[39mname, [38;5;124m"[39m[38;5;124m| standard:[39m[38;5;124m"[39m, d[38;5;241m.[39mstandard)
+
+File [0;32m~/frappe-bench/apps/frappe/frappe/model/document.py:723[0m, in [0;36mDocument.insert[0;34m(self, ignore_permissions, ignore_links, ignore_if_duplicate, ignore_mandatory, set_name, set_child_names)[0m
+[1;32m    720[0m [38;5;28mself[39m[38;5;241m.[39mvalidate_higher_perm_levels()
+[1;32m    722[0m [38;5;28mself[39m[38;5;241m.[39mflags[38;5;241m.[39min_insert [38;5;241m=[39m [38;5;28;01mTrue[39;00m
+[0;32m--> 723[0m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mrun_before_save_methods[49m[43m([49m[43m)[49m
+[1;32m    724[0m [38;5;28mself[39m[38;5;241m.[39m_validate()
+[1;32m    725[0m [38;5;28mself[39m[38;5;241m.[39mset_docstatus()
+
+File [0;32m~/frappe-bench/apps/frappe/frappe/model/document.py:1656[0m, in [0;36mDocument.run_before_save_methods[0;34m(self)[0m
+[1;32m   1653[0m 	[38;5;28;01mreturn[39;00m
+[1;32m   1655[0m [38;5;28;01mif[39;00m [38;5;28mself[39m[38;5;241m.[39m_action [38;5;241m==[39m [38;5;124m"[39m[38;5;124msave[39m[38;5;124m"[39m:
+[0;32m-> 1656[0m 	[38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mrun_method[49m[43m([49m[38;5;124;43m"[39;49m[38;5;124;43mvalidate[39;49m[38;5;124;43m"[39;49m[43m)[49m
+[1;32m   1657[0m 	[38;5;28mself[39m[38;5;241m.[39mrun_method([38;5;124m"[39m[38;5;124mbefore_save[39m[38;5;124m"[39m)
+[1;32m   1658[0m [38;5;28;01melif[39;00m [38;5;28mself[39m[38;5;241m.[39m_action [38;5;241m==[39m [38;5;124m"[39m[38;5;124msubmit[39m[38;5;124m"[39m:
+
+File [0;32m~/frappe-bench/apps/frappe/frappe/model/document.py:1504[0m, in [0;36mDocument.run_method[0;34m(self, method, *args, **kwargs)[0m
+[1;32m   1501[0m 		[38;5;28;01mreturn[39;00m method_object([38;5;241m*[39margs, [38;5;241m*[39m[38;5;241m*[39mkwargs)
+[1;32m   1503[0m fn[38;5;241m.[39m[38;5;18m__name__[39m [38;5;241m=[39m [38;5;28mstr[39m(method)
+[0;32m-> 1504[0m out [38;5;241m=[39m [43mDocument[49m[38;5;241;43m.[39;49m[43mhook[49m[43m([49m[43mfn[49m[43m)[49m[43m([49m[38;5;28;43mself[39;49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[43margs[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[38;5;241;43m*[39;49m[43mkwargs[49m[43m)[49m
+[1;32m   1506[0m [38;5;28mself[39m[38;5;241m.[39mrun_notifications(method)
+[1;32m   1507[0m run_webhooks([38;5;28mself[39m, method)
+
+File [0;32m~/frappe-bench/apps/frappe/frappe/model/document.py:1908[0m, in [0;36mDocument.hook.<locals>.composer[0;34m(self, *args, **kwargs)[0m
+[1;32m   1905[0m 	hooks[38;5;241m.[39mappend(frappe[38;5;241m.[39mget_attr(handler))
+[1;32m   1907[0m composed [38;5;241m=[39m compose(f, [38;5;241m*[39mhooks)
+[0;32m-> 1908[0m [38;5;28;01mreturn[39;00m [43mcomposed[49m[43m([49m[38;5;28;43mself[39;49m[43m,[49m[43m [49m[43mmethod[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[43margs[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[38;5;241;43m*[39;49m[43mkwargs[49m[43m)[49m
+
+File [0;32m~/frappe-bench/apps/frappe/frappe/model/document.py:1882[0m, in [0;36mDocument.hook.<locals>.compose.<locals>.runner[0;34m(self, method, *args, **kwargs)[0m
+[1;32m   1881[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21mrunner[39m([38;5;28mself[39m, method, [38;5;241m*[39margs, [38;5;241m*[39m[38;5;241m*[39mkwargs):
+[0;32m-> 1882[0m 	add_to_return_value([38;5;28mself[39m, [43mfn[49m[43m([49m[38;5;28;43mself[39;49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[43margs[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[38;5;241;43m*[39;49m[43mkwargs[49m[43m)[49m)
+[1;32m   1883[0m 	[38;5;28;01mfor[39;00m f [38;5;129;01min[39;00m hooks:
+[1;32m   1884[0m 		[38;5;28;01mtry[39;00m:
+
+File [0;32m~/frappe-bench/apps/frappe/frappe/model/document.py:1501[0m, in [0;36mDocument.run_method.<locals>.fn[0;34m(self, *args, **kwargs)[0m
+[1;32m   1498[0m [38;5;66;03m# Cannot have a field with same name as method[39;00m
+[1;32m   1499[0m [38;5;66;03m# If method found in __dict__, expect it to be callable[39;00m
+[1;32m   1500[0m [38;5;28;01mif[39;00m method [38;5;129;01min[39;00m [38;5;28mself[39m[38;5;241m.[39m[38;5;18m__dict__[39m [38;5;129;01mor[39;00m [38;5;28mcallable[39m(method_object):
+[0;32m-> 1501[0m 	[38;5;28;01mreturn[39;00m [43mmethod_object[49m[43m([49m[38;5;241;43m*[39;49m[43margs[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[38;5;241;43m*[39;49m[43mkwargs[49m[43m)[49m
+
+File [0;32m~/frappe-bench/apps/frappe/frappe/core/doctype/page/page.py:61[0m, in [0;36mPage.validate[0;34m(self)[0m
+[1;32m     58[0m validate_route_conflict([38;5;28mself[39m[38;5;241m.[39mdoctype, [38;5;28mself[39m[38;5;241m.[39mname)
+[1;32m     60[0m [38;5;28;01mif[39;00m [38;5;28mself[39m[38;5;241m.[39mis_new() [38;5;129;01mand[39;00m [38;5;129;01mnot[39;00m [38;5;28mgetattr[39m(conf, [38;5;124m"[39m[38;5;124mdeveloper_mode[39m[38;5;124m"[39m, [38;5;241m0[39m):
+[0;32m---> 61[0m 	[43mfrappe[49m[38;5;241;43m.[39;49m[43mthrow[49m[43m([49m[43m_[49m[43m([49m[38;5;124;43m"[39;49m[38;5;124;43mNot in Developer Mode[39;49m[38;5;124;43m"[39;49m[43m)[49m[43m)[49m
+[1;32m     63[0m [38;5;66;03m# setting ignore_permissions via update_setup_wizard_access (setup_wizard.py)[39;00m
+[1;32m     64[0m [38;5;28;01mif[39;00m frappe[38;5;241m.[39msession[38;5;241m.[39muser [38;5;241m!=[39m [38;5;124m"[39m[38;5;124mAdministrator[39m[38;5;124m"[39m [38;5;129;01mand[39;00m [38;5;129;01mnot[39;00m [38;5;28mself[39m[38;5;241m.[39mflags[38;5;241m.[39mignore_permissions:
+
+File [0;32m~/frappe-bench/apps/frappe/frappe/utils/messages.py:159[0m, in [0;36mthrow[0;34m(msg, exc, title, is_minimizable, wide, as_list, primary_action, allow_dangerous_html)[0m
+[1;32m    138[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21mthrow[39m(
+[1;32m    139[0m 	msg: [38;5;28mstr[39m [38;5;241m|[39m Sequence[[38;5;28mstr[39m],
+[1;32m    140[0m 	exc: [38;5;28mtype[39m[[38;5;167;01mException[39;00m] [38;5;241m|[39m [38;5;167;01mException[39;00m [38;5;241m=[39m frappe[38;5;241m.[39mValidationError,
+[0;32m   (...)[0m
+[1;32m    147[0m 	allow_dangerous_html[38;5;241m=[39m[38;5;28;01mFalse[39;00m,
+[1;32m    148[0m ) [38;5;241m-[39m[38;5;241m>[39m [38;5;28;01mNone[39;00m:
+[1;32m    149[0m [38;5;250m	[39m[38;5;124;03m"""Throw execption and show message (`msgprint`).[39;00m
+[1;32m    150[0m 
+[1;32m    151[0m [38;5;124;03m	:param msg: Message.[39;00m
+[0;32m   (...)[0m
+[1;32m    157[0m [38;5;124;03m	:param primary_action: [optional] Bind a primary server/client side action.[39;00m
+[1;32m    158[0m [38;5;124;03m	"""[39;00m
+[0;32m--> 159[0m 	[43mmsgprint[49m[43m([49m
+[1;32m    160[0m [43m		[49m[43mmsg[49m[43m,[49m
+[1;32m    161[0m [43m		[49m[43mraise_exception[49m[38;5;241;43m=[39;49m[43mexc[49m[43m,[49m
+[1;32m    162[0m [43m		[49m[43mtitle[49m[38;5;241;43m=[39;49m[43mtitle[49m[43m,[49m
+[1;32m    163[0m [43m		[49m[43mindicator[49m[38;5;241;43m=[39;49m[38;5;124;43m"[39;49m[38;5;124;43mred[39;49m[38;5;124;43m"[39;49m[43m,[49m
+[1;32m    164[0m [43m		[49m[43mis_minimizable[49m[38;5;241;43m=[39;49m[43mis_minimizable[49m[43m,[49m
+[1;32m    165[0m [43m		[49m[43mwide[49m[38;5;241;43m=[39;49m[43mwide[49m[43m,[49m
+[1;32m    166[0m [43m		[49m[43mas_list[49m[38;5;241;43m=[39;49m[43mas_list[49m[43m,[49m
+[1;32m    167[0m [43m		[49m[43mprimary_action[49m[38;5;241;43m=[39;49m[43mprimary_action[49m[43m,[49m
+[1;32m    168[0m [43m		[49m[43mallow_dangerous_html[49m[38;5;241;43m=[39;49m[43mallow_dangerous_html[49m[43m,[49m
+[1;32m    169[0m [43m	[49m[43m)[49m
+
+File [0;32m~/frappe-bench/apps/frappe/frappe/utils/messages.py:118[0m, in [0;36mmsgprint[0;34m(msg, title, raise_exception, as_table, as_list, indicator, alert, primary_action, is_minimizable, wide, realtime, allow_dangerous_html)[0m
+[1;32m    116[0m [38;5;28;01melse[39;00m:
+[1;32m    117[0m 	frappe[38;5;241m.[39mmessage_log[38;5;241m.[39mappend(out)
+[0;32m--> 118[0m [43m_raise_exception[49m[43m([49m[43m)[49m
+
+File [0;32m~/frappe-bench/apps/frappe/frappe/utils/messages.py:59[0m, in [0;36mmsgprint.<locals>._raise_exception[0;34m()[0m
+[1;32m     57[0m [38;5;28;01mif[39;00m out[38;5;241m.[39m__frappe_exc_id:
+[1;32m     58[0m 	exc[38;5;241m.[39m__frappe_exc_id [38;5;241m=[39m out[38;5;241m.[39m__frappe_exc_id
+[0;32m---> 59[0m [38;5;28;01mraise[39;00m exc
+
+[0;31mValidationError[0m: 未在开发模式下
+
+In [3]: Do you really want to exit ([y]/n)? 
+

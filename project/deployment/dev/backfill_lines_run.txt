@@ -1,0 +1,11 @@
+BACKFILLED Material Request Item
+BACKFILLED Stock Entry Detail
+BACKFILLED Purchase Order Item
+BACKFILL_ERR Stock Reconciliation Item OperationalError(1054, "Unknown column 's.project' in 'SELECT'")
+REPORT_ROWS 280
+ROWS_WITH_UOM 280
+SAMPLE {'单据类型': '采购申请', '单据编号': 'MAT-MR-2026-00004', '序号': 2, '编码': 'SIM-PV-0002', '名称': '模拟管道阀门-0002', '规格参数': None, '单位': '件', '数量': 77.0, '使用项目': 'PROJ-0003', '责任人': 'eng45@cb.local', '备注': None}
+SAMPLE {'单据类型': '采购申请', '单据编号': 'MAT-MR-2026-00004', '序号': 3, '编码': 'SIM-PV-0003', '名称': '模拟管道阀门-0003', '规格参数': None, '单位': '件', '数量': 38.0, '使用项目': 'PROJ-0003', '责任人': 'eng45@cb.local', '备注': None}
+SAMPLE {'单据类型': '采购申请', '单据编号': 'MAT-MR-2026-00004', '序号': 1, '编码': 'SIM-PV-0001', '名称': '模拟管道阀门-0001', '规格参数': None, '单位': '件', '数量': 53.0, '使用项目': 'PROJ-0003', '责任人': 'eng45@cb.local', '备注': None}
+SAMPLE {'单据类型': '采购申请', '单据编号': 'MAT-MR-2026-00005', '序号': 3, '编码': 'SIM-EL-0003', '名称': '模拟电缆电气-0003', '规格参数': None, '单位': '件', '数量': 49.0, '使用项目': 'PROJ-0004', '责任人': 'eng35@cb.local', '备注': None}
+BACKFILL_LINES_DONE

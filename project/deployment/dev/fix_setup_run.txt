@@ -1,0 +1,16 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: table_exists: True
+ROWS: [{'name': 'kprpb3uihp', 'app_name': 'cb_erp', 'is_setup_complete': 0}, {'name': 'kpreikk2li', 'app_name': 'erpnext', 'is_setup_complete': 1}, {'name': 'kprut7l703', 'app_name': 'frappe', 'is_setup_complete': 1}]
+SET erpnext was 1 -> now 1
+SET frappe was 1 -> now 1
+RESULT is_setup_complete(): True
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

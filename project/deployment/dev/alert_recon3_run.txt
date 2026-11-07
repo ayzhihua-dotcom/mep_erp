@@ -1,0 +1,24 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: MRI_HAS_project: True | MRI_HAS_custom_cb_project: False
+MR_HEADER_LINKPROJ: ['custom_cb_project']
+MR_HEADER_has_project: False
+MR: MAT-MR-2026-00003 | ds: 0 | custom_cb_project: PROJ-0001
+   MRI: CB-GV-001 | qty: 12.0 | ordered: 0.0
+CASE: CB-IMP-2026-00001 | ds: 0 | customs: 单证准备
+   CHK: 提单 | done: 0 | due: None
+   CHK: 箱单 | done: 0 | due: None
+   CHK: 发票 | done: 0 | due: None
+BUDGET: CB-BUD-2026-00001 | proj: PROJ-0001 | ds: 0 | amt: 31000.0
+   BLINE: CB-EL-001 | qty: 800.0
+   BLINE: CB-GV-001 | qty: 12.0
+COMMIT: CB-CMT-2026-00002 | proj: PROJ-0001 | CB-GV-001 | qty: 12.0 | amt: 10200.0 | ds: 0
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

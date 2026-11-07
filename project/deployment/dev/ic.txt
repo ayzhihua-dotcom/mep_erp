@@ -1,0 +1,3 @@
+IDS_SAMPLE: ['frappe-symbols', 'icon-hand-helping', 'icon-underline', 'icon-funnel-plus', 'icon-funnel-x', 'icon-file-plus-2', 'icon-sigma', 'icon-clock-9', 'icon-triangle-alert', 'icon-ethernet-port', 'icon-triangle', 'icon-hand', 'icon-search', 'icon-chart-scatter', 'icon-signpost-big']
+HAVE: {'layout-dashboard': True, 'zap': True, 'file-text': True, 'shopping-cart': True, 'package': True, 'log-out': True, 'clipboard-list': True, 'bar-chart-2': False, 'layers': True, 'edit-3': False, 'pie-chart': False, 'search': True, 'users': True, 'truck': True, 'globe': True, 'check-circle': False, 'box': True, 'folder': True, 'award': True, 'bell': True, 'settings': True}
+OK

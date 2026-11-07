@@ -1,0 +1,83 @@
+=== 1) 自定义字段：专业/系统/责任人
+  CB Import Case                   custom_discipline    Data       
+  CB Import Case                   custom_responsible   Link       User
+  CB Import Case                   custom_system        Data       
+  CB Shipment                      custom_discipline    Data       
+  CB Shipment                      custom_responsible   Link       User
+  CB Shipment                      custom_system        Data       
+  Design BOM                       custom_discipline    Data       
+  Design BOM                       custom_responsible   Link       User
+  Design BOM                       custom_system        Data       
+  Design Change Request            custom_discipline    Data       
+  Design Change Request            custom_responsible   Link       User
+  Design Change Request            custom_system        Data       
+  Material Budget                  custom_discipline    Data       
+  Material Budget                  custom_responsible   Link       User
+  Material Budget                  custom_system        Data       
+  Material Commitment              custom_discipline    Data       
+  Material Commitment              custom_responsible   Link       User
+  Material Commitment              custom_system        Data       
+  Material Request                 custom_discipline    Data       
+  Material Request                 custom_responsible   Link       User
+  Material Request                 custom_system        Data       
+  Material Request Item            custom_responsible   Link       User
+  Purchase Order                   custom_discipline    Data       
+  Purchase Order                   custom_responsible   Link       User
+  Purchase Order                   custom_system        Data       
+  Purchase Order Item              custom_responsible   Link       User
+  Stock Entry                      custom_discipline    Data       
+  Stock Entry                      custom_responsible   Link       User
+  Stock Entry                      custom_system        Data       
+  Stock Entry Detail               custom_responsible   Link       User
+  Stock Reconciliation             custom_discipline    Data       
+  Stock Reconciliation             custom_responsible   Link       User
+  Stock Reconciliation             custom_system        Data       
+  Stock Reconciliation Item        custom_responsible   Link       User
+=== 2) Project 上的相关字段
+=== 3) 各单据存量专业/系统分布
+  -- Material Request total: 51
+     [管道] / [工艺系统] -> 14
+     [电气] / [电气系统] -> 13
+     [机械设备] / [工艺系统] -> 12
+     [仪表] / [仪表自控系统] -> 12
+  -- Purchase Order total: 52
+     [管道] / [工艺系统] -> 15
+     [电气] / [电气系统] -> 13
+     [机械设备] / [工艺系统] -> 12
+     [仪表] / [仪表自控系统] -> 12
+  -- Stock Entry total: 25
+     [管道] / [工艺系统] -> 25
+  SKIP(no field): Purchase Receipt
+  SKIP(no field): Quality Inspection
+=== 4) 自定义 DocType 上的专业/系统（材料预算/承诺等）
+  -- CB Import Case
+     [] / [] -> 51
+  -- CB Shipment
+     [] / [] -> 51
+=== 5) 现有 Report / Server Script 是否引用专业系统
+  REPORT: {'name': '业务汇总（专业系统责任人）', 'report_type': 'Query Report', 'ref_doctype': 'Material Request'}
+=== 6) Bulk Entry 字段
+   project Link Project
+   discipline Select 管道
+电气
+仪表
+暖通
+给排水
+消防
+钢结构
+机械设备
+焊接
+防腐保温
+安全环保
+其他
+   system Select 工艺系统
+给排水系统
+消防系统
+暖通空调系统
+电气系统
+仪表自控系统
+弱电通信系统
+压缩空气系统
+蒸
+   responsible Link User
+OK

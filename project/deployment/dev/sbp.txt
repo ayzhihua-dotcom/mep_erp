@@ -1,0 +1,10 @@
+SIDEBAR_LINK_TYPES: DocType
+Page
+Report
+Workspace
+Dashboard
+URL
+SIDEBAR_FIELDS: ["details_section", "label", "link_type", "icon", "is_default_module", "column_break_krzu", "type", "link_to", "child", "navigate_to_tab", "url", "open_in_new_tab", "display_section", "collapsible_column", "collapsible", "indent", "keep_closed", "show_arrow", "column_break_jexf", "section_break_whjq", "filter_area", "filters", "route_options", "customization_section", "hidden", "added", "provenance_section", "key"]
+SIDEBARS: ["Geo", "Support", "Stock", "Setup", "Selling", "Quality", "Projects", "Portal", "Manufacturing", "CRM", "Buying", "Assets", "Accounts", "System", "Users", "Data", "Build", "Workflow", "Contacts", "Website", "Printing", "Integrations", "Email", "Automation"]
+STOCK_ITEMS: [["Workspace", "Stock", "Home"], ["Dashboard", "Stock", "Dashboard"], ["DocType", "Item", "Item"], ["DocType", "Warehouse", "Warehouse"], ["DocType", "Material Request", "Material Request"], ["DocType", "Stock Entry", "Stock Entry"], ["DocType", "Stock Reconciliation", "Stock Reconciliation"], ["DocType", "Purchase Receipt", "Purchase Receipt"], ["DocType", "Delivery Note", "Delivery Note"], ["DocType", null, "Reports"], ["Report", "Stock Ledger", "Stock Ledger"], ["Report", "Stock Balance", "Stock Balance"], ["Report", "Stock Projected Qty", "Stock Projected Qty"], ["Report", "Stock Ageing", "Stock Ageing"], ["Report", "Stock Analytics", "Stock Analytics"], ["DocType", null, "Tools"], ["DocType", "Pick List", "Pick List"], ["DocType", "Landed Cost Voucher", "Landed Cost Voucher"], ["DocType", "Quality Inspection", "Quality Inspection"], ["DocType", "Packing Slip", "Packing Slip"], ["DocType", null, "Serial & Batch"], ["DocType", "Serial No", "Serial No"], ["DocType", "Batch", "Batch No"], ["DocType", "Serial and Batch Bundle", "Serial and Batch Bundle"], ["DocType", null, "Setup"], ["DocType", "Item Group", "Item Group"], ["DocType", "Item Attribute", "Item Attribute"], ["DocType", "Brand", "Brand"], ["DocType", "UOM", "Unit of Measure (UOM)"], ["DocType", "Inventory Dimension", "Inventory Dimension"], ["DocType", "Stock Settings", "Settings"]]
+OK

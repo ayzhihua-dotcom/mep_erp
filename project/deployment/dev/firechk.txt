@@ -1,0 +1,7 @@
+UNDER_FIRE: [{'name': '消防报警', 'is_group': 1}, {'name': '消防水系统', 'is_group': 1}, {'name': '消防管件', 'is_group': 1}, {'name': '消防设备', 'is_group': 1}, {'name': '灭火系统', 'is_group': 1}]
+   灭火系统 children: 3
+   消防报警 children: 4
+   消防水系统 children: 4
+   消防管件 children: 2
+   消防设备 children: 3
+OK

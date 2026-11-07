@@ -1,0 +1,7 @@
+已领用数量 COLS: 13 ROWS: 1 MSG: 指标：已领用数量；项目数：10；系统数：1
+   sample: {"discipline": "\u7ba1\u9053", "system": "\u7ba1\u9053-\u5de5\u827a\u7cfb\u7edf", "total": 107.0, "p_PROJ_0005": 13.0, "p_PROJ_0003": 12.0, "p_PROJ_0004": 12.0, "p_PROJ_0006": 10.0, "p_PROJ_0007": 10.0, "p_PROJ_0008": 10.0, "p_PROJ_0009": 10.0, "p_PROJ_0010": 10.0, "p_PROJ_0011": 10.0, "p_PROJ_0012"
+采购订单数量 COLS: 54 ROWS: 4 MSG: 指标：采购订单数量；项目数：51；系统数：4
+   sample: {"discipline": "\u7ba1\u9053", "system": "\u7ba1\u9053-\u5de5\u827a\u7cfb\u7edf", "total": 942.0, "p_PROJ_0001": 812.0, "p_PROJ_0005": 0.0, "p_PROJ_0009": 0.0, "p_PROJ_0013": 0.0, "p_PROJ_0017": 0.0, "p_PROJ_0021": 0.0, "p_PROJ_0025": 0.0, "p_PROJ_0029": 0.0, "p_PROJ_0033": 0.0, "p_PROJ_0037": 0.0, 
+采购申请数量 COLS: 53 ROWS: 4 MSG: 指标：采购申请数量；项目数：50；系统数：4
+   sample: {"discipline": "\u7ba1\u9053", "system": "\u7ba1\u9053-\u5de5\u827a\u7cfb\u7edf", "total": 2148.0, "p_PROJ_0051": 257.0, "p_PROJ_0023": 245.0, "p_PROJ_0021": 0.0, "p_PROJ_0005": 0.0, "p_PROJ_0035": 221.0, "p_PROJ_0030": 0.0, "p_PROJ_0015": 216.0, "p_PROJ_0034": 0.0, "p_PROJ_0050": 0.0, "p_PROJ_0008"
+OK

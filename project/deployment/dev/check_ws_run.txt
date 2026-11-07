@@ -1,0 +1,17 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: WS_EXISTS: CB 机电总控
+hidden: 0 | public: 1 | links: 31
+labels: ['工程与预算', '设计 BOM', '设计变更申请', '材料预算', '采购与承诺', '采购申请', '询价单', '供应商报价', '采购订单', '材料承诺台账', '物流与进口', 'CB 装运', 'CB 进口案件', '质检与库存', '质检单', '库存收发', '主数据', '物料', '供应商', '项目', '项目视图', '项目物料执行台账', '项目任务', '项目预警', '预警规则', '项目文档台账', '项目总览', '物料分类', '批量录入', '业务汇总（专业/系统/责任人）', '物料明细（九列）']
+CB_PAGES: []
+ADD_TO_APPS: [{'name': 'frappe', 'logo': '/assets/frappe/images/frappe-framework-logo.svg', 'title': 'Framework', 'route': '/desk/build', 'has_permission': 'frappe.permissions.check_app_permission', 'sequence_id': 1000}, {'name': 'erpnext', 'logo': '/assets/erpnext/images/erpnext-logo.svg', 'title': 'ERPNext', 'route': '/desk/home', 'setup_wizard_text': "Let's give your business a home.", 'has_permission': 'erpnext.check_app_permission', 'sequence_id': 1}, {'name': 'cb_erp', 'logo': '/assets/cb_erp/images/cb-erp-logo.svg', 'title': '中巴机电', 'route': '/app/cb-机电总控'}]
+VISIBLE: ['Buying', 'CB 机电总控', 'ERPNext Settings', 'Home', 'Projects', 'Quality', 'Stock', 'System', 'Users']
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

@@ -1,0 +1,76 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: ROOT_CHILDREN(L1): 8
+L1: 五金辅材 | is_group: 1 | L2_count: 2
+    L2: 紧固件 | L3_count: 3 | items: 0
+    L2: 通用五金 | L3_count: 3 | items: 0
+L1: 仪表与自控 | is_group: 1 | L2_count: 3
+    L2: 仪表辅材 | L3_count: 3 | items: 86
+    L2: 控制系统 | L3_count: 4 | items: 81
+L1: 其他 | is_group: 1 | L2_count: 1
+    L2: 其他物料 | L3_count: 1 | items: 0
+L1: 机电设备与主材 | is_group: 1 | L2_count: 3
+    L2: 机械设备 | L3_count: 4 | items: 102
+    L2: 焊接材料 | L3_count: 3 | items: 70
+L1: 消防 | is_group: 1 | L2_count: 2
+    L2: 消防管件 | L3_count: 2 | items: 0
+    L2: 消防设备 | L3_count: 3 | items: 0
+L1: 电气与电缆 | is_group: 1 | L2_count: 4
+    L2: 桥架穿线 | L3_count: 3 | items: 59
+    L2: 照明 | L3_count: 3 | items: 55
+L1: 管道与阀门 | is_group: 1 | L2_count: 3
+    L2: 法兰紧固 | L3_count: 3 | items: 70
+    L2: 管材 | L3_count: 4 | items: 71
+L1: 防腐保温 | is_group: 1 | L2_count: 2
+    L2: 保温材料 | L3_count: 3 | items: 0
+    L2: 防腐材料 | L3_count: 2 | items: 0
+GROUP_NODES_WITH_ITEMS: []
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mOperationalError[0m                          Traceback (most recent call last)
+Cell [0;32mIn[2], line 31[0m
+[1;32m     29[0m         [38;5;28mprint[39m([38;5;124m"[39m[38;5;124mWS_LINK_EXISTS: Item Group[39m[38;5;124m"[39m)
+[1;32m     30[0m     sys[38;5;241m.[39mexit([38;5;241m0[39m)
+[0;32m---> 31[0m [43mmain[49m[43m([49m[43m)[49m
+
+Cell [0;32mIn[2], line 19[0m, in [0;36mmain[0;34m()[0m
+[1;32m     17[0m bad [38;5;241m=[39m frappe[38;5;241m.[39mdb[38;5;241m.[39msql([38;5;124m"[39m[38;5;124mselect ig.item_group_name as g, count(i.name) c from `tabItem Group` ig join `tabItem` i on i.item_group=ig.item_group_name where ig.is_group=1 group by ig.item_group_name[39m[38;5;124m"[39m, as_dict[38;5;241m=[39m[38;5;28;01mTrue[39;00m)
+[1;32m     18[0m [38;5;28mprint[39m([38;5;124m"[39m[38;5;124mGROUP_NODES_WITH_ITEMS:[39m[38;5;124m"[39m, bad)
+[0;32m---> 19[0m bad2 [38;5;241m=[39m [43mfrappe[49m[38;5;241;43m.[39;49m[43mdb[49m[38;5;241;43m.[39;49m[43msql[49m[43m([49m[38;5;124;43m"[39;49m[38;5;124;43mselect count(*) c from `tabItem` i join `tabItem Group` ig on ig.item_group=i.item_group where ig.is_group=1[39;49m[38;5;124;43m"[39;49m[43m,[49m[43m [49m[43mas_dict[49m[38;5;241;43m=[39;49m[38;5;28;43;01mTrue[39;49;00m[43m)[49m
+[1;32m     20[0m [38;5;28mprint[39m([38;5;124m"[39m[38;5;124mITEMS_IN_GROUP_NODES:[39m[38;5;124m"[39m, bad2)
+[1;32m     21[0m [38;5;28mprint[39m([38;5;124m"[39m[38;5;124mITEM_GROUP_TOTAL:[39m[38;5;124m"[39m, frappe[38;5;241m.[39mdb[38;5;241m.[39mcount([38;5;124m"[39m[38;5;124mItem Group[39m[38;5;124m"[39m), [38;5;124m"[39m[38;5;124m| ITEM_TOTAL:[39m[38;5;124m"[39m, frappe[38;5;241m.[39mdb[38;5;241m.[39mcount([38;5;124m"[39m[38;5;124mItem[39m[38;5;124m"[39m))
+
+File [0;32m~/frappe-bench/apps/frappe/frappe/database/database.py:272[0m, in [0;36mDatabase.sql[0;34m(self, query, values, as_dict, as_list, debug, ignore_ddl, auto_commit, update, explain, run, pluck, as_iterator)[0m
+[1;32m    269[0m 	query [38;5;241m+[39m[38;5;241m=[39m [38;5;124mf[39m[38;5;124m"[39m[38;5;124m /* FRAPPE_TRACE_ID: [39m[38;5;132;01m{[39;00mtrace_id[38;5;132;01m}[39;00m[38;5;124m */[39m[38;5;124m"[39m
+[1;32m    271[0m [38;5;28;01mtry[39;00m:
+[0;32m--> 272[0m 	[38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mexecute_query[49m[43m([49m[43mquery[49m[43m,[49m[43m [49m[43mvalues[49m[43m)[49m
+[1;32m    273[0m [38;5;28;01mexcept[39;00m [38;5;167;01mException[39;00m [38;5;28;01mas[39;00m e:
+[1;32m    274[0m 	[38;5;28;01mif[39;00m [38;5;28mself[39m[38;5;241m.[39mis_syntax_error(e):
+
+File [0;32m~/frappe-bench/apps/frappe/frappe/database/database.py:372[0m, in [0;36mDatabase.execute_query[0;34m(self, query, values)[0m
+[1;32m    371[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21mexecute_query[39m([38;5;28mself[39m, query, values[38;5;241m=[39m[38;5;28;01mNone[39;00m):
+[0;32m--> 372[0m 	[38;5;28;01mreturn[39;00m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_cursor[49m[38;5;241;43m.[39;49m[43mexecute[49m[43m([49m[43mquery[49m[43m,[49m[43m [49m[43mvalues[49m[43m)[49m
+
+File [0;32m~/frappe-bench/env/lib/python3.14/site-packages/MySQLdb/cursors.py:179[0m, in [0;36mBaseCursor.execute[0;34m(self, query, args)[0m
+[1;32m    176[0m mogrified_query [38;5;241m=[39m [38;5;28mself[39m[38;5;241m.[39m_mogrify(query, args)
+[1;32m    178[0m [38;5;28;01massert[39;00m [38;5;28misinstance[39m(mogrified_query, ([38;5;28mbytes[39m, [38;5;28mbytearray[39m))
+[0;32m--> 179[0m res [38;5;241m=[39m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_query[49m[43m([49m[43mmogrified_query[49m[43m)[49m
+[1;32m    180[0m [38;5;28;01mreturn[39;00m res
+
+File [0;32m~/frappe-bench/env/lib/python3.14/site-packages/MySQLdb/cursors.py:330[0m, in [0;36mBaseCursor._query[0;34m(self, q)[0m
+[1;32m    328[0m [38;5;28mself[39m[38;5;241m.[39mrowcount [38;5;241m=[39m [38;5;28;01mNone[39;00m
+[1;32m    329[0m [38;5;28mself[39m[38;5;241m.[39mlastrowid [38;5;241m=[39m [38;5;28;01mNone[39;00m
+[0;32m--> 330[0m [43mdb[49m[38;5;241;43m.[39;49m[43mquery[49m[43m([49m[43mq[49m[43m)[49m
+[1;32m    331[0m [38;5;28mself[39m[38;5;241m.[39m_do_get_result(db)
+[1;32m    332[0m [38;5;28mself[39m[38;5;241m.[39m_post_get_result()
+
+File [0;32m~/frappe-bench/env/lib/python3.14/site-packages/MySQLdb/connections.py:280[0m, in [0;36mConnection.query[0;34m(self, query)[0m
+[1;32m    278[0m [38;5;28;01mif[39;00m [38;5;28misinstance[39m(query, [38;5;28mbytearray[39m):
+[1;32m    279[0m     query [38;5;241m=[39m [38;5;28mbytes[39m(query)
+[0;32m--> 280[0m [43m_mysql[49m[38;5;241;43m.[39;49m[43mconnection[49m[38;5;241;43m.[39;49m[43mquery[49m[43m([49m[38;5;28;43mself[39;49m[43m,[49m[43m [49m[43mquery[49m[43m)[49m
+
+[0;31mOperationalError[0m: (1054, "Unknown column 'ig.item_group' in 'ON'")
+
+In [3]: Do you really want to exit ([y]/n)? 
+

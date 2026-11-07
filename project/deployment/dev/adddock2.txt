@@ -1,0 +1,5 @@
+Wrote document file for Dock frappe at /home/frappe/frappe-bench/apps/frappe/frappe/dock/frappe/frappe.json
+RESULTS: {'frappe': 'ADDED', 'erpnext': 'EXISTS'}
+frappe ITEMS: [('Sidebar', 'Build'), ('Sidebar', 'Users'), ('Sidebar', 'Email'), ('Sidebar', 'Website'), ('Sidebar', 'Data'), ('Sidebar', 'Workflow'), ('Sidebar', 'Printing'), ('Sidebar', 'Integrations'), ('Sidebar', 'Contacts'), ('Sidebar', 'Automation'), ('Sidebar', 'Geo'), ('Sidebar', 'System'), ('Workspace', '巴西机电ERP系统测试')]
+erpnext ITEMS: [('Sidebar', 'Setup'), ('Sidebar', 'Accounts'), ('Sidebar', 'Selling'), ('Sidebar', 'Buying'), ('Sidebar', 'Stock'), ('Sidebar', 'Manufacturing'), ('Sidebar', 'Projects'), ('Sidebar', 'Assets'), ('Sidebar', 'Quality'), ('Sidebar', 'CRM'), ('Sidebar', 'Support'), ('Sidebar', 'Portal'), ('Workspace', '巴西机电ERP系统测试')]
+DONE

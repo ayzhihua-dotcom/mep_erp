@@ -1,0 +1,30 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: DOCK_DOCTYPES: ['Dock', 'Dock Item']
+Dock count: 2
+  ROW: {'name': 'erpnext'}
+  FIELDS: {'name': 'erpnext', 'owner': 'Administrator', 'creation': datetime.datetime(2026, 8, 26, 23, 30), 'modified': datetime.datetime(2026, 10, 8, 19, 0), 'modified_by': 'Administrator', 'docstatus': 0, 'idx': 0, 'app': 'erpnext', 'user': '', 'standard': 1, 'mount_on': None}
+  TABLE items rows: 12
+  ROW: {'name': 'frappe'}
+  FIELDS: {'name': 'frappe', 'owner': 'Administrator', 'creation': datetime.datetime(2026, 8, 26, 20, 0), 'modified': datetime.datetime(2026, 10, 8, 18, 41, 15), 'modified_by': 'Administrator', 'docstatus': 0, 'idx': 0, 'app': 'frappe', 'user': '', 'standard': 1, 'mount_on': None}
+  TABLE items rows: 12
+Dock Item count: 24
+  ROW: {'name': 'alp91lu77d'}
+  FIELDS: {'name': 'alp91lu77d', 'owner': 'Administrator', 'creation': datetime.datetime(2026, 8, 26, 23, 30), 'modified': datetime.datetime(2026, 10, 30, 7, 18, 40, 946278), 'modified_by': 'Administrator', 'docstatus': 0, 'idx': 10, 'link_type': 'Sidebar', 'link_to': 'CRM', 'url': None, 'icon': 'handshake-soft', 'title': 'CRM', 'added': 0, 'hidden': 1, 'parent': 'erpnext', 'parentfield': 'items', 'parenttype': 'Dock'}
+  ROW: {'name': 'alpa0b270o'}
+  FIELDS: {'name': 'alpa0b270o', 'owner': 'Administrator', 'creation': datetime.datetime(2026, 8, 26, 23, 30), 'modified': datetime.datetime(2026, 10, 30, 7, 18, 40, 946278), 'modified_by': 'Administrator', 'docstatus': 0, 'idx': 11, 'link_type': 'Sidebar', 'link_to': 'Support', 'url': None, 'icon': 'headset-soft', 'title': 'Support', 'added': 0, 'hidden': 1, 'parent': 'erpnext', 'parentfield': 'items', 'parenttype': 'Dock'}
+  ROW: {'name': 'alpakpp0gs'}
+  FIELDS: {'name': 'alpakpp0gs', 'owner': 'Administrator', 'creation': datetime.datetime(2026, 8, 26, 23, 30), 'modified': datetime.datetime(2026, 10, 30, 7, 18, 40, 946278), 'modified_by': 'Administrator', 'docstatus': 0, 'idx': 8, 'link_type': 'Sidebar', 'link_to': 'Assets', 'url': None, 'icon': 'asset-hand-soft', 'title': 'Assets', 'added': 0, 'hidden': 0, 'parent': 'erpnext', 'parentfield': 'items', 'parenttype': 'Dock'}
+  ROW: {'name': 'alpflb75hr'}
+  FIELDS: {'name': 'alpflb75hr', 'owner': 'Administrator', 'creation': datetime.datetime(2026, 8, 26, 23, 30), 'modified': datetime.datetime(2026, 10, 30, 7, 18, 40, 946278), 'modified_by': 'Administrator', 'docstatus': 0, 'idx': 2, 'link_type': 'Sidebar', 'link_to': 'Accounts', 'url': None, 'icon': 'calculator-soft', 'title': 'Accounts', 'added': 0, 'hidden': 0, 'parent': 'erpnext', 'parentfield': 'items', 'parenttype': 'Dock'}
+  ROW: {'name': 'alpggmhov7'}
+  FIELDS: {'name': 'alpggmhov7', 'owner': 'Administrator', 'creation': datetime.datetime(2026, 8, 26, 23, 30), 'modified': datetime.datetime(2026, 10, 30, 7, 18, 40, 946278), 'modified_by': 'Administrator', 'docstatus': 0, 'idx': 12, 'link_type': 'Sidebar', 'link_to': 'Portal', 'url': None, 'icon': 'portal-user-soft', 'title': 'Portal', 'added': 0, 'hidden': 0, 'parent': 'erpnext', 'parentfield': 'items', 'parenttype': 'Dock'}
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

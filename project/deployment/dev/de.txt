@@ -1,0 +1,14 @@
+FIELD Purchase Receipt custom_discipline
+FIELD Purchase Receipt custom_system
+FIELD Quality Inspection custom_discipline
+FIELD Quality Inspection custom_system
+BACKFILLED: 330
+    Material Budget 51
+    Material Commitment 101
+    Design BOM 51
+    Design Change Request 25
+    CB Shipment 51
+    CB Import Case 51
+    Purchase Receipt 0
+    Quality Inspection 0
+DISC_EXTEND_DONE

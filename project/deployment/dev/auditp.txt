@@ -1,0 +1,14 @@
+Material Request -> ['custom_cb_project']
+Purchase Order -> ['project', 'custom_cb_project']
+Stock Entry -> ['project']
+Stock Reconciliation -> []
+Material Budget -> ['project']
+Material Commitment -> ['project']
+Design BOM -> ['project']
+Design Change Request -> []
+CB Shipment -> []
+CB Import Case -> []
+--- Stock Entry Detail project field type: Link
+--- Project fields sample: ['naming_series', 'project_name', 'status', 'project_type', 'percent_complete_method', 'column_break_5', 'project_template', 'priority', 'department', 'is_active', 'percent_complete', 'section_break_18', 'expected_start_date', 'actual_start_date', 'actual_time', 'column_break_20', 'expected_end_date', 'actual_end_date', 'costing_tab', 'project_details', 'estimated_costing', 'total_costing_amount', 'total_purchase_cost', 'company', 'column_break_28', 'total_sales_amount', 'total_billable_amount', 'total_billed_amount', 'total_consumed_material_cost', 'cost_center', 'margin', 'gross_margin', 'column_break_37', 'per_gross_margin', 'monitor_progress_tab', 'collect_progress', 'holiday_list', 'frequency', 'from_time', 'to_time']
+--- Roles: []
+OK

@@ -1,0 +1,11 @@
+ORDER_SET Material Request 49
+ORDER_SET Purchase Order 167
+ORDER_SET Stock Entry 95
+ORDER_SET Purchase Receipt 154
+ORDER_SET Quality Inspection 35
+Material Request -> ['custom_cb_project', 'custom_cb_budget', 'custom_disc_section', 'custom_disc_cb1', 'custom_discipline', 'custom_disc_cb2', 'custom_system', 'custom_disc_cb3', 'custom_responsible']
+Purchase Order -> ['custom_cb_project', 'custom_cb_budget', 'custom_disc_section', 'custom_disc_cb1', 'custom_discipline', 'custom_disc_cb2', 'custom_system', 'custom_disc_cb3', 'custom_responsible']
+Stock Entry -> ['custom_disc_section', 'custom_disc_cb1', 'custom_discipline', 'custom_disc_cb2', 'custom_system', 'custom_disc_cb3', 'custom_responsible']
+Purchase Receipt -> ['custom_disc_section', 'custom_disc_cb1', 'custom_discipline', 'custom_disc_cb2', 'custom_system']
+Quality Inspection -> ['custom_disc_section', 'custom_disc_cb1', 'custom_discipline', 'custom_disc_cb2', 'custom_system']
+ORDER_DONE

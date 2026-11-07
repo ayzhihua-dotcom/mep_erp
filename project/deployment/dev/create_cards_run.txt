@@ -1,0 +1,23 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: CARD_CREATED: 在办项目
+CARD_CREATED: 在办任务
+CARD_CREATED: 未关闭预警
+CARD_CREATED: 缺料预警
+CARD_CREATED: 超预算预警
+WS_NUMCARD_ROWS: ['在办项目', '在办任务', '未关闭预警', '缺料预警', '超预算预警']
+WS_CONTENT_NUMCARD_BLOCKS: ['在办项目', '在办任务', '未关闭预警', '缺料预警', '超预算预警']
+VALUE_ERR: 在办项目 TypeError("get_result() missing 1 required positional argument: 'filters'")
+VALUE_ERR: 在办任务 TypeError("get_result() missing 1 required positional argument: 'filters'")
+VALUE_ERR: 未关闭预警 TypeError("get_result() missing 1 required positional argument: 'filters'")
+VALUE_ERR: 缺料预警 TypeError("get_result() missing 1 required positional argument: 'filters'")
+VALUE_ERR: 超预算预警 TypeError("get_result() missing 1 required positional argument: 'filters'")
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

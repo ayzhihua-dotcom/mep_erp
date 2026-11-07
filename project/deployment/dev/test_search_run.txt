@@ -1,0 +1,20 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: [0;36m  Cell [0;32mIn[1], line 1[0;36m[0m
+[0;31m    ﻿import sys[0m
+[0m    ^[0m
+[0;31mSyntaxError[0m[0;31m:[0m invalid non-printable character U+FEFF
+
+
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: CATS: ['五金辅材', '仪表与自控', '其他', '安全与临时设施', '弱电与通信', '暖通空调', '机电设备与主材', '消防', '焊接与辅材', '电气与电缆', '管道与阀门', '给排水', '钢结构与建筑', '防腐保温']
+all -> [('CB-EL-001', '电力电缆 4×16mm²', None, '米', '电气与电缆'), ('CB-GV-001', '闸阀 DN100 PN1.6', None, '个', '管道与阀门'), ('CB-IN-001', '压力变送器 0~10bar', None, '个', '仪表与自控')]
+kw_steel -> [('MAT-001004', '钢管-0015', None, '米', '管道与阀门'), ('MAT-001005', '钢管-0016', None, '米', '管道与阀门'), ('MAT-001006', '钢管-0017', None, '米', '管道与阀门')]
+cat_pipe -> [('CB-GV-001', '闸阀 DN100 PN1.6', None, '个', '管道与阀门'), ('MAT-001004', '钢管-0015', None, '米', '管道与阀门'), ('MAT-001005', '钢管-0016', None, '米', '管道与阀门')]
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

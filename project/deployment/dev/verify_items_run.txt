@@ -1,0 +1,20 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: LEAF_WITH_ITEMS: 209
+MIN_LEAF: {'item_group': '通信电缆', 'c': 48}
+MAX_LEAF: {'item_group': '弹簧吊架', 'c': 48}
+ITEMS_IN_GROUP_NODES: [{'c': 48}]
+SAMPLE: {'item_code': 'SIM-PV-0250', 'item_name': '模拟管道阀门-0250', 'item_group': '止回阀', 'stock_uom': '件', 'valuation_rate': 4108.0, 'is_stock_item': 1}
+SAMPLE: {'item_code': 'SIM-PV-0249', 'item_name': '模拟管道阀门-0249', 'item_group': '钢管', 'stock_uom': '件', 'valuation_rate': 612.0, 'is_stock_item': 1}
+SAMPLE: {'item_code': 'SIM-PV-0248', 'item_name': '模拟管道阀门-0248', 'item_group': '截止阀', 'stock_uom': '件', 'valuation_rate': 3462.0, 'is_stock_item': 1}
+TOTAL_ITEMS: 10032
+TOTAL_GROUPS: 286
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

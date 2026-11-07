@@ -1,0 +1,7 @@
+chart -> ['icon-chart-scatter', 'icon-chart-line', 'icon-chart-bar-stacked', 'icon-chart-candlestick', 'icon-chart-no-axes-column-increasing', 'icon-file-chart-column-increasing', 'icon-chart-network', 'icon-chart-column-decreasing', 'icon-chart-gantt', 'icon-chart-column-big', 'icon-chart-no-axes-column', 'icon-chart-spline', 'icon-square-chart-gantt', 'icon-file-chart-column']
+pencil -> ['icon-pencil-off', 'icon-pencil-ruler', 'icon-pencil', 'icon-pencil-line', 'icon-pencil-off', 'icon-pencil-ruler', 'icon-pencil', 'icon-pencil-line']
+pie -> ['icon-chart-pie', 'icon-chart-pie', 'icon-file-chart-pie']
+check -> ['icon-printer-check', 'icon-circle-check-big', 'icon-folder-check', 'icon-alarm-clock-check', 'icon-calendar-check-2', 'icon-book-check', 'icon-check-check', 'icon-calendar-check', 'icon-square-check-big', 'icon-square-check', 'icon-user-round-check', 'icon-file-check-2', 'icon-circle-check', 'icon-spell-check-2']
+edit -> ['icon-credit-card', 'icon-credit-card']
+list -> ['icon-list', 'icon-layout-list', 'icon-list-start', 'icon-list-plus', 'icon-list-video', 'icon-list-todo', 'icon-list-minus', 'icon-clipboard-list', 'icon-list-ordered', 'icon-list-x', 'icon-list-tree', 'icon-list-collapse', 'icon-list-restart', 'icon-list-music']
+OK

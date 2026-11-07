@@ -1,0 +1,22 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: TEMP_TASKS: ['TASK-2026-00007', 'TASK-2026-00008']
+RUN: ['ok:PRJ-002:TASK-2026-00008:created', 'ok:PRJ-001:TASK-2026-00007:created']
+EVENT_COUNT: 2
+EV: CB-ALE-2026-00019 | PRJ-001 | 其他 | metric: 3.0 | ref: TASK-2026-00007 | status: 待处理
+EV: CB-ALE-2026-00018 | PRJ-002 | 其他 | metric: 3.0 | ref: TASK-2026-00008 | status: 待处理
+RUN2: ['ok:PRJ-002:TASK-2026-00008:updated', 'ok:PRJ-001:TASK-2026-00007:updated']
+EVENT_COUNT_AFTER_RUN2: 2
+EVENTS_DELETED: 2
+TEMP_TASKS_DELETED
+FINAL_ALERT_EVENT: 0
+FINAL_TASK_COUNT: 6
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

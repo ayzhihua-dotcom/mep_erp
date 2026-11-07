@@ -1,0 +1,3 @@
+Wrote document file for Dock erpnext at /home/frappe/frappe-bench/apps/erpnext/erpnext/dock/erpnext/erpnext.json
+DOCK_ITEM_ADDED
+OK

@@ -1,0 +1,23 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: TEMP_MR: MAT-MR-2026-00004 | ds: 1
+RUN1: ['ok:ALR-001:MAT-MR-2026-00004:created']
+EVENTS_RUN1_COUNT: 1
+EV: CB-ALE-2026-00015 | 缺料 | metric: 5.0 | severity: 警告 | status: 待处理 | proj: PROJ-0001 | CB-GV-001
+RUN2: ['ok:ALR-001:MAT-MR-2026-00004:updated']
+EVENTS_RUN2_COUNT(dedupe->should stay 1): 1
+ALERT_EVENT_TOTAL: 1
+ALERT_EVENTS_DELETED: 1
+MR_CANCELLED
+MR_DELETED
+FINAL_ALERT_EVENT_COUNT: 0
+FINAL_MR_COUNT: 1
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

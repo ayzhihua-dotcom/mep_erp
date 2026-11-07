@@ -1,0 +1,15 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: ITEMS_IN_GROUP_NODES: [{'c': 0}]
+ITEM_GROUP_TOTAL: 94 | ITEM_TOTAL: 1003
+WS_LINK_ADDED: 物料分类
+WS_LINKS_NOW: ['工程与预算', '设计 BOM', '设计变更申请', '材料预算', '采购与承诺', '采购申请', '询价单', '供应商报价', '采购订单', '材料承诺台账', '物流与进口', 'CB 装运', 'CB 进口案件', '质检与库存', '质检单', '库存收发', '主数据', '物料', '供应商', '项目', '项目视图', '项目物料执行台账', '项目任务', '项目预警', '预警规则', '项目文档台账', '项目总览', '物料分类']
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

@@ -1,0 +1,17 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: VALUE 在办项目 = 52.0
+VALUE 在办任务 = 256.0
+VALUE 未关闭预警 = 350.0
+VALUE 缺料预警 = 150.0
+VALUE 超预算预警 = 50.0
+VALUE 逾期任务 = 50.0
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

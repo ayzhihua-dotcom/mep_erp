@@ -1,0 +1,18 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: TO_DELETE: ['3a97ada255', '8126143b2a', '9a0d34333a', '9f5cbc8cc8', 'b62075b129', 'e05d7ca219']
+DELETED_COUNT: 6
+SLE_REMAINING_COUNT: 1
+SLE_LEFT: 9a4befb75c | MAT-STE-2026-00002 | qty: 12.0 | cancelled: 0
+BIN_CB-GV-001: 12.0
+ORPHANS_LEFT: 0
+SE_COUNT: 2
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

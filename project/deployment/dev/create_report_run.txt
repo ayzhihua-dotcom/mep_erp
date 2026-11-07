@@ -1,0 +1,17 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: REPORT_CREATED: 项目物料执行台账
+RESULT_KEYS: ['result', 'columns', 'message', 'chart', 'report_summary', 'skip_total_row', 'status', 'execution_time', 'add_total_row']
+COLUMNS: [{'label': '项目', 'fieldname': '项目'}, {'label': '物料编码', 'fieldname': '物料编码'}, {'label': '物料名称', 'fieldname': '物料名称'}, {'label': '预算数量', 'fieldname': '预算数量'}, {'label': '承诺数量', 'fieldname': '承诺数量'}, {'label': '采购数量', 'fieldname': '采购数量'}, {'label': '已出库数量', 'fieldname': '已出库数量'}, {'label': '待出库数量', 'fieldname': '待出库数量'}]
+ROW_COUNT: 2
+ROW: {'项目': 'PROJ-0001', '物料编码': 'CB-EL-001', '物料名称': '电力电缆 4×16mm²', '预算数量': 800.0, '承诺数量': 0.0, '采购数量': 800.0, '已出库数量': 0.0, '待出库数量': 800.0}
+ROW: {'项目': 'PROJ-0001', '物料编码': 'CB-GV-001', '物料名称': '闸阀 DN100 PN1.6', '预算数量': 12.0, '承诺数量': 12.0, '采购数量': 50.0, '已出库数量': 0.0, '待出库数量': 12.0}
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

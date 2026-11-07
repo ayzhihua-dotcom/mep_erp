@@ -1,0 +1,49 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: SE_DETAIL_HAS_PROJECT: True
+SE_HEADER_HAS_PROJECT: True
+IC02_SCRIPTS: [{'name': 'CB-IC02-领料调拨内控', 'disabled': 0, 'reference_doctype': 'Stock Entry', 'doctype_event': 'Before Submit'}]
+=== SCRIPT: CB-IC02-领料调拨内控 | disabled: 0 | ref: Stock Entry | event: Before Submit ===
+if doc.get("doctype") == "Stock Entry" and doc.get("purpose") in ("Material Issue", "Material Transfer"):
+    # ---- 可用库存校验（领料/调拨共用）----
+    for row in doc.get("items"):
+        s_wh = row.get("s_warehouse") or doc.get("set_warehouse")
+        if not s_wh:
+            continue
+        avail = frappe.db.get_value("Bin", {"item_code": row.item_code, "warehouse": s_wh}, "actual_qty")
+        avail = avail or 0
+        qty = row.get("transfer_qty") or row.get("qty") or 0
+        if qty > avail:
+            frappe.throw("物料 " + str(row.item_code) + " 在 " + str(s_wh) + " 可用库存不足：领出/调出 " + str(qty) + " > 可用 " + str(avail) + "（IC-02 领料调拨内控）")
+
+    # ---- 领料出库(INV-005)：项目归属校验（成本归集前置，跨项目/无项目拦）----
+    if doc.get("purpose") == "Material Issue":
+        missing_project = False
+        for row in doc.get("items"):
+            if not row.get("project"):
+                missing_project = True
+        if missing_project:
+            frappe.throw("领料行未关联项目，领料成本无法归集到项目（IC-02 领料内控；跨项目领用须授权留痕）")
+
+    # ---- 调拨(INV-007)：同公司调拨校验（跨公司/项目间调拨 INV-008 须授权审批）----
+    if doc.get("purpose") == "Material Transfer":
+        s_wh = doc.get("set_warehouse")
+        g_wh = doc.get("get_warehouse")
+        if s_wh and g_wh:
+            s_co = frappe.db.get_value("Warehouse", s_wh, "company")
+            g_co = frappe.db.get_value("Warehouse", g_wh, "company")
+            if s_co and g_co and s_co != g_co:
+                frappe.throw("跨公司调拨须经授权审批（INV-008 项目间调拨），当前被拦截（IC-02）")
+
+frappe.flags.cb_ic02_suppress = True
+=== END ===
+BIN_CB-GV-001: 12.0
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

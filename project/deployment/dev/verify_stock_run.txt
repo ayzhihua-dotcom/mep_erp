@@ -1,0 +1,34 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: === ALL SLE ===
+SLE: 9a4befb75c | Stock Entry | MAT-STE-2026-00002 | CB-GV-001 | 巴西现场总仓 - 巴项 | 12.0 | cancelled: 0
+SLE: e05d7ca219 | Stock Entry | MAT-STE-2026-00031 | CB-GV-001 | 巴西现场总仓 - 巴项 | 5.0 | cancelled: 1
+SLE: 3a97ada255 | Stock Entry | MAT-STE-2026-00031 | CB-GV-001 | 巴西现场总仓 - 巴项 | 5.0 | cancelled: 1
+SLE: 9f5cbc8cc8 | Stock Entry | MAT-STE-2026-00031 | CB-GV-001 | 巴西现场总仓 - 巴项 | 2.0 | cancelled: 1
+SLE: b62075b129 | Stock Entry | MAT-STE-2026-00031 | CB-GV-001 | 巴西现场总仓 - 巴项 | -2.0 | cancelled: 1
+SLE: 9a0d34333a | Stock Entry | MAT-STE-2026-00031 | CB-GV-001 | 巴西现场总仓 - 巴项 | -5.0 | cancelled: 1
+SLE: 8126143b2a | Stock Entry | MAT-STE-2026-00031 | CB-GV-001 | 巴西现场总仓 - 巴项 | -5.0 | cancelled: 1
+SLE_TOTAL: 7
+=== SUM vs BIN ===
+SUM: CB-GV-001 | 巴西现场总仓 - 巴项 | sle_sum: 12.0 | sle_cnt: 1 | bin: 12.0 | match: True
+=== ORPHAN SLE (voucher missing) ===
+ORPHAN_COUNT: 6
+ORPHAN: {'name': '3a97ada255', 'voucher_type': 'Stock Entry', 'voucher_no': 'MAT-STE-2026-00031'}
+ORPHAN: {'name': '8126143b2a', 'voucher_type': 'Stock Entry', 'voucher_no': 'MAT-STE-2026-00031'}
+ORPHAN: {'name': '9a0d34333a', 'voucher_type': 'Stock Entry', 'voucher_no': 'MAT-STE-2026-00031'}
+ORPHAN: {'name': '9f5cbc8cc8', 'voucher_type': 'Stock Entry', 'voucher_no': 'MAT-STE-2026-00031'}
+ORPHAN: {'name': 'b62075b129', 'voucher_type': 'Stock Entry', 'voucher_no': 'MAT-STE-2026-00031'}
+ORPHAN: {'name': 'e05d7ca219', 'voucher_type': 'Stock Entry', 'voucher_no': 'MAT-STE-2026-00031'}
+=== STOCK ENTRY LIST ===
+SE: MAT-STE-2026-00001 | type: Material Receipt | purpose: Material Receipt | docstatus: 0 | project: None
+SE: MAT-STE-2026-00002 | type: Material Receipt | purpose: Material Receipt | docstatus: 1 | project: None
+SE_COUNT: 2
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

@@ -1,0 +1,40 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: === 主数据 ===
+ITEM 10032 | ITEM_GROUP 286
+ITEMS_ON_GROUP_NODES: [{'c': 0}]
+=== 项目链 ===
+BUDGET total 51 | with_project 51
+COMMIT total 101 | proj 101 | budget 101 | po 1
+MR total 51 | proj 51
+PO total 52 | proj 52 | budget 52
+IMPORT total 51 | po 51
+SHIP total 51 | po 51
+=== 库存 ===
+SE total 22 | receipt 12 | issue 10
+ISSUE with_project 10
+RECEIPT with_project 0
+=== 任务/预警 ===
+TASK total 256 | proj 256
+ALERT total 350 | proj 300
+ALERTS_BY_RULE: [{'rule_code': 'ALR-001', 'c': 150}, {'rule_code': 'ALR-002', 'c': 50}, {'rule_code': 'CST-007', 'c': 50}, {'rule_code': 'PRJ-001', 'c': 50}, {'rule_code': 'PRJ-002', 'c': 50}]
+=== 专业/系统/责任人 覆盖 ===
+Material Request | disc 0 | sys 0 | resp 0 / 51
+Stock Entry | disc 0 | sys 0 | resp 0 / 22
+Purchase Order | disc 0 | sys 0 | resp 0 / 52
+=== MR→PO 闭环 ===
+MR_ITEM_ordered>0: [{'c': 0}]
+PO_ITEM_with_MR: [{'c': 0}]
+=== 单据间关联样例 ===
+CHAIN: {'po': 'PUR-ORD-2026-00003', 'proj': 'PROJ-0001', 'bud': 'CB-BUD-2026-00001', 'ic': 'CB-IMP-2026-00001', 'sh': 'CB-SHP-2026-00001'}
+CHAIN: {'po': 'PUR-ORD-2026-00005', 'proj': 'PROJ-0003', 'bud': 'CB-BUD-2026-00002', 'ic': 'CB-IMP-2026-00002', 'sh': 'CB-SHP-2026-00002'}
+CHAIN: {'po': 'PUR-ORD-2026-00006', 'proj': 'PROJ-0004', 'bud': 'CB-BUD-2026-00003', 'ic': 'CB-IMP-2026-00003', 'sh': 'CB-SHP-2026-00003'}
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

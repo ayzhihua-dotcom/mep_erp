@@ -1,0 +1,23 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: RESULT material_request => {'created': [{'kind': 'material_request', 'name': 'MAT-MR-2026-00054', 'rows': 1, 'group': 'PROJ-0001'}], 'errors': [], 'count': 1, 'total_rows': 1}
+RESULT material_receipt => {'created': [{'kind': 'material_receipt', 'name': 'MAT-STE-2026-00052', 'rows': 1, 'group': '巴西现场总仓 - 巴项'}], 'errors': [], 'count': 1, 'total_rows': 1}
+RESULT material_issue => {'created': [{'kind': 'material_issue', 'name': 'MAT-STE-2026-00053', 'rows': 1, 'group': 'PROJ-0001'}], 'errors': [], 'count': 1, 'total_rows': 1}
+RESULT material_return => {'created': [{'kind': 'material_return', 'name': 'MAT-STE-2026-00054', 'rows': 1, 'group': 'PROJ-0001'}], 'errors': [], 'count': 1, 'total_rows': 1}
+RESULT stock_reconciliation => {'created': [{'kind': 'stock_reconciliation', 'name': 'MAT-RECO-2026-00001', 'rows': 1, 'group': '巴西现场总仓 - 巴项'}], 'errors': [], 'count': 1, 'total_rows': 1}
+CREATED: [('material_request', 'MAT-MR-2026-00054'), ('material_receipt', 'MAT-STE-2026-00052'), ('material_issue', 'MAT-STE-2026-00053'), ('material_return', 'MAT-STE-2026-00054'), ('stock_reconciliation', 'MAT-RECO-2026-00001')]
+CLEANED Stock Reconciliation MAT-RECO-2026-00001
+CLEANED Stock Entry MAT-STE-2026-00054
+CLEANED Stock Entry MAT-STE-2026-00053
+CLEANED Stock Entry MAT-STE-2026-00052
+CLEANED Material Request MAT-MR-2026-00054
+AFTER_CLEAN SLE: 21
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

@@ -1,0 +1,23 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: TASK_FIELDS: {'subject': ('Data', None), 'project': ('Link', None), 'status': ('Select', 'Open\nWorking\nPending Review\nOverdue\nTemplate\nCompleted\nCance'), 'priority': ('Select', 'Low\nMedium\nHigh\nUrgent'), 'progress': ('Percent', None), 'exp_start_date': ('Datetime', None), 'exp_end_date': ('Datetime', None), 'expected_time': ('Float', None), 'is_milestone': ('Check', None), 'parent_task': ('Link', None), 'task_weight': ('Float', None), 'description': ('Text Editor', None), 'type': ('Link', None)}
+TASK_STATUS_OPTIONS: Open
+Working
+Pending Review
+Overdue
+Template
+Completed
+Cancelled
+TASK_COUNT: 0
+KANBAN_BOARDS: [{'name': '项目看板', 'reference_doctype': 'Project', 'field_name': 'status'}, {'name': 'Opportunity Pipeline', 'reference_doctype': 'Opportunity', 'field_name': 'status'}, {'name': 'Lead Pipeline', 'reference_doctype': 'Lead', 'field_name': 'status'}, {'name': 'Warranty Claim Status', 'reference_doctype': 'Warranty Claim', 'field_name': 'status'}, {'name': 'Workstation Status', 'reference_doctype': 'Workstation', 'field_name': 'status'}, {'name': 'Issue Status', 'reference_doctype': 'Issue', 'field_name': 'status'}, {'name': 'Task Status', 'reference_doctype': 'Task', 'field_name': 'status'}]
+PROJECTS: [{'name': 'PROJ-0002', 'project_name': '测试项目B (临时)', 'expected_start_date': None, 'expected_end_date': None, 'status': 'Open'}, {'name': 'PROJ-0001', 'project_name': '中巴示范楼机电项目 D01（占位）', 'expected_start_date': datetime.date(2026, 10, 29), 'expected_end_date': None, 'status': 'Open'}]
+WS_LINKS: [('Card Break', '工程与预算', None, 'DocType'), ('Link', '设计 BOM', 'Design BOM', 'DocType'), ('Link', '设计变更申请', 'Design Change Request', 'DocType'), ('Link', '材料预算', 'Material Budget', 'DocType'), ('Card Break', '采购与承诺', None, 'DocType'), ('Link', '采购申请', 'Material Request', 'DocType'), ('Link', '询价单', 'Request for Quotation', 'DocType'), ('Link', '供应商报价', 'Supplier Quotation', 'DocType'), ('Link', '采购订单', 'Purchase Order', 'DocType'), ('Link', '材料承诺台账', 'Material Commitment', 'DocType'), ('Card Break', '物流与进口', None, 'DocType'), ('Link', 'CB 装运', 'CB Shipment', 'DocType'), ('Link', 'CB 进口案件', 'CB Import Case', 'DocType'), ('Card Break', '质检与库存', None, 'DocType'), ('Link', '质检单', 'Quality Inspection', 'DocType'), ('Link', '库存收发', 'Stock Entry', 'DocType'), ('Card Break', '主数据', None, 'DocType'), ('Link', '物料', 'Item', 'DocType'), ('Link', '供应商', 'Supplier', 'DocType'), ('Link', '项目', 'Project', 'DocType'), ('Card Break', '项目视图', None, 'DocType'), ('Link', '项目物料执行台账', '项目物料执行台账', 'Report')]
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

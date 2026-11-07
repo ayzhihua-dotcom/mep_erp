@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/commands/utils.py", line 309, in execute
+    ret = frappe.get_attr(method)(*fn_args, **fn_kwargs)
+  File "/home/frappe/frappe-bench/apps/cb_erp/cb_erp/cb_erp/line_fields_v2.py", line 34, in run
+    rest = [x for x in d.field_order if x not in desired]
+                       ^^^^^^^^^^^^^
+AttributeError: 'DocType' object has no attribute 'field_order'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 48, in invoke
+    return super().invoke(ctx)
+           ~~~~~~~~~~~~~~^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/click/core.py", line 1970, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+  File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/click/decorators.py", line 34, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/commands/__init__.py", line 28, in _func
+    ret = f(ctx.obj, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/commands/utils.py", line 313, in execute
+    ret = eval(code, globals(), locals())  # nosemgrep
+  File "<bench execute>", line 1, in <module>
+NameError: name 'cb_erp' is not defined
+
+name 'cb_erp' is not defined

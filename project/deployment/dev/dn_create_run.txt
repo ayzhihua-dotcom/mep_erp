@@ -1,0 +1,30 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: == COMPANY CHECK ==
+COMPANY_EXISTS: 中巴机电（巴西）项目有限公司
+DEFAULT_CURRENCY: BRL
+== 0) MISSING MASTER (Customer Group / Territory) ==
+CREATED CUSTOMER GROUP
+CREATED TERRITORY
+== 1) CUSTOMER (草案待追认) ==
+INSERTED CUSTOMER: 测试客户-BR-DEMO
+== 2) SALES ORDER (草案待追认) ==
+UOM: 个
+CREATED PRICE LIST
+SO_INSERTED: SAL-ORD-2026-00001 status: To Deliver and Bill
+BIN_QTY_BEFORE_DN: 12.0
+== 3) DELIVERY NOTE from SO (草案待追认) ==
+DN_INSERTED: MAT-DN-2026-00001 status: To Bill docstatus: 1
+BIN_QTY_AFTER_DN: 7.0
+SLE_FOR_DN: 1
+COMMIT_DONE
+EVIDENCE_OK:1
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

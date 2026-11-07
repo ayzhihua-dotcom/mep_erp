@@ -1,0 +1,74 @@
+{
+ "masters": {
+  "disciplines": 12,
+  "systems": 38
+ },
+ "systems_without_discipline": [],
+ "custom_fields": {
+  "total": 24,
+  "link": 24,
+  "bad": []
+ },
+ "projects": {
+  "total": 52,
+  "with_config": 51,
+  "without": 1
+ },
+ "fill_rate": {
+  "Material Request": {
+   "total": 52,
+   "filled": 52,
+   "partial": 0
+  },
+  "Purchase Order": {
+   "total": 52,
+   "filled": 52,
+   "partial": 0
+  },
+  "Stock Entry": {
+   "total": 25,
+   "filled": 25,
+   "partial": 0
+  },
+  "Stock Reconciliation": {
+   "total": 0,
+   "filled": 0,
+   "partial": 0
+  },
+  "Material Budget": {
+   "total": 51,
+   "filled": 51,
+   "partial": 0
+  },
+  "Material Commitment": {
+   "total": 101,
+   "filled": 101,
+   "partial": 0
+  },
+  "Design BOM": {
+   "total": 51,
+   "filled": 51,
+   "partial": 0
+  },
+  "Design Change Request": {
+   "total": 25,
+   "filled": 25,
+   "partial": 0
+  },
+  "CB Shipment": {
+   "total": 51,
+   "filled": 51,
+   "partial": 0
+  },
+  "CB Import Case": {
+   "total": 51,
+   "filled": 51,
+   "partial": 0
+  }
+ },
+ "mr_invalid_system": 0,
+ "purchase_receipt_has_disc": true,
+ "quality_inspection_has_disc": true,
+ "report_uses_discipline": true
+}
+OK

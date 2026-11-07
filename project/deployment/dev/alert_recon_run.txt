@@ -1,0 +1,86 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: ALERT_RULE_COUNT: 3
+RULE: CST-007 | 超预算 | enabled: 1 | role: FIN 财务人员
+RULE: ALR-002 | 单证缺失 | enabled: 1 | role: CUS 客服专员
+RULE: ALR-001 | 缺料 | enabled: 1 | role: PM 项目经理
+ALERT_EVENT_COUNT: 0
+--- MR gaps ---
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mOperationalError[0m                          Traceback (most recent call last)
+Cell [0;32mIn[2], line 26[0m
+[1;32m     24[0m             [38;5;28mprint[39m([38;5;124m"[39m[38;5;124mBLINE:[39m[38;5;124m"[39m, b[38;5;241m.[39mname, [38;5;124m"[39m[38;5;124m|[39m[38;5;124m"[39m, b[38;5;241m.[39mproject, [38;5;124m"[39m[38;5;124m| ds:[39m[38;5;124m"[39m, b[38;5;241m.[39mdocstatus, [38;5;124m"[39m[38;5;124m|[39m[38;5;124m"[39m, l[38;5;241m.[39mitem_code, [38;5;124m"[39m[38;5;124m| qty:[39m[38;5;124m"[39m, l[38;5;241m.[39mqty)
+[1;32m     25[0m     sys[38;5;241m.[39mexit([38;5;241m0[39m)
+[0;32m---> 26[0m [43mmain[49m[43m([49m[43m)[49m
+
+Cell [0;32mIn[2], line 9[0m, in [0;36mmain[0;34m()[0m
+[1;32m      7[0m [38;5;28mprint[39m([38;5;124m"[39m[38;5;124mALERT_EVENT_COUNT:[39m[38;5;124m"[39m, frappe[38;5;241m.[39mdb[38;5;241m.[39mcount([38;5;124m"[39m[38;5;124mAlert Event[39m[38;5;124m"[39m))
+[1;32m      8[0m [38;5;28mprint[39m([38;5;124m"[39m[38;5;124m--- MR gaps ---[39m[38;5;124m"[39m)
+[0;32m----> 9[0m [38;5;28;01mfor[39;00m mr [38;5;129;01min[39;00m [43mfrappe[49m[38;5;241;43m.[39;49m[43mget_all[49m[43m([49m[38;5;124;43m"[39;49m[38;5;124;43mMaterial Request[39;49m[38;5;124;43m"[39;49m[43m,[49m[43m [49m[43mfilters[49m[38;5;241;43m=[39;49m[43m{[49m[38;5;124;43m"[39;49m[38;5;124;43mdocstatus[39;49m[38;5;124;43m"[39;49m[43m:[49m[43m [49m[38;5;241;43m1[39;49m[43m}[49m[43m,[49m[43m [49m[43mfields[49m[38;5;241;43m=[39;49m[43m[[49m[38;5;124;43m"[39;49m[38;5;124;43mname[39;49m[38;5;124;43m"[39;49m[43m,[49m[43m [49m[38;5;124;43m"[39;49m[38;5;124;43mproject[39;49m[38;5;124;43m"[39;49m[43m][49m[43m)[49m:
+[1;32m     10[0m     [38;5;28;01mfor[39;00m it [38;5;129;01min[39;00m frappe[38;5;241m.[39mget_all([38;5;124m"[39m[38;5;124mMaterial Request Item[39m[38;5;124m"[39m, filters[38;5;241m=[39m{[38;5;124m"[39m[38;5;124mparent[39m[38;5;124m"[39m: mr[38;5;241m.[39mname}, fields[38;5;241m=[39m[[38;5;124m"[39m[38;5;124mitem_code[39m[38;5;124m"[39m, [38;5;124m"[39m[38;5;124mqty[39m[38;5;124m"[39m, [38;5;124m"[39m[38;5;124mordered_qty[39m[38;5;124m"[39m, [38;5;124m"[39m[38;5;124mproject[39m[38;5;124m"[39m]):
+[1;32m     11[0m         gap [38;5;241m=[39m (it[38;5;241m.[39mqty [38;5;129;01mor[39;00m [38;5;241m0[39m) [38;5;241m-[39m (it[38;5;241m.[39mordered_qty [38;5;129;01mor[39;00m [38;5;241m0[39m)
+
+File [0;32m~/frappe-bench/apps/frappe/frappe/__init__.py:1403[0m, in [0;36mget_all[0;34m(doctype, *args, **kwargs)[0m
+[1;32m   1401[0m [38;5;28;01mif[39;00m [38;5;124m"[39m[38;5;124mlimit_page_length[39m[38;5;124m"[39m [38;5;129;01mnot[39;00m [38;5;129;01min[39;00m kwargs:
+[1;32m   1402[0m 	kwargs[[38;5;124m"[39m[38;5;124mlimit_page_length[39m[38;5;124m"[39m] [38;5;241m=[39m [38;5;241m0[39m
+[0;32m-> 1403[0m [38;5;28;01mreturn[39;00m [43mget_list[49m[43m([49m[43mdoctype[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[43margs[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[38;5;241;43m*[39;49m[43mkwargs[49m[43m)[49m
+
+File [0;32m~/frappe-bench/apps/frappe/frappe/__init__.py:1378[0m, in [0;36mget_list[0;34m(doctype, *args, **kwargs)[0m
+[1;32m   1359[0m [38;5;250m[39m[38;5;124;03m"""List database query via `frappe.model.db_query`. Will also check for permissions.[39;00m
+[1;32m   1360[0m 
+[1;32m   1361[0m [38;5;124;03m:param doctype: DocType on which query is to be made.[39;00m
+[0;32m   (...)[0m
+[1;32m   1374[0m [38;5;124;03m        frappe.get_list("ToDo", fields="*", filters = [["modified", ">", "2014-01-01"]])[39;00m
+[1;32m   1375[0m [38;5;124;03m"""[39;00m
+[1;32m   1376[0m [38;5;28;01mimport[39;00m[38;5;250m [39m[38;5;21;01mfrappe[39;00m[38;5;21;01m.[39;00m[38;5;21;01mmodel[39;00m[38;5;21;01m.[39;00m[38;5;21;01mqb_query[39;00m
+[0;32m-> 1378[0m [38;5;28;01mreturn[39;00m [43mfrappe[49m[38;5;241;43m.[39;49m[43mmodel[49m[38;5;241;43m.[39;49m[43mqb_query[49m[38;5;241;43m.[39;49m[43mDatabaseQuery[49m[43m([49m[43mdoctype[49m[43m)[49m[38;5;241;43m.[39;49m[43mexecute[49m[43m([49m[38;5;241;43m*[39;49m[43margs[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[38;5;241;43m*[39;49m[43mkwargs[49m[43m)[49m
+
+File [0;32m~/frappe-bench/apps/frappe/frappe/model/qb_query.py:233[0m, in [0;36mDatabaseQuery.execute[0;34m(self, fields, filters, or_filters, group_by, order_by, limit, offset, limit_start, limit_page_length, as_list, with_childnames, debug, ignore_permissions, user, with_comment_count, join, distinct, start, page_length, ignore_ifnull, save_user_settings, save_user_settings_fields, update, user_settings, reference_doctype, run, strict, pluck, ignore_ddl, parent_doctype, ignore_user_permissions)[0m
+[1;32m    231[0m 	result [38;5;241m=[39m query[38;5;241m.[39mrun(debug[38;5;241m=[39mdebug, as_dict[38;5;241m=[39m[38;5;28;01mTrue[39;00m, pluck[38;5;241m=[39mpluck)
+[1;32m    232[0m [38;5;28;01melse[39;00m:
+[0;32m--> 233[0m 	result [38;5;241m=[39m [43mquery[49m[38;5;241;43m.[39;49m[43mrun[49m[43m([49m[43mdebug[49m[38;5;241;43m=[39;49m[43mdebug[49m[43m,[49m[43m [49m[43mas_dict[49m[38;5;241;43m=[39;49m[38;5;129;43;01mnot[39;49;00m[43m [49m[43mas_list[49m[43m,[49m[43m [49m[43mupdate[49m[38;5;241;43m=[39;49m[43mupdate[49m[43m)[49m
+[1;32m    235[0m [38;5;28;01mif[39;00m with_comment_count:
+[1;32m    236[0m 	[38;5;28mself[39m[38;5;241m.[39m_add_comment_count(result)
+
+File [0;32m~/frappe-bench/apps/frappe/frappe/query_builder/utils.py:144[0m, in [0;36mexecute_query[0;34m(query, *args, **kwargs)[0m
+[1;32m    142[0m name_field_injected [38;5;241m=[39m query[38;5;241m.[39m[38;5;18m__dict__[39m[38;5;241m.[39mget([38;5;124m"[39m[38;5;124m_name_field_injected[39m[38;5;124m"[39m, [38;5;28;01mFalse[39;00m)
+[1;32m    143[0m query, params [38;5;241m=[39m prepare_query(query)
+[0;32m--> 144[0m result [38;5;241m=[39m [43mfrappe[49m[38;5;241;43m.[39;49m[43mlocal[49m[38;5;241;43m.[39;49m[43mdb[49m[38;5;241;43m.[39;49m[43msql[49m[43m([49m[43mquery[49m[43m,[49m[43m [49m[43mparams[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[43margs[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[38;5;241;43m*[39;49m[43mkwargs[49m[43m)[49m  [38;5;66;03m# nosemgrep[39;00m
+[1;32m    146[0m [38;5;28;01mif[39;00m child_queries [38;5;129;01mand[39;00m [38;5;28misinstance[39m(child_queries, [38;5;28mlist[39m) [38;5;129;01mand[39;00m result:
+[1;32m    147[0m 	execute_child_queries(child_queries, result)
+
+File [0;32m~/frappe-bench/apps/frappe/frappe/database/database.py:272[0m, in [0;36mDatabase.sql[0;34m(self, query, values, as_dict, as_list, debug, ignore_ddl, auto_commit, update, explain, run, pluck, as_iterator)[0m
+[1;32m    269[0m 	query [38;5;241m+[39m[38;5;241m=[39m [38;5;124mf[39m[38;5;124m"[39m[38;5;124m /* FRAPPE_TRACE_ID: [39m[38;5;132;01m{[39;00mtrace_id[38;5;132;01m}[39;00m[38;5;124m */[39m[38;5;124m"[39m
+[1;32m    271[0m [38;5;28;01mtry[39;00m:
+[0;32m--> 272[0m 	[38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mexecute_query[49m[43m([49m[43mquery[49m[43m,[49m[43m [49m[43mvalues[49m[43m)[49m
+[1;32m    273[0m [38;5;28;01mexcept[39;00m [38;5;167;01mException[39;00m [38;5;28;01mas[39;00m e:
+[1;32m    274[0m 	[38;5;28;01mif[39;00m [38;5;28mself[39m[38;5;241m.[39mis_syntax_error(e):
+
+File [0;32m~/frappe-bench/apps/frappe/frappe/database/database.py:372[0m, in [0;36mDatabase.execute_query[0;34m(self, query, values)[0m
+[1;32m    371[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21mexecute_query[39m([38;5;28mself[39m, query, values[38;5;241m=[39m[38;5;28;01mNone[39;00m):
+[0;32m--> 372[0m 	[38;5;28;01mreturn[39;00m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_cursor[49m[38;5;241;43m.[39;49m[43mexecute[49m[43m([49m[43mquery[49m[43m,[49m[43m [49m[43mvalues[49m[43m)[49m
+
+File [0;32m~/frappe-bench/env/lib/python3.14/site-packages/MySQLdb/cursors.py:179[0m, in [0;36mBaseCursor.execute[0;34m(self, query, args)[0m
+[1;32m    176[0m mogrified_query [38;5;241m=[39m [38;5;28mself[39m[38;5;241m.[39m_mogrify(query, args)
+[1;32m    178[0m [38;5;28;01massert[39;00m [38;5;28misinstance[39m(mogrified_query, ([38;5;28mbytes[39m, [38;5;28mbytearray[39m))
+[0;32m--> 179[0m res [38;5;241m=[39m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_query[49m[43m([49m[43mmogrified_query[49m[43m)[49m
+[1;32m    180[0m [38;5;28;01mreturn[39;00m res
+
+File [0;32m~/frappe-bench/env/lib/python3.14/site-packages/MySQLdb/cursors.py:330[0m, in [0;36mBaseCursor._query[0;34m(self, q)[0m
+[1;32m    328[0m [38;5;28mself[39m[38;5;241m.[39mrowcount [38;5;241m=[39m [38;5;28;01mNone[39;00m
+[1;32m    329[0m [38;5;28mself[39m[38;5;241m.[39mlastrowid [38;5;241m=[39m [38;5;28;01mNone[39;00m
+[0;32m--> 330[0m [43mdb[49m[38;5;241;43m.[39;49m[43mquery[49m[43m([49m[43mq[49m[43m)[49m
+[1;32m    331[0m [38;5;28mself[39m[38;5;241m.[39m_do_get_result(db)
+[1;32m    332[0m [38;5;28mself[39m[38;5;241m.[39m_post_get_result()
+
+File [0;32m~/frappe-bench/env/lib/python3.14/site-packages/MySQLdb/connections.py:280[0m, in [0;36mConnection.query[0;34m(self, query)[0m
+[1;32m    278[0m [38;5;28;01mif[39;00m [38;5;28misinstance[39m(query, [38;5;28mbytearray[39m):
+[1;32m    279[0m     query [38;5;241m=[39m [38;5;28mbytes[39m(query)
+[0;32m--> 280[0m [43m_mysql[49m[38;5;241;43m.[39;49m[43mconnection[49m[38;5;241;43m.[39;49m[43mquery[49m[43m([49m[38;5;28;43mself[39;49m[43m,[49m[43m [49m[43mquery[49m[43m)[49m
+
+[0;31mOperationalError[0m: (1054, "Unknown column 'project' in 'SELECT'")
+
+In [3]: Do you really want to exit ([y]/n)? 
+

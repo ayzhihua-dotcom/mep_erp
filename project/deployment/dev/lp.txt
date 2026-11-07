@@ -1,0 +1,10 @@
+BULK_FIELDS: [[1, "kind", "Select", "\u4e1a\u52a1\u7c7b\u578b"], [2, "project", "Link", "\u9879\u76ee"], [3, "warehouse", "Link", "\u4ed3\u5e93"], [4, "posting_date", "Date", "\u5355\u636e\u65e5\u671f"], [5, "rows_text", "Long Text", "\u7c98\u8d34\u6570\u636e"], [6, "discipline", "Link", "\u4e13\u4e1a"], [7, "system", "Link", "\u7cfb\u7edf"], [8, "responsible", "Link", "\u8d23\u4efb\u4eba"]]
+Material Request ANCHORS: ['company', 'custom_cb_project', 'custom_discipline', 'custom_system', 'custom_responsible', 'transaction_date', 'schedule_date', 'material_request_type']
+Purchase Order ANCHORS: ['company', 'project', 'custom_cb_project', 'custom_discipline', 'custom_system', 'custom_responsible', 'transaction_date', 'schedule_date']
+Stock Entry ANCHORS: ['company', 'project', 'custom_discipline', 'custom_system', 'custom_responsible', 'posting_date', 'stock_entry_type']
+Purchase Receipt ANCHORS: ['company', 'project', 'custom_discipline', 'custom_system', 'posting_date']
+WS_LINK_TYPE_OPTIONS: DocType
+Page
+Report
+WS_LINK_FIELDS: ["type", "label", "icon", "description", "hidden", "link_details_section", "link_type", "link_to", "report_ref_doctype", "column_break_7", "dependencies", "only_for", "onboard", "is_query_report", "link_count"]
+OK

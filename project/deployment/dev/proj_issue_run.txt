@@ -1,0 +1,47 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: BIN_BEFORE: 12.0 | valuation_rate: 850 | uom: 个
+SE_INSERTED: MAT-STE-2026-00032 | derived purpose: Material Issue
+SE_SUBMITTED: MAT-STE-2026-00032 | docstatus: 1
+BIN_AFTER: 10.0
+SLE: 00096a9621 | qty: -5.0 | wh: 巴西现场总仓 - 巴项
+SLE: 0f74281b3f | qty: -5.0 | wh: 巴西现场总仓 - 巴项
+SLE: 1d292be0b5 | qty: 5.0 | wh: 巴西现场总仓 - 巴项
+SLE: 2d058d60e8 | qty: -5.0 | wh: 巴西现场总仓 - 巴项
+SLE: 2f0be3578f | qty: 2.0 | wh: 巴西现场总仓 - 巴项
+SLE: 358fc6a428 | qty: -5.0 | wh: 巴西现场总仓 - 巴项
+SLE: 39ef4604b9 | qty: 5.0 | wh: 巴西现场总仓 - 巴项
+SLE: 51a2e1a0ac | qty: -2.0 | wh: 巴西现场总仓 - 巴项
+SLE: 54c25e31dc | qty: -5.0 | wh: 巴西现场总仓 - 巴项
+SLE: 5e31826ea9 | qty: 5.0 | wh: 巴西现场总仓 - 巴项
+SLE: 6638e71d2b | qty: 2.0 | wh: 巴西现场总仓 - 巴项
+SLE: 66ac95f4ff | qty: -2.0 | wh: 巴西现场总仓 - 巴项
+SLE: 6b83ba8bb6 | qty: 2.0 | wh: 巴西现场总仓 - 巴项
+SLE: 718c5aaf9a | qty: -5.0 | wh: 巴西现场总仓 - 巴项
+SLE: 80fb822ada | qty: -2.0 | wh: 巴西现场总仓 - 巴项
+SLE: 85f6a04ef0 | qty: -5.0 | wh: 巴西现场总仓 - 巴项
+SLE: 861ee0bcc2 | qty: -2.0 | wh: 巴西现场总仓 - 巴项
+SLE: 8c7472513f | qty: 5.0 | wh: 巴西现场总仓 - 巴项
+SLE: 8ec1bf35eb | qty: 5.0 | wh: 巴西现场总仓 - 巴项
+SLE: b356b0fcea | qty: 2.0 | wh: 巴西现场总仓 - 巴项
+SLE: ccd0850389 | qty: 5.0 | wh: 巴西现场总仓 - 巴项
+SLE: e575405df5 | qty: 5.0 | wh: 巴西现场总仓 - 巴项
+SLE: f35b65c6d6 | qty: 5.0 | wh: 巴西现场总仓 - 巴项
+SLE: fa6c6039d0 | qty: -5.0 | wh: 巴西现场总仓 - 巴项
+SLE: fc428373a6 | qty: -2.0 | wh: 巴西现场总仓 - 巴项
+REPORT_AFTER_ISSUE -> 预算: 12.0 已出库: 2.0 待出库: 10.0
+SE_CANCELLED
+SE_DELETED
+ORPHAN_SLE_DELETED: 26
+BIN_FINAL: 12.0
+REPORT_AFTER_ROLLBACK -> 已出库: 0.0 待出库: 12.0
+SE_COUNT: 2 | SLE_COUNT: 7
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

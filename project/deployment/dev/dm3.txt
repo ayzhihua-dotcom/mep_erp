@@ -1,0 +1,14 @@
+DISCIPLINES: 12 SYSTEMS: 38
+  NO_MASTER Material Request [管道/管道-工艺系统]
+  NO_MASTER Material Request [电气/电气-电气系统]
+  NO_MASTER Material Request [仪表/仪表-仪表自控系统]
+  NO_MASTER Material Request [机械设备/机械设备-工艺系统]
+  NO_MASTER Purchase Order [管道/管道-工艺系统]
+  NO_MASTER Purchase Order [电气/电气-电气系统]
+  NO_MASTER Purchase Order [仪表/仪表-仪表自控系统]
+  NO_MASTER Purchase Order [机械设备/机械设备-工艺系统]
+  NO_MASTER Stock Entry [管道/管道-工艺系统]
+MIGRATED_ROWS: 0
+LINK_FIELDS_UPDATED discipline/system: () ()
+DONE
+DISC_MASTER_DONE

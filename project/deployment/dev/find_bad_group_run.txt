@@ -1,0 +1,12 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: GROUP_NODES_WITH_ITEMS: [{'g': '水处理设备', 'is_group': 1, 'parent': '机电设备与主材', 'c': 48}]
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

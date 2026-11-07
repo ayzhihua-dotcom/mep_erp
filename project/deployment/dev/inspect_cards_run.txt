@@ -1,0 +1,64 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: CARD Open Issues | type: Document Type | function: Count | filters_json: [["Issue", "status", "=", "Open"]] | doc: Issue
+CARD Overdue Issues | type: Document Type | function: Count | filters_json: [["Issue", "agreement_status", "=", "Failed"], ["Issue", "status", "not in", ["Closed", "Resolved"]]] | doc: Issue
+CARD Failed Scheduled Jobs | type: Document Type | function: Count | filters_json: [["Scheduled Job Log","status","=","Failed",false]] | doc: Scheduled Job Log
+--- OUR CARDS ---
+CARD 缺料预警 | filters_json: [["alert_type", "=", "缺料"], ["status", "!=", "已关闭"]]
+CARD 超预算预警 | filters_json: [["alert_type", "=", "超预算"], ["status", "!=", "已关闭"]]
+CARD 逾期任务 | filters_json: [["rule_code", "=", "PRJ-001"], ["status", "!=", "已关闭"]]
+GET_RESULT_SIG: (doc: str | dict[str, Any] | frappe.model.document.Document, filters: str | list | dict[str, Any], to_date: str | datetime.datetime | datetime.date | None = None)
+=== get_result ===
+@frappe.whitelist()
+def get_result(
+	doc: str | dict[str, Any] | Document,
+	filters: str | list | dict[str, Any],
+	to_date: str | datetime | date | None = None,
+):
+	doc = frappe.parse_json(doc)
+	fields = []
+	sql_function_map = {
+		"Count": "COUNT",
+		"Sum": "SUM",
+		"Average": "AVG",
+		"Minimum": "MIN",
+		"Maximum": "MAX",
+	}
+
+	function = sql_function_map[doc.function]
+
+	if function == "COUNT":
+		arg = "*"
+	else:
+		arg = doc.aggregate_function_based_on
+
+	fields = [{function: arg, "as": "result"}]
+
+	if not filters:
+		filters = []
+	elif isinstance(filters, str):
+		filters = frappe.parse_json(filters)
+
+	if to_date:
+		filters.append([doc.document_type, "creation", "<", to_date])
+
+	res = frappe.get_list(
+		doc.document_type,
+		fields=fields,
+		filters=filters,
+		parent_doctype=doc.parent_document_type,
+		order_by=None,
+	)
+	number = res[0]["result"] if res else 0
+
+	return flt(number)
+
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

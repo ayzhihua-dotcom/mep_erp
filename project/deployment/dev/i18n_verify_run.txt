@@ -1,0 +1,27 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: [0;36m  Cell [0;32mIn[1], line 1[0;36m[0m
+[0;31m    ﻿import sys[0m
+[0m    ^[0m
+[0;31mSyntaxError[0m[0;31m:[0m invalid non-printable character U+FEFF
+
+
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...: CHECK Design BOM -> 设计BOM
+CHECK Material Budget -> 材料预算
+CHECK Material Commitment -> 材料承诺
+CHECK Bulk Entry -> 批量录入
+CHECK Stock Entry -> 库存移动
+CHECK Draft -> 草稿
+CHECK Submitted -> 已提交
+CHECK Last Edited By -> 最后编辑
+CHECK Item -> 物料
+CHECK Warehouse -> 仓库
+CHECK Project -> 项目
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

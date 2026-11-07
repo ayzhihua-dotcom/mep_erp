@@ -1,0 +1,73 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: WORKSPACE_COUNT: 23
+Accounting || label=Accounting || module=Accounts || public=1 || hidden=0 || domain=None
+Assets || label=Assets || module=Assets || public=1 || hidden=0 || domain=
+Automation || label=Automation || module=Automation || public=1 || hidden=0 || domain=None
+Build || label=Build || module=Build || public=1 || hidden=0 || domain=
+Buying || label=Buying || module=Buying || public=1 || hidden=0 || domain=
+CRM || label=CRM || module=CRM || public=1 || hidden=0 || domain=
+Email || label=Email || module=Email || public=1 || hidden=0 || domain=None
+ERPNext Settings || label=ERPNext Settings || module=Setup || public=1 || hidden=0 || domain=
+Financial Reports || label=Financial Reports || module=Accounts || public=1 || hidden=0 || domain=
+Home || label=Home || module=Setup || public=1 || hidden=0 || domain=
+Integrations || label=Integrations || module=Integrations || public=1 || hidden=0 || domain=
+Invoicing || label=Invoicing || module=Accounts || public=1 || hidden=0 || domain=
+Manufacturing || label=Manufacturing || module=Manufacturing || public=1 || hidden=0 || domain=
+Payments || label=Payments || module=Accounts || public=1 || hidden=0 || domain=None
+Printing || label=Printing || module=Printing || public=1 || hidden=0 || domain=None
+Projects || label=Projects || module=Projects || public=1 || hidden=0 || domain=
+Quality || label=Quality || module=Quality Management || public=1 || hidden=0 || domain=
+Selling || label=Selling || module=Selling || public=1 || hidden=0 || domain=
+Stock || label=Stock || module=Stock || public=1 || hidden=0 || domain=
+Support || label=Support || module=Support || public=1 || hidden=0 || domain=
+System || label=System || module=System || public=1 || hidden=0 || domain=None
+Users || label=Users || module=Users || public=1 || hidden=0 || domain=
+Website || label=Website || module=Website || public=1 || hidden=0 || domain=
+MODULE_DEFS:
+  Accounts || app=erpnext
+  Assets || app=erpnext
+  Automation || app=frappe
+  Build || app=frappe
+  Bulk Transaction || app=erpnext
+  Buying || app=erpnext
+  CB ERP || app=cb_erp
+  Communication || app=erpnext
+  Contacts || app=frappe
+  Core || app=frappe
+  CRM || app=erpnext
+  Custom || app=frappe
+  Data || app=frappe
+  Desk || app=frappe
+  EDI || app=erpnext
+  Email || app=frappe
+  ERPNext Integrations || app=erpnext
+  Geo || app=frappe
+  Integrations || app=frappe
+  Maintenance || app=erpnext
+  Manufacturing || app=erpnext
+  Portal || app=erpnext
+  Printing || app=frappe
+  Projects || app=erpnext
+  Quality Management || app=erpnext
+  Regional || app=erpnext
+  Selling || app=erpnext
+  Setup || app=erpnext
+  Stock || app=erpnext
+  Subcontracting || app=erpnext
+  Support || app=erpnext
+  System || app=frappe
+  Telephony || app=erpnext
+  Users || app=frappe
+  Utilities || app=erpnext
+  Website || app=frappe
+  Workflow || app=frappe
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

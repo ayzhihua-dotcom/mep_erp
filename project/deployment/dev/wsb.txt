@@ -1,0 +1,3 @@
+HAS_WORKSPACE_SIDEBAR: Workspace Sidebar
+ROWS: []
+OK

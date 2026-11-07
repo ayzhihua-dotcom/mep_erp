@@ -1,0 +1,12 @@
+["custom_cb_project", "Link", "project", 0, "2026-10-30 09:57:36.958231"]
+["custom_cb_budget", "Link", "project", 0, "2026-10-30 09:57:37.166049"]
+["custom_discipline", "Link", "custom_disc_cb1", 0, "2026-11-05 08:51:44.008379"]
+["custom_system", "Link", "custom_disc_cb2", 0, "2026-11-05 08:51:44.177478"]
+["custom_responsible", "Link", "custom_disc_cb3", 0, "2026-11-05 08:51:44.258835"]
+["custom_disc_section", "Section Break", "custom_cb_project", 0, "2026-11-05 10:40:47.529358"]
+["custom_disc_cb1", "Column Break", "custom_disc_section", 0, "2026-11-05 10:40:48.334430"]
+["custom_disc_cb2", "Column Break", "custom_discipline", 0, "2026-11-05 10:40:48.440929"]
+["custom_disc_cb3", "Column Break", "custom_system", 0, "2026-11-05 10:40:48.519925"]
+COUNT: 9
+META_ORDER: ["custom_system", "custom_disc_cb1", "custom_disc_cb2", "custom_disc_cb3", "custom_cb_budget", "custom_cb_project", "custom_discipline", "custom_responsible", "custom_disc_section"]
+OK

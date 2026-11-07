@@ -1,0 +1,16 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: DOCK_RECORDS: [{'name': 'gfrrqjttt7', 'app': 'cb_erp', 'user': '', 'standard': 0, 'mount_on': None}, {'name': 'erpnext', 'app': 'erpnext', 'user': '', 'standard': 1, 'mount_on': None}, {'name': 'frappe', 'app': 'frappe', 'user': '', 'standard': 1, 'mount_on': None}]
+STANDARD_DOCK: frappe
+ITEMS: [('Sidebar', 'Build', 'Build', 'code-app-soft'), ('Sidebar', 'Users', 'Users', 'users-soft'), ('Sidebar', 'Email', 'Email', 'email-envelope-soft'), ('Sidebar', 'Website', 'Website', 'website-browser-soft'), ('Sidebar', 'Data', 'Data', 'data-table-soft'), ('Sidebar', 'Workflow', 'Workflow', 'workflow-builder-soft'), ('Sidebar', 'Printing', 'Printing', 'printing-printer-soft'), ('Sidebar', 'Integrations', 'Integrations', 'integrations-cable-soft'), ('Sidebar', 'Contacts', 'Contacts', 'contacts-cards-soft'), ('Sidebar', 'Automation', 'Automation', 'automation-cycle-soft'), ('Sidebar', 'Geo', 'Geo', 'geo-pin-soft'), ('Sidebar', 'System', 'System', 'system-monitor-soft')]
+ENTRY_SET: [('Sidebar', 'Build', '构建'), ('Sidebar', 'Users', '用户'), ('Sidebar', 'Email', '邮件'), ('Sidebar', 'Website', '网站'), ('Sidebar', 'Data', '数据'), ('Sidebar', 'Workflow', '工作流'), ('Sidebar', 'Printing', '正在打印'), ('Sidebar', 'Integrations', '集成'), ('Sidebar', 'Contacts', '联系人'), ('Sidebar', 'Automation', '自动化'), ('Sidebar', 'Geo', 'Geo'), ('Sidebar', 'System', '系统')]
+PERMITTED_HAS_WS: True
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

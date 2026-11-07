@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% block title %}仪表盘 - 出入库管理系统{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">仪表盘</h1>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card stat-card primary">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h6 class="text-muted">商品总数</h6>
+                        <h2 class="mb-0">{{ total_products }}</h2>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="bi bi-box display-4 text-primary"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card stat-card success">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h6 class="text-muted">库存总值</h6>
+                        <h2 class="mb-0">¥{{ "%.2f"|format(total_stock_value) }}</h2>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="bi bi-currency-yen display-4 text-success"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card stat-card warning">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h6 class="text-muted">库存预警</h6>
+                        <h2 class="mb-0">{{ low_stock_count }}</h2>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="bi bi-exclamation-triangle display-4 text-warning"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card stat-card danger">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h6 class="text-muted">今日出入库</h6>
+                        <h2 class="mb-0">{{ today_inbound }} / {{ today_outbound }}</h2>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="bi bi-arrow-left-right display-4 text-danger"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <i class="bi bi-box-arrow-in-down"></i> 最近入库记录
+            </div>
+            <div class="card-body p-0">
+                <table class="table table-hover mb-0">
+                    <thead>
+                        <tr>
+                            <th>商品</th>
+                            <th>数量</th>
+                            <th>时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for record in recent_inbound %}
+                        <tr>
+                            <td>{{ record.product.name }}</td>
+                            <td>{{ record.quantity }}</td>
+                            <td>{{ record.created_at.strftime('%m-%d %H:%M') }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <i class="bi bi-box-arrow-up"></i> 最近出库记录
+            </div>
+            <div class="card-body p-0">
+                <table class="table table-hover mb-0">
+                    <thead>
+                        <tr>
+                            <th>商品</th>
+                            <th>数量</th>
+                            <th>时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for record in recent_outbound %}
+                        <tr>
+                            <td>{{ record.product.name }}</td>
+                            <td>{{ record.quantity }}</td>
+                            <td>{{ record.created_at.strftime('%m-%d %H:%M') }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

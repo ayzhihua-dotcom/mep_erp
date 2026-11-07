@@ -1,0 +1,16 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: DRAFTS: ['MAT-MR-2026-00054', 'MAT-MR-2026-00055']
+BEFORE_DS: [('MAT-MR-2026-00054', 0), ('MAT-MR-2026-00055', 0)]
+RESULT: {'ok': ['MAT-MR-2026-00054', 'MAT-MR-2026-00055'], 'err': [], 'count': 2}
+AFTER_DS: [('MAT-MR-2026-00054', 1), ('MAT-MR-2026-00055', 1)]
+CLEANED; MR_COUNT: 51
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

@@ -1,0 +1,5 @@
+GRID_COLS Stock Entry Detail -> ['custom_seq', 'item_code', 'item_name', 'custom_spec', 'custom_uom', 'qty', 'custom_use_project', 'custom_responsible', 'custom_remark']
+GRID_COLS Material Request Item -> ['custom_seq', 'item_code', 'item_name', 'custom_spec', 'custom_uom', 'qty', 'custom_use_project', 'custom_responsible', 'custom_remark']
+GRID_COLS Purchase Order Item -> ['custom_seq', 'item_code', 'item_name', 'custom_spec', 'custom_uom', 'qty', 'custom_use_project', 'custom_responsible', 'custom_remark']
+GRID_COLS Stock Reconciliation Item -> ['custom_item_name', 'custom_seq', 'item_code', 'qty', 'custom_use_project', 'custom_responsible', 'custom_remark', 'custom_spec', 'custom_uom']
+REORDER_DONE

@@ -1,0 +1,5 @@
+RENAMED_WORKSPACE
+DOCK_ERR ValidationError("<strong>erpnext</strong>'s dock belongs to its app and can only be authored in developer mode. Arrange the dock instead to change it for this site.")
+CB_DOCK_CREATED_MOUNTED
+WS_EXISTS: 巴西机电ERP系统测试
+DONE

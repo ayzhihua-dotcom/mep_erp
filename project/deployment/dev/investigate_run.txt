@@ -1,0 +1,83 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: Syntax error in query:
+show columns from tabWebsite Settings 
+=== Website Settings fields ===
+home_tab Tab Break  
+sb0 Section Break  
+home_page Data  
+cb4 Column Break  
+title_prefix Data  
+misc_section Section Break  
+app_name Data  
+disable_signup Check  
+show_footer_on_login Check  
+column_break_9 Column Break  
+app_logo Attach Image  
+section_break_6 Section Break  
+website_theme Link  
+website_theme_image Image hidden 
+website_theme_image_link Code hidden 
+navbar_tab Tab Break  
+brand Section Break  
+banner_image Attach Image  
+splash_image Attach Image  
+brand_html Code  
+set_banner_from_image Button  
+favicon Attach  
+top_bar Section Break  
+top_bar_items Table  
+hide_login Check  
+show_language_picker Check  
+navbar_template_section Section Break  
+navbar_template Link  
+navbar_template_values Code hidden 
+edit_navbar_template_values Button  
+call_to_action Data  
+call_to_action_url Data  
+banner Section Break  
+banner_html Code  
+footer_tab Tab Break  
+footer Section Break  
+footer_items Table  
+footer_details_section Section Break  
+copyright Data  
+footer_logo Attach Image  
+hide_footer_signup Check  
+column_break_37 Column Break  
+address Small Text  
+footer_powered Small Text  
+custom_footer_section Section Break  
+footer_template Link  
+footer_template_values Code hidden 
+edit_footer_template_values Button  
+integrations Tab Break  
+analytics_section Section Break  
+enable_view_tracking Check  
+enable_google_indexing Check  
+authorize_api_indexing_access Button  
+indexing_refresh_token Data hidden ro
+indexing_authorization_code Data hidden ro
+column_break_17 Column Break  
+google_analytics_id Data  
+google_analytics_anonymize_ip Check  
+account_deletion_settings_section Section Break  
+auto_account_deletion Int  
+show_account_deletion_link Check  
+section_break_38 Tab Break  
+subdomain Small Text  ro
+head_html Code  
+robots_txt Code  
+redirects_tab Tab Break  
+route_redirects Table  
+=== raw tabWebsite Settings row (setup_complete col?) ===
+ERR: ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Settings' at line 1")
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

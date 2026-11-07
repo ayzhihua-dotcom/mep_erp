@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+{% block title %}商品管理 - 出入库管理系统{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">商品管理</h1>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProductModal">
+        <i class="bi bi-plus-circle"></i> 添加商品
+    </button>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>商品编码</th>
+                    <th>商品名称</th>
+                    <th>分类</th>
+                    <th>单位</th>
+                    <th>单价</th>
+                    <th>库存</th>
+                    <th>最低库存</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for product in products %}
+                <tr>
+                    <td>{{ product.code }}</td>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.category }}</td>
+                    <td>{{ product.unit }}</td>
+                    <td>¥{{ "%.2f"|format(product.price) }}</td>
+                    <td>
+                        <span class="{% if product.stock <= product.min_stock %}text-danger fw-bold{% endif %}">
+                            {{ product.stock }}
+                        </span>
+                    </td>
+                    <td>{{ product.min_stock }}</td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-primary" onclick="editProduct({{ product.id }})">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        <form method="POST" action="{{ url_for('main.delete_product', id=product.id) }}" class="d-inline" onsubmit="return confirm('确定删除此商品？')">
+                            <button type="submit" class="btn btn-sm btn-outline-danger">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Add Product Modal -->
+<div class="modal fade" id="addProductModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form method="POST" action="{{ url_for('main.add_product') }}">
+                <div class="modal-header">
+                    <h5 class="modal-title">添加商品</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">商品编码</label>
+                        <input type="text" class="form-control" name="code" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">商品名称</label>
+                        <input type="text" class="form-control" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">分类</label>
+                        <input type="text" class="form-control" name="category">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">单位</label>
+                        <input type="text" class="form-control" name="unit" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">单价</label>
+                        <input type="number" class="form-control" name="price" step="0.01" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">最低库存</label>
+                        <input type="number" class="form-control" name="min_stock" value="0">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                    <button type="submit" class="btn btn-primary">保存</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Product Modal -->
+<div class="modal fade" id="editProductModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form method="POST" id="editProductForm">
+                <div class="modal-header">
+                    <h5 class="modal-title">编辑商品</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">商品编码</label>
+                        <input type="text" class="form-control" name="code" id="editCode" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">商品名称</label>
+                        <input type="text" class="form-control" name="name" id="editName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">分类</label>
+                        <input type="text" class="form-control" name="category" id="editCategory">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">单位</label>
+                        <input type="text" class="form-control" name="unit" id="editUnit" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">单价</label>
+                        <input type="number" class="form-control" name="price" id="editPrice" step="0.01" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">最低库存</label>
+                        <input type="number" class="form-control" name="min_stock" id="editMinStock">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                    <button type="submit" class="btn btn-primary">保存</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function editProduct(id) {
+    fetch(`/api/product/${id}`)
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('editProductForm').action = `/products/edit/${id}`;
+            document.getElementById('editCode').value = data.code;
+            document.getElementById('editName').value = data.name;
+            document.getElementById('editCategory').value = data.category || '';
+            document.getElementById('editUnit').value = data.unit;
+            document.getElementById('editPrice').value = data.price;
+            document.getElementById('editMinStock').value = data.min_stock;
+            new bootstrap.Modal(document.getElementById('editProductModal')).show();
+        });
+}
+</script>
+{% endblock %}

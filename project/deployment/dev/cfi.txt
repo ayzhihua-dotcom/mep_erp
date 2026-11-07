@@ -1,0 +1,4 @@
+Material Request -> ['custom_system', 'custom_disc_cb1', 'custom_disc_cb2', 'custom_disc_cb3', 'custom_discipline', 'custom_responsible', 'custom_disc_section']
+Purchase Order -> ['custom_disc_section', 'custom_disc_cb1', 'custom_discipline', 'custom_disc_cb2', 'custom_system', 'custom_disc_cb3', 'custom_responsible']
+Stock Entry -> ['custom_disc_section', 'custom_disc_cb1', 'custom_discipline', 'custom_disc_cb2', 'custom_system', 'custom_disc_cb3', 'custom_responsible']
+OK

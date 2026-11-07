@@ -1,0 +1,9 @@
+REMOVED: []
+REPORT_QUERY_HEAD:  select custom_discipline as `专业`, custom_system as `系统`, custom_responsible as `责任人`,   sum(case when dt='MR' then 1 else 0 end) as `采购申请`,   sum(case when dt='SE' then 1 else 0 end) as `库存移动`,   sum(case when dt='PO' t
+REPORT_COLS: ["\u4e13\u4e1a", "\u7cfb\u7edf", "\u8d23\u4efb\u4eba", "\u91c7\u8d2d\u7533\u8bf7", "\u5e93\u5b58\u79fb\u52a8", "\u91c7\u8d2d\u8ba2\u5355", "\u5408\u8ba1"]
+REPORT_ROWS: 60
+REPORT_SAMPLE: [{"\u4e13\u4e1a": "\u4eea\u8868", "\u7cfb\u7edf": "\u4eea\u8868-\u4eea\u8868\u81ea\u63a7\u7cfb\u7edf", "\u8d23\u4efb\u4eba": "eng01@cb.local", "\u91c7\u8d2d\u7533\u8bf7": 1.0, "\u5e93\u5b58\u79fb\u52a8": 0.0, "\u91c7\u8d2d\u8ba2\u5355": 1.0, "\u5408\u8ba1": 2}, {"\u4e13\u4e1a": "\u4eea\u8868", "\u7cfb\u7edf": "\u4eea\u8868-\u4eea\u8868\u81ea\u63a7\u7cfb\u7edf", "\u8d23\u4efb\u4eba": "eng12@cb.local", "\u91c7\u8d2d\u7533\u8bf7": 1.0, "\u5e93\u5b58\u79fb\u52a8": 0.0, "\u91c7\u8d2d\u8ba2\u5355": 1.
+DISC: 12 SYS: 38
+PROJ_WITH_CFG: 51 / 52
+ITEMS: 9640 GROUPS: 297
+OK

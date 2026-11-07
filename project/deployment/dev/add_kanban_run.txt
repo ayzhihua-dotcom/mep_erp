@@ -1,0 +1,36 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: KANBAN_CREATED: 项目看板
+WS_LINK_ADDED: 项目视图 / 项目物料执行台账
+WS_LINKS_COUNT: 22
+  LINK: Card Break | 工程与预算 | None | DocType
+  LINK: Link | 设计 BOM | Design BOM | DocType
+  LINK: Link | 设计变更申请 | Design Change Request | DocType
+  LINK: Link | 材料预算 | Material Budget | DocType
+  LINK: Card Break | 采购与承诺 | None | DocType
+  LINK: Link | 采购申请 | Material Request | DocType
+  LINK: Link | 询价单 | Request for Quotation | DocType
+  LINK: Link | 供应商报价 | Supplier Quotation | DocType
+  LINK: Link | 采购订单 | Purchase Order | DocType
+  LINK: Link | 材料承诺台账 | Material Commitment | DocType
+  LINK: Card Break | 物流与进口 | None | DocType
+  LINK: Link | CB 装运 | CB Shipment | DocType
+  LINK: Link | CB 进口案件 | CB Import Case | DocType
+  LINK: Card Break | 质检与库存 | None | DocType
+  LINK: Link | 质检单 | Quality Inspection | DocType
+  LINK: Link | 库存收发 | Stock Entry | DocType
+  LINK: Card Break | 主数据 | None | DocType
+  LINK: Link | 物料 | Item | DocType
+  LINK: Link | 供应商 | Supplier | DocType
+  LINK: Link | 项目 | Project | DocType
+  LINK: Card Break | 项目视图 | None | DocType
+  LINK: Link | 项目物料执行台账 | 项目物料执行台账 | Report
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

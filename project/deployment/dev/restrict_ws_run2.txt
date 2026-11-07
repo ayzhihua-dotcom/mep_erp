@@ -1,0 +1,38 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: HIDDEN: Selling
+HIDDEN: Accounting
+HIDDEN: Financial Reports
+HIDDEN: Invoicing
+HIDDEN: Payments
+HIDDEN: Assets
+HIDDEN: Manufacturing
+HIDDEN: CRM
+HIDDEN: Support
+HIDDEN: Website
+HIDDEN: Automation
+HIDDEN: Build
+HIDDEN: Email
+HIDDEN: Integrations
+HIDDEN: Printing
+WS_CREATED: CB 机电总控
+=== VISIBLE WORKSPACES (public & not hidden) ===
+  VISIBLE: Buying
+  VISIBLE: CB 机电总控
+  VISIBLE: ERPNext Settings
+  VISIBLE: Home
+  VISIBLE: Projects
+  VISIBLE: Quality
+  VISIBLE: Stock
+  VISIBLE: System
+  VISIBLE: Users
+VISIBLE_COUNT: 9
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+

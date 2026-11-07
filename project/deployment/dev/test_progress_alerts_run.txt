@@ -1,0 +1,70 @@
+Apps in this namespace:
+frappe, erpnext, cb_erp
+
+In [1]: 
+In [2]:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...:    ...: Traceback (most recent call last):
+  File "<ipython-input-2-ffcfb2b1720f>", line 14, in main
+    t_over.insert(ignore_permissions=True); created.append(("Task", t_over.name))
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 723, in insert
+    self.run_before_save_methods()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1656, in run_before_save_methods
+    self.run_method("validate")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1504, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1908, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1882, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+                              ~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1501, in fn
+    return method_object(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/projects/doctype/task/task.py", line 97, in validate
+    self.validate_dates()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/projects/doctype/task/task.py", line 114, in validate_dates
+    self.validate_parent_project_dates()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/projects/doctype/task/task.py", line 168, in validate_parent_project_dates
+    self.report_date_conflict(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+    	_("{0}'s {1} cannot be before {2}'s Expected Start Date.").format(
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    	"project",
+     ^^^^^^^^^^
+    )
+    ^
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/projects/doctype/task/task.py", line 182, in report_date_conflict
+    frappe.throw(message, frappe.exceptions.InvalidDates)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/messages.py", line 159, in throw
+    msgprint(
+    ~~~~~~~~^
+    	msg,
+     ^^^^
+    ...<7 lines>...
+    	allow_dangerous_html=allow_dangerous_html,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/messages.py", line 118, in msgprint
+    _raise_exception()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/messages.py", line 59, in _raise_exception
+    raise exc
+frappe.exceptions.InvalidDates: <a href="http://dev.localhost/desk/task/TASK-2026-00007">TASK-2026-00007</a> 的 预计开始日期 不能早于 <a href="http://dev.localhost/desk/project/PROJ-0001">PROJ-0001</a> 的预期开始日期。
+TEST_ERR: InvalidDates('<a href="http://dev.localhost/desk/task/TASK-2026-00007">TASK-2026-00007</a> 的 预计开始日期 不能早于 <a href="http://dev.localhost/desk/project/PROJ-0001">PROJ-0001</a> 的预期开始日期。')
+EVENTS_DELETED: 0
+TEMP_TASKS_DELETED
+FINAL_ALERT_EVENT: 0
+FINAL_TASK_COUNT: 6
+An exception has occurred, use %tb to see the full traceback.
+
+[0;31mSystemExit[0m[0;31m:[0m 0
+
+
+In [3]: Do you really want to exit ([y]/n)? 
+
