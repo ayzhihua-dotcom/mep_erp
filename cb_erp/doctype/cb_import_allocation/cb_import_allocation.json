@@ -1,0 +1,175 @@
+{
+ "actions": [],
+ "autoname": "format:CB-ALC-{YYYY}-{#####}",
+ "creation": "2026-11-05 09:00:00.000000",
+ "custom": 1,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sec_g0",
+  "company",
+  "import_case",
+  "target_entry",
+  "sec_g1",
+  "costs_allocated",
+  "sec_g2",
+  "allocation_items",
+  "sec_g3",
+  "total_costs",
+  "total_allocated",
+  "rounding_diff",
+  "sec_g4",
+  "alloc_remark",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec_g0",
+   "fieldtype": "Section Break",
+   "label": "基本信息"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "公司",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "import_case",
+   "fieldtype": "Link",
+   "label": "进口案件",
+   "options": "CB Import Case",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "target_entry",
+   "fieldtype": "Link",
+   "label": "目标收货单（Stock Entry 草稿）",
+   "options": "Stock Entry",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "sec_g1",
+   "fieldtype": "Section Break",
+   "label": "费用与分摊基础"
+  },
+  {
+   "fieldname": "costs_allocated",
+   "fieldtype": "Table",
+   "label": "费用分摊行（每笔费用）",
+   "options": "CB Allocation Cost"
+  },
+  {
+   "fieldname": "sec_g2",
+   "fieldtype": "Section Break",
+   "label": "分摊明细（按收货行）"
+  },
+  {
+   "fieldname": "allocation_items",
+   "fieldtype": "Table",
+   "label": "分摊明细",
+   "options": "CB Allocation Item"
+  },
+  {
+   "fieldname": "sec_g3",
+   "fieldtype": "Section Break",
+   "label": "汇总"
+  },
+  {
+   "fieldname": "total_costs",
+   "fieldtype": "Currency",
+   "label": "费用总额",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_allocated",
+   "fieldtype": "Currency",
+   "label": "已分摊合计",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rounding_diff",
+   "fieldtype": "Currency",
+   "label": "舍入差额（归末行）",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_g4",
+   "fieldtype": "Section Break",
+   "label": "备注"
+  },
+  {
+   "fieldname": "alloc_remark",
+   "fieldtype": "Small Text",
+   "label": "备注"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "修改后",
+   "options": "CB Import Allocation"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-11-05 09:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "CB ERP",
+ "name": "CB Import Allocation",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "SYS \u7cfb\u7edf\u7ba1\u7406\u5458",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "submit": 1,
+   "write": 1,
+   "cancel": 1,
+   "amend": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "share": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "FIN \u8d22\u52a1\u4eba\u5458"
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "PM \u9879\u76ee\u7ecf\u7406"
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

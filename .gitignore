@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Node / build
+node_modules/
+*.bundle.js
+*.bundle.js.map
+dist/
+build/
+
+# Secrets / config
+.env
+.env.*
+site_config*.json
+common_site_config.json
+*.pem
+*.key
+*.p12
+
+# Data / backups
+*.sql
+*.sql.gz
+*.dump
+*.tar
+*.tar.gz
+*.zip
+backups/
+private/
+files/
+sites/
+
+# Logs / local
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

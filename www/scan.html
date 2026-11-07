@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>扫码查询 · CB 机电</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+           background: #f4f7fc; color: #0f172a; display: flex; min-height: 100vh;
+           align-items: center; justify-content: center; padding: 20px; }
+    .card { width: 100%; max-width: 520px; background: #fff; border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(15,23,42,.08); padding: 28px 26px; }
+    h2 { margin: 0 0 6px; font-size: 20px; }
+    .sub { color: #64748b; font-size: 13px; margin-bottom: 20px; }
+    form { display: flex; gap: 10px; }
+    input { flex: 1; padding: 13px 14px; font-size: 16px; border: 1px solid #e2e8f0;
+            border-radius: 10px; outline: none; }
+    input:focus { border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37,99,235,.12); }
+    button { padding: 13px 20px; font-size: 15px; border: 0; border-radius: 10px;
+             background: #2563eb; color: #fff; cursor: pointer; white-space: nowrap; }
+    button:hover { background: #1d4ed8; }
+    #msg { margin-top: 16px; font-size: 14px; color: #dc2626; min-height: 20px; }
+    .hint { margin-top: 18px; font-size: 12px; color: #94a3b8; line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>扫码查询</h2>
+    <div class="sub">扫描二维码 / 输入单据编号，直接打开对应单据</div>
+    <form id="f">
+      <input id="code" placeholder="如 PUR-ORD-2026-00001" autocomplete="off" autofocus>
+      <button type="submit">查询</button>
+    </form>
+    <div id="msg"></div>
+    <div class="hint">
+      支持：采购订单、采购申请、设计BOM、设计变更、质检单、不合格报告、试运行/移交、
+      装运、进口案件、库存移动、项目、任务、物料。<br>
+      页面需登录；扫描枪请设置为「回车结束」。
+    </div>
+  </div>
+  <script>
+    (function () {
+      var form = document.getElementById("f");
+      var input = document.getElementById("code");
+      var msg = document.getElementById("msg");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var code = (input.value || "").trim();
+        if (!code) return;
+        msg.textContent = "查询中…";
+        msg.style.color = "#64748b";
+        fetch("/api/method/cb_erp.cb_erp.scan.resolve?code=" + encodeURIComponent(code), {
+          credentials: "same-origin"
+        })
+          .then(function (r) { return r.json(); })
+          .then(function (j) {
+            var res = (j && j.message) || {};
+            if (res.found && res.route) {
+              msg.textContent = "已找到：" + res.doctype + " " + res.name + "，正在打开…";
+              msg.style.color = "#059669";
+              window.location.href = res.route;
+            } else {
+              msg.textContent = "未找到编号：" + code;
+              msg.style.color = "#dc2626";
+            }
+          })
+          .catch(function () {
+            msg.textContent = "查询失败，请重试";
+            msg.style.color = "#dc2626";
+          });
+      });
+    })();
+  </script>
+</body>
+</html>

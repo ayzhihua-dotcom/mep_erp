@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "autoname": "field:rule_code",
+ "creation": "2026-11-05 12:00:00.000000",
+ "custom": 1,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sec_g0",
+  "rule_code",
+  "alert_type",
+  "sec_g1",
+  "threshold_days",
+  "assignee_role",
+  "sec_g2",
+  "notify_email",
+  "notify_system",
+  "enabled",
+  "sec_g3",
+  "rule_version",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec_g0",
+   "fieldtype": "Section Break",
+   "label": "规则标识"
+  },
+  {
+   "fieldname": "rule_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "规则编码",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "alert_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "预警类型",
+   "options": "缺料\n承诺交期违约\n供应商逾期\n单证缺失\n已放行未提货\n超预算\n超领\n盘点差异\n在途超时\nETA延误\n其他",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sec_g1",
+   "fieldtype": "Section Break",
+   "label": "阈值与责任映射"
+  },
+  {
+   "description": "时效类 N 天阈值（D-v5 代拟草案：单证停更 3 天；其余 0=不适用，待业务统一成表确认）",
+   "fieldname": "threshold_days",
+   "fieldtype": "Int",
+   "label": "N 阈值（天）",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "assignee_role",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "责任人角色",
+   "options": "Role"
+  },
+  {
+   "fieldname": "sec_g2",
+   "fieldtype": "Section Break",
+   "label": "通知与启用"
+  },
+  {
+   "default": "1",
+   "fieldname": "notify_email",
+   "fieldtype": "Check",
+   "label": "Email 通知"
+  },
+  {
+   "default": "1",
+   "fieldname": "notify_system",
+   "fieldtype": "Check",
+   "label": "系统通知"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "启用"
+  },
+  {
+   "fieldname": "sec_g3",
+   "fieldtype": "Section Break",
+   "label": "版本与备注"
+  },
+  {
+   "fieldname": "rule_version",
+   "fieldtype": "Data",
+   "label": "规则版本",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "label": "备注"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-05 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "CB ERP",
+ "name": "Alert Rule",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "SYS 系统管理员",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "FIN 财务人员"
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "PM 项目经理"
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "rule_code",
+ "track_changes": 1
+}

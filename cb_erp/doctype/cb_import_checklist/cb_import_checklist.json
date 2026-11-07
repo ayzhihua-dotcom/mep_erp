@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2026-10-30 10:08:56.720766",
+ "custom": 1,
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "doc_name",
+  "done",
+  "due_date",
+  "holder_role"
+ ],
+ "fields": [
+  {
+   "columns": 4,
+   "fieldname": "doc_name",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u5355\u8bc1",
+   "options": "\n\u7bb1\u5355\n\u53d1\u7968\n\u63d0\u5355\n\u4ea7\u54c1\u8bc1\n\u88c5\u8fd0\u8bc1\n\u6388\u6743\u4e66\n\u4ea7\u5730\u8bc1\n\u5176\u4ed6",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "done",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "\u5df2\u5907\u9f50"
+  },
+  {
+   "columns": 3,
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "\u622a\u6b62\u65e5\u671f"
+  },
+  {
+   "columns": 2,
+   "fieldname": "holder_role",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u8d1f\u8d23\u89d2\u8272",
+   "options": "Role"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-10-30 10:08:56.720766",
+ "modified_by": "Administrator",
+ "module": "CB ERP",
+ "name": "CB Import Checklist",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "SYS \u7cfb\u7edf\u7ba1\u7406\u5458",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

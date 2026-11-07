@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "CB-CMT-.YYYY.-.#####",
+ "creation": "2026-10-30 10:04:52.810077",
+ "custom": 1,
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec_g0",
+  "company",
+  "project",
+  "budget",
+  "po",
+  "item_code",
+  "qty_committed",
+  "rate",
+  "amount_committed",
+  "snapshot_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec_g0",
+   "fieldtype": "Section Break",
+   "label": "\u57fa\u672c\u4fe1\u606f"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "budget",
+   "fieldtype": "Link",
+   "label": "\u5173\u8054\u9884\u7b97",
+   "options": "Material Budget"
+  },
+  {
+   "fieldname": "po",
+   "fieldtype": "Link",
+   "label": "\u91c7\u8d2d\u8ba2\u5355",
+   "options": "Purchase Order"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qty_committed",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u627f\u8bfa\u6570\u91cf",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "\u627f\u8bfa\u5355\u4ef7"
+  },
+  {
+   "fieldname": "amount_committed",
+   "fieldtype": "Currency",
+   "label": "\u627f\u8bfa\u91d1\u989d"
+  },
+  {
+   "fieldname": "snapshot_date",
+   "fieldtype": "Date",
+   "label": "\u5feb\u7167\u65e5\u671f"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Material Commitment",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-10-31 10:07:17.132860",
+ "modified_by": "Administrator",
+ "module": "CB ERP",
+ "name": "Material Commitment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "SYS \u7cfb\u7edf\u7ba1\u7406\u5458",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "PM \u9879\u76ee\u7ecf\u7406",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "FIN \u8d22\u52a1\u4eba\u5458",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

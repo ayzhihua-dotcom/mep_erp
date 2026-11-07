@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2026-11-05 09:00:00.000000",
+ "custom": 1,
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "se_row",
+  "item_code",
+  "project",
+  "qty",
+  "goods_amount",
+  "add_amount",
+  "new_basic_rate",
+  "new_basic_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "se_row",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "收货行",
+   "read_only": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "物料",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "项目",
+   "options": "Project",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "数量",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "goods_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "货值基数",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "add_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "摊入费用",
+   "read_only": 1
+  },
+  {
+   "fieldname": "new_basic_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "含费单价",
+   "read_only": 1
+  },
+  {
+   "fieldname": "new_basic_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "含费金额",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-11-05 09:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "CB ERP",
+ "name": "CB Allocation Item",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "SYS \u7cfb\u7edf\u7ba1\u7406\u5458",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,155 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "CB-IMP-.YYYY.-.#####",
+ "creation": "2026-10-30 10:08:57.106470",
+ "custom": 1,
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec_g0",
+  "company",
+  "purchase_order",
+  "cb_shipment",
+  "customs_status",
+  "sec_g1",
+  "checklists",
+  "sec_g2",
+  "costs",
+  "sec_g3",
+  "portrait_note",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec_g0",
+   "fieldtype": "Section Break",
+   "label": "\u57fa\u672c\u4fe1\u606f"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "purchase_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "options": "Purchase Order",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cb_shipment",
+   "fieldtype": "Link",
+   "label": "\u5173\u8054\u88c5\u8fd0",
+   "options": "CB Shipment"
+  },
+  {
+   "fieldname": "customs_status",
+   "fieldtype": "Select",
+   "label": "\u6e05\u5173\u72b6\u6001",
+   "options": "\n\u5355\u8bc1\u51c6\u5907\n\u62a5\u68c0\n\u62a5\u5173\n\u7f34\u7a0e\n\u653e\u884c\n\u5b8c\u6210"
+  },
+  {
+   "fieldname": "sec_g1",
+   "fieldtype": "Section Break",
+   "label": "\u5355\u8bc1\u6e05\u5355"
+  },
+  {
+   "fieldname": "checklists",
+   "fieldtype": "Table",
+   "label": "\u5355\u8bc1\u6e05\u5355",
+   "options": "CB Import Checklist"
+  },
+  {
+   "fieldname": "sec_g2",
+   "fieldtype": "Section Break",
+   "label": "\u6210\u672c\u4e3b\u5355"
+  },
+  {
+   "fieldname": "costs",
+   "fieldtype": "Table",
+   "label": "\u6210\u672c\u4e3b\u5355",
+   "options": "CB Import Cost"
+  },
+  {
+   "fieldname": "sec_g3",
+   "fieldtype": "Section Break",
+   "label": "\u6e05\u5173\u8bf4\u660e"
+  },
+  {
+   "fieldname": "portrait_note",
+   "fieldtype": "Small Text",
+   "label": "\u6e05\u5173\u8bf4\u660e"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "CB Import Case",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-10-31 10:07:17.417336",
+ "modified_by": "Administrator",
+ "module": "CB ERP",
+ "name": "CB Import Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "SYS \u7cfb\u7edf\u7ba1\u7406\u5458",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CUS \u6e05\u5173\u4eba\u5458",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

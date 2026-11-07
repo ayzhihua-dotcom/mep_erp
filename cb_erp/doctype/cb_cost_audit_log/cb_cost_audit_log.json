@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "autoname": "format:CB-CAU-{YYYY}-{#####}",
+ "creation": "2026-11-05 09:00:00.000000",
+ "custom": 1,
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec_g0",
+  "allocation",
+  "import_case",
+  "target_entry",
+  "event",
+  "allocated_total",
+  "sec_g1",
+  "detail"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec_g0",
+   "fieldtype": "Section Break",
+   "label": "审计事件"
+  },
+  {
+   "fieldname": "allocation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "分摊单",
+   "options": "CB Import Allocation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "import_case",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "进口案件",
+   "options": "CB Import Case"
+  },
+  {
+   "fieldname": "target_entry",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "收货单",
+   "options": "Stock Entry"
+  },
+  {
+   "columns": 2,
+   "fieldname": "event",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "事件",
+   "options": "提交分摊\n取消分摊\n调整",
+   "reqd": 1
+  },
+  {
+   "fieldname": "allocated_total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "分摊总额"
+  },
+  {
+   "fieldname": "sec_g1",
+   "fieldtype": "Section Break",
+   "label": "详情"
+  },
+  {
+   "fieldname": "detail",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "计算过程与说明"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-05 09:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "CB ERP",
+ "name": "CB Cost Audit Log",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "SYS 系统管理员",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "FIN 财务人员"
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "allocation",
+ "track_changes": 1
+}

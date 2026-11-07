@@ -1,0 +1,275 @@
+{
+ "actions": [],
+ "autoname": "format:CB-ALE-{YYYY}-{#####}",
+ "creation": "2026-11-05 12:00:00.000000",
+ "custom": 1,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sec_g0",
+  "alert_type",
+  "ref_doctype",
+  "ref_docname",
+  "alert_summary",
+  "sec_g1",
+  "project",
+  "item_code",
+  "metric_value",
+  "severity",
+  "sec_g2",
+  "assignee",
+  "assignee_role",
+  "due_date",
+  "sec_g3",
+  "status",
+  "close_reason",
+  "exemption_auth",
+  "sec_g4",
+  "rule",
+  "rule_code",
+  "dedupe_key",
+  "computed_at",
+  "rule_version",
+  "notified"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec_g0",
+   "fieldtype": "Section Break",
+   "label": "预警对象"
+  },
+  {
+   "columns": 2,
+   "fieldname": "alert_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "预警类型",
+   "options": "缺料\n承诺交期违约\n供应商逾期\n单证缺失\n已放行未提货\n超预算\n超领\n盘点差异\n在途超时\nETA延误\n其他",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ref_doctype",
+   "fieldtype": "Link",
+   "label": "关联对象类型",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ref_docname",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "关联对象单据",
+   "options": "ref_doctype",
+   "reqd": 1
+  },
+  {
+   "fieldname": "alert_summary",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "摘要"
+  },
+  {
+   "fieldname": "sec_g1",
+   "fieldtype": "Section Break",
+   "label": "维度与度量"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "项目",
+   "options": "Project"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "物料",
+   "options": "Item"
+  },
+  {
+   "columns": 2,
+   "fieldname": "metric_value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "度量值（净缺口/超限金额/逾期天数）"
+  },
+  {
+   "columns": 2,
+   "default": "警告",
+   "fieldname": "severity",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "严重度",
+   "options": "信息\n警告\n严重"
+  },
+  {
+   "fieldname": "sec_g2",
+   "fieldtype": "Section Break",
+   "label": "责任与期限"
+  },
+  {
+   "fieldname": "assignee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "责任人",
+   "options": "User"
+  },
+  {
+   "fieldname": "assignee_role",
+   "fieldtype": "Link",
+   "label": "责任角色",
+   "options": "Role"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "处理期限"
+  },
+  {
+   "fieldname": "sec_g3",
+   "fieldtype": "Section Break",
+   "label": "处理闭环"
+  },
+  {
+   "default": "待处理",
+   "columns": 2,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "状态",
+   "options": "待处理\n处理中\n已关闭",
+   "reqd": 1
+  },
+  {
+   "fieldname": "close_reason",
+   "fieldtype": "Small Text",
+   "label": "关闭原因（关闭必填；豁免须授权编号）"
+  },
+  {
+   "fieldname": "exemption_auth",
+   "fieldtype": "Data",
+   "label": "豁免授权编号（IC-05 留痕）"
+  },
+  {
+   "fieldname": "sec_g4",
+   "fieldtype": "Section Break",
+   "label": "引擎痕迹"
+  },
+  {
+   "fieldname": "rule",
+   "fieldtype": "Link",
+   "label": "预警规则",
+   "options": "Alert Rule"
+  },
+  {
+   "fieldname": "rule_code",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "规则编码",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dedupe_key",
+   "fieldtype": "Data",
+   "label": "去重键",
+   "read_only": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "computed_at",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "计算时点",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rule_version",
+   "fieldtype": "Data",
+   "label": "规则版本",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "notified",
+   "fieldtype": "Check",
+   "label": "已通知",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-05 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "CB ERP",
+ "name": "Alert Event",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "SYS 系统管理员",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "PM 项目经理"
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "CUS 客服专员"
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "FIN 财务人员"
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "LOG 物流专员"
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "WHS 仓库管理员"
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "PRC 中国采购"
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "alert_summary",
+ "track_changes": 1
+}

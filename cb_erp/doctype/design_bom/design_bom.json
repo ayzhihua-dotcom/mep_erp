@@ -1,0 +1,193 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "CB-BOM-.YYYY.-.#####",
+ "creation": "2026-10-30 09:57:35.033407",
+ "custom": 1,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sec_g0",
+  "naming_series",
+  "project",
+  "company",
+  "version_no",
+  "professional",
+  "sec_g1",
+  "bom_items",
+  "sec_g2",
+  "design_base",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec_g0",
+   "fieldtype": "Section Break",
+   "label": "\u57fa\u672c\u4fe1\u606f"
+  },
+  {
+   "default": "CB-BOM-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u7f16\u53f7\u89c4\u5219",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u9879\u76ee",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u516c\u53f8",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "version_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u7248\u672c\u53f7",
+   "reqd": 1
+  },
+  {
+   "fieldname": "professional",
+   "fieldtype": "Select",
+   "label": "\u4e13\u4e1a",
+   "options": "\n\u7ba1\u9053\u9600\u95e8\n\u7535\u7f06\u7535\u6c14\n\u4eea\u8868\u81ea\u63a7\n\u5176\u4ed6"
+  },
+  {
+   "fieldname": "sec_g1",
+   "fieldtype": "Section Break",
+   "label": "BOM \u660e\u7ec6"
+  },
+  {
+   "fieldname": "bom_items",
+   "fieldtype": "Table",
+   "label": "BOM \u660e\u7ec6",
+   "options": "Design BOM Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sec_g2",
+   "fieldtype": "Section Break",
+   "label": "\u8bbe\u8ba1\u4f9d\u636e"
+  },
+  {
+   "fieldname": "design_base",
+   "fieldtype": "Small Text",
+   "label": "\u8bbe\u8ba1\u4f9d\u636e"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Design BOM",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-10-31 10:07:16.529671",
+ "modified_by": "Administrator",
+ "module": "CB ERP",
+ "name": "Design BOM",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "SYS \u7cfb\u7edf\u7ba1\u7406\u5458",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ENG \u5de5\u7a0b\u4eba\u5458",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "PM \u9879\u76ee\u7ecf\u7406",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "MGT \u7ba1\u7406\u5c42",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "FIN \u8d22\u52a1\u4eba\u5458",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

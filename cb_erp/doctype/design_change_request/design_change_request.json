@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "CB-DCR-.YYYY.-.#####",
+ "creation": "2026-10-30 09:57:35.334028",
+ "custom": 1,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sec_g0",
+  "design_bom",
+  "reason",
+  "new_version_no",
+  "sec_g1",
+  "change_content",
+  "sec_g2",
+  "impact_assessment",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec_g0",
+   "fieldtype": "Section Break",
+   "label": "\u57fa\u672c\u4fe1\u606f"
+  },
+  {
+   "fieldname": "design_bom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u8bbe\u8ba1 BOM",
+   "options": "Design BOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Select",
+   "label": "\u53d8\u66f4\u539f\u56e0\uff08D-y4 \u5360\u4f4d\u679a\u4e3e\uff09",
+   "options": "\n\u8bbe\u8ba1\u9519\u8bef\n\u5ba2\u6237\u8981\u6c42\n\u73b0\u573a\u8c03\u6574\n\u5176\u4ed6"
+  },
+  {
+   "fieldname": "new_version_no",
+   "fieldtype": "Data",
+   "label": "\u751f\u6548\u540e\u65b0\u7248\u672c\u53f7"
+  },
+  {
+   "fieldname": "sec_g1",
+   "fieldtype": "Section Break",
+   "label": "\u53d8\u66f4\u5185\u5bb9"
+  },
+  {
+   "fieldname": "change_content",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "\u53d8\u66f4\u5185\u5bb9",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sec_g2",
+   "fieldtype": "Section Break",
+   "label": "\u5f71\u54cd\u8bc4\u4f30"
+  },
+  {
+   "fieldname": "impact_assessment",
+   "fieldtype": "Small Text",
+   "label": "\u5f71\u54cd\u8bc4\u4f30\uff08\u9879\u76ee/\u7269\u6599/\u6210\u672c\uff09"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Design Change Request",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-10-31 10:07:16.892656",
+ "modified_by": "Administrator",
+ "module": "CB ERP",
+ "name": "Design Change Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "SYS \u7cfb\u7edf\u7ba1\u7406\u5458",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ENG \u5de5\u7a0b\u4eba\u5458",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "PM \u9879\u76ee\u7ecf\u7406",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "MGT \u7ba1\u7406\u5c42",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "FIN \u8d22\u52a1\u4eba\u5458",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

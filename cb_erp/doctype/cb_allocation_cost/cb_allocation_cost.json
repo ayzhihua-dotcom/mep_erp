@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2026-11-05 09:00:00.000000",
+ "custom": 1,
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cost_row",
+  "cost_type",
+  "currency",
+  "amount",
+  "alloc_basis",
+  "fallback_note",
+  "base_magnitude",
+  "allocated_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "cost_row",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "来源费用行",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "cost_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "费用类型",
+   "options": "\n\u5173\u7a0e\n\u589e\u503c\u7a0e\n\u6e05\u5173\u8d39\n\u5185\u9646\u8fd0\u8f93\u8d39\n\u4fdd\u9669\u8d39\n\u5176\u4ed6",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "default": "BRL",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "币种",
+   "options": "Currency",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "费用金额",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "default": "\u91d1\u989d\u5360\u6bd4",
+   "fieldname": "alloc_basis",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u5206\u644a\u57fa\u7840",
+   "options": "\u91d1\u989d\u5360\u6bd4\n\u6570\u91cf\n\u6bdb\u91cd\n\u4f53\u79ef"
+  },
+  {
+   "fieldname": "fallback_note",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "基础回退说明",
+   "read_only": 1
+  },
+  {
+   "fieldname": "base_magnitude",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "分摊基数合计",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "allocated_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "本行分摊额",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-11-05 09:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "CB ERP",
+ "name": "CB Allocation Cost",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "SYS \u7cfb\u7edf\u7ba1\u7406\u5458",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

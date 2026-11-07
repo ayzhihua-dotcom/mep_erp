@@ -1,0 +1,41 @@
+[
+ {
+  "doctype": "Alert Rule",
+  "name": "ALR-001",
+  "rule_code": "ALR-001",
+  "alert_type": "缺料",
+  "threshold_days": 0,
+  "assignee_role": "PM 项目经理",
+  "notify_email": 1,
+  "notify_system": 1,
+  "enabled": 1,
+  "rule_version": "v2026.11.05-1",
+  "remark": "缺料：需求已批准未采购 + 净缺口>0（TP-PRJ-004 口径）。责任人 PM/ENG；首版仅 PM 映射。"
+ },
+ {
+  "doctype": "Alert Rule",
+  "name": "ALR-002",
+  "rule_code": "ALR-002",
+  "alert_type": "单证缺失",
+  "threshold_days": 3,
+  "assignee_role": "CUS 客服专员",
+  "notify_email": 1,
+  "notify_system": 1,
+  "enabled": 1,
+  "rule_version": "v2026.11.05-1",
+  "remark": "单证缺失/停更（LOG-006/IMP-002 承接）。N=3 天代拟草案（D-v5 待业务统一成表确认）；本版 v1 简化=清单未完成即缺失，停更天数判定留接 v2，登记台账。"
+ },
+ {
+  "doctype": "Alert Rule",
+  "name": "CST-007",
+  "rule_code": "CST-007",
+  "alert_type": "超预算",
+  "threshold_days": 0,
+  "assignee_role": "FIN 财务人员",
+  "notify_email": 1,
+  "notify_system": 1,
+  "enabled": 1,
+  "rule_version": "v2026.11.05-1",
+  "remark": "超预算/偏差劣化（CST-007 承接）：已提交预算 vs 已提交承诺合计，超限额为度量值；责任人 PM/FIN；首版仅 FIN 映射。"
+ }
+]

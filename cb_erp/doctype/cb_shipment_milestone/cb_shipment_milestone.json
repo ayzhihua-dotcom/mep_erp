@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2026-10-30 10:08:55.755770",
+ "custom": 1,
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "milestone_name",
+  "planned_date",
+  "actual_date",
+  "milestone_remark"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "milestone_name",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u8282\u70b9",
+   "options": "\n\u8ba1\u5212\u53d1\u8fd0\n\u5f00\u8239\n\u5230\u6e2f\n\u5230\u573a\n\u9a8c\u6536\u5b8c\u6210",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "planned_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "\u8ba1\u5212\u65e5\u671f"
+  },
+  {
+   "columns": 2,
+   "fieldname": "actual_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "\u5b9e\u9645\u65e5\u671f"
+  },
+  {
+   "fieldname": "milestone_remark",
+   "fieldtype": "Small Text",
+   "label": "\u51ed\u8bc1/\u5907\u6ce8"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-10-30 10:08:55.755770",
+ "modified_by": "Administrator",
+ "module": "CB ERP",
+ "name": "CB Shipment Milestone",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "SYS \u7cfb\u7edf\u7ba1\u7406\u5458",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
